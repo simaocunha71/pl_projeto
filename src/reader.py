@@ -73,7 +73,7 @@ def validate_rep(line, limits, index):
         i = 0
         filled = 0
         while(i < max and filled < min):
-            if(line[index].group("column") != None):
+            if(len(line[index].group("column")) > 0):
                 filled += 1
             i+=1
             index += 1
@@ -87,7 +87,7 @@ def matchNumeric(string_num):
     reg_exp = r'((\+|-)?\d+)(\.\d+)?'
     p = re.compile(reg_exp)
     value = p.match(string_num)
-    return value.group() != None
+    return value != None
 
 
 
@@ -96,18 +96,18 @@ def validate_rep_method(line, limits, method, index):
     if (validate_method(method)):
         min = get_min_rep(limits)
         max = get_max_rep(limits)
-
         if (min <= max):
             i = 0
             filled = 0
             flag = True
             while(i < max and flag):
-                if(line[index].group("column") != None):
+                if(len(line[index].group("column")) > 0):
                     filled += 1
                     if (not matchNumeric(line[index].group("column"))):
                         flag = False
                 i+=1
                 index += 1
+            
             if(filled >= min and flag):
                 return True
             else:
@@ -124,31 +124,37 @@ def validate_method (string):
 #Valida colunas de uma linha do csv
 def validate_line (columns, line, cols_number, pattern_file):
     valid = pattern_file.finditer(line)
-    if (valid and get_num_columns(line) == cols_number):
+    list = [*valid]
+    #Numero de colunas tem de ser igual ao definido na estrutura do csv
+    if (list and get_num_columns(line) == cols_number):
         flag = True
         i = 0
         j = 0
         while flag and i < len(columns):
-            # Caso de repetiçoes onde se espera vários itens iguais (exemplo das notas no enunciado)
+            # Verificacao de listas (exemplo das notas no enunciado)
             if(type(columns[i]) is tuple):
+                #Lista simples
                 if(len(columns[i]) == 2):
-                    flag = validate_rep(valid, columns[i][1], j)
+                    flag = validate_rep(list, columns[i][1], j)
                     j+=get_max_rep(columns[i][1])
+                #Lista com metodos
                 elif(len(columns[i]) == 3):
-                    flag = validate_rep_method()
+                    flag = validate_rep_method(list, columns[i][1],columns[i][2], j)
                 else:
                     flag = False
-
-            else: #Quando se encontra um valor (exemplo: nome)
-                if(valid[j].group() == ','):
+            # Verificacao de coluna simples(estilo nome)
+            else: 
+                # Coluna tem de estar preenchida
+                if(not list[j].group("column")):
                     flag = False
                 else:
                     pass
                 j+=1
             i+=1
-
+        if flag: print("valido ->" + line_to_read)
+        else: print("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
     else:
-        print(line_to_read + "-> Invalido -> " + str(get_num_columns(line_to_read)))
+        print("Invalido -> " + str(get_num_columns(line_to_read)) + line_to_read)
         return False
         #file_json.write(valid_line.group()) #escreve no ficheiro
         #file_json.write("\n")
@@ -174,13 +180,13 @@ file_csv = open(filename_to_open,"r")
 filename_to_save = filename_to_open.replace("csv","json") #muda terminação de csv para json
 file_json = open(filename_to_save,'w')
 
-
+#Tratar da primeira linha
 line_to_read = file_csv.readline()
 columns = get_columns_names(line_to_read)
 cols_number = get_num_columns_array(columns)
 print("columns ->: " + str(cols_number))
 
-
+line_to_read = file_csv.readline()
 while (line_to_read != ""): #nao deteta EOF
     validate_line(columns,line_to_read,cols_number,pattern_file)
     line_to_read = file_csv.readline() #le proxima linha

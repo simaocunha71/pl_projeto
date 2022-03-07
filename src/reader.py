@@ -7,7 +7,7 @@ first_line = True
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
-    reg_exp = r'((((?P<nome>(\w|[À-ÿ ])+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?),?))'
+    reg_exp = r'((((?P<nome>(\w|[À-ÿ ])+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
     for match in matches:
@@ -74,7 +74,8 @@ def validate_rep(line, limits, index):
     if (min <= max):
         i = 0
         filled = 0
-        while(i < max and filled < min):
+        size = len(line)
+        while(i < max and index < size and filled < min):
             if(len(line[index].group("column")) > 0):
                 filled += 1
             i+=1
@@ -102,7 +103,8 @@ def validate_rep_method(line, limits, method, index):
             i = 0
             filled = 0
             flag = True
-            while(i < max and flag):
+            size = len(line)
+            while(i < max and index < size and flag):
                 if(len(line[index].group("column")) > 0):
                     filled += 1
                     if (not matchNumeric(line[index].group("column"))):
@@ -181,7 +183,6 @@ class line:
     index = 0
     def __init__(self,columns):
         self.cols = [None] * len(columns)
-        print(len(columns))
         
 
     def add_simple_element(self,col_name,list):
@@ -230,7 +231,7 @@ def write_json_object(filename,data):
 ################################################ Script da leitura do csv #####################################################
 
 
-pattern_content = r'((?P<column>(\w|[À-ÿ\s])*),?)'
+pattern_content = r'((?P<column>(\w|[À-ÿ ])*)(,|$))'
 pattern_file = re.compile(pattern_content)
 
 #ficheiro a abrir como input
@@ -253,12 +254,14 @@ while (line_to_read != ""): #nao deteta EOF
     if valid: 
         write_json_object(file_json,data)
         first_line = False
+        """
         print("******DEBUG******")
         print(data.cols[0])
         print(data.cols[1])
         print(data.cols[2])
         print(data.cols[3])
         print("*****************")
+        """
     else:
          del data
     line_to_read = file_csv.readline() #le proxima linha

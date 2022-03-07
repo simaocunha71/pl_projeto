@@ -170,7 +170,6 @@ def validate_line (columns, line, cols_number, pattern_file,data):
         flag = False
     return flag
    
-    
 
 
 class line:
@@ -200,6 +199,16 @@ class line:
         self.cols[self.index] = (new_col_name,result)
         self.index += 1
 
+def write_json_object(filename,data):
+    filename.write("    {\n") #tab
+    i = 0
+    size = len(data.cols)
+    while(i < size):
+        filename.write("        " + "\"" + str(data.cols[i][0]) + "\" : \"" + str(data.cols[i][1]) +"\",\n") #necessario fazer o parse dos tuplos
+        i+=1
+    filename.write("    },\n")
+
+
 
 
 ################################################ Script da leitura do csv #####################################################
@@ -215,23 +224,28 @@ file_csv = open(filename_to_open,"r")
 
 filename_to_save = filename_to_open.replace("csv","json") #muda terminação de csv para json
 file_json = open(filename_to_save,'w')
-
+file_json.write("[\n")
 #Tratar da primeira linha
 line_to_read = file_csv.readline()
 columns = get_columns_names(line_to_read)
 cols_number = get_num_columns_array(columns)
-print("columns ->: " + str(cols_number))
+#print("columns ->: " + str(cols_number))
 
 while (line_to_read != ""): #nao deteta EOF
     data = line(columns)
     valid = validate_line(columns,line_to_read,cols_number,pattern_file,data)
-    print(valid)
     if valid: 
+        write_json_object(file_json,data)
+        print("******DEBUG******")
         print(data.cols[0])
+        print(data.cols[1])
+        print(data.cols[2])
+        print(data.cols[3])
+        print("*****************")
     else:
          del data
     line_to_read = file_csv.readline() #le proxima linha
-
+file_json.write("]\n")
 
 file_csv.close()
 file_json.close()

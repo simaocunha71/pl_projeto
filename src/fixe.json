@@ -1,0 +1,10 @@
+[
+	{
+		"Número": "2022",
+		"Nome": " Olazinho",
+		"Curso": " Cinema",
+		"Notas": ['1', '2', '3', '4', '5'],
+		"Anos_sum": 2003.0,
+		"Uni": "minho"
+    }
+]

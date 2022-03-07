@@ -2,6 +2,8 @@ from enum import Flag
 import sys
 import re
 
+first_line = True
+
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
@@ -142,8 +144,10 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                 if(len(columns[i]) == 2):
                     flag = validate_rep(list, columns[i][1], j)
                     max_rep = get_max_rep(columns[i][1])
+                    # map que aplica group() a todos os elementos da lista, devolvendo
+                    # a lista dos resultados, retirando no caso de elemntos vazios
                     rep_list = apply_group("column",list[j:j+max_rep])
-                    data.add_simple_element(columns[i][0],rep_list)
+                    data.add_list(columns[i][0],rep_list)
                     j+= max_rep
                 #Lista com metodos
                 elif(len(columns[i]) == 3):
@@ -160,7 +164,7 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                 if(not list[j].group("column")):
                     flag = False
                 else:
-                    data.add_simple_element(columns[i],[list[j].group("column")])
+                    data.add_simple_element(columns[i],list[j].group("column"))
                 j+=1
             i+=1
         if flag: print("valido ->" + line_to_read)
@@ -181,7 +185,11 @@ class line:
         
 
     def add_simple_element(self,col_name,list):
-        self.cols[self.index] = (col_name,list)
+        self.cols[self.index] = (col_name,list,0)
+        self.index += 1
+
+    def add_list(self,col_name,list):
+        self.cols[self.index] = (col_name,list,1)
         self.index += 1
         
     def add_method_element(self,col_name,method,list):
@@ -196,17 +204,25 @@ class line:
             if(total != 0): 
                 result = total/len(float_list)
         new_col_name = col_name + "_" + method
-        self.cols[self.index] = (new_col_name,result)
+        self.cols[self.index] = (new_col_name,result,1)
         self.index += 1
 
 def write_json_object(filename,data):
-    filename.write("    {\n") #tab
+    if(not first_line):
+        filename.write(",\n") #tab
+    filename.write("\t{\n")
     i = 0
     size = len(data.cols)
     while(i < size):
-        filename.write("        " + "\"" + str(data.cols[i][0]) + "\" : \"" + str(data.cols[i][1]) +"\",\n") #necessario fazer o parse dos tuplos
+        if data.cols[i][2] == 0 :
+            filename.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": \"" + str(data.cols[i][1]) +"\"") #necessario fazer o parse dos tuplos
+        elif data.cols[i][2] == 1 :
+            filename.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": " + str(data.cols[i][1]) +"") #necessario fazer o parse dos tuplos
+        if(i < size-1): 
+            filename.write(",")
+        filename.write("\n")
         i+=1
-    filename.write("    },\n")
+    filename.write("    }")
 
 
 
@@ -236,6 +252,7 @@ while (line_to_read != ""): #nao deteta EOF
     valid = validate_line(columns,line_to_read,cols_number,pattern_file,data)
     if valid: 
         write_json_object(file_json,data)
+        first_line = False
         print("******DEBUG******")
         print(data.cols[0])
         print(data.cols[1])
@@ -245,7 +262,7 @@ while (line_to_read != ""): #nao deteta EOF
     else:
          del data
     line_to_read = file_csv.readline() #le proxima linha
-file_json.write("]\n")
+file_json.write("\n]\n")
 
 file_csv.close()
 file_json.close()

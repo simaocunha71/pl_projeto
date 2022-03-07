@@ -119,10 +119,15 @@ def validate_rep_method(line, limits, method, index):
 def validate_method (string):
     return string == "sum" or string == "media"
 
-
+def apply_group(column_name,list):
+    new_list = []
+    for l in list:
+        if(l.group(column_name)):
+            new_list.append(l.group(column_name))
+    return new_list
 
 #Valida colunas de uma linha do csv
-def validate_line (columns, line, cols_number, pattern_file):
+def validate_line (columns, line, cols_number, pattern_file,data):
     valid = pattern_file.finditer(line)
     list = [*valid]
     #Numero de colunas tem de ser igual ao definido na estrutura do csv
@@ -136,10 +141,17 @@ def validate_line (columns, line, cols_number, pattern_file):
                 #Lista simples
                 if(len(columns[i]) == 2):
                     flag = validate_rep(list, columns[i][1], j)
-                    j+=get_max_rep(columns[i][1])
+                    max_rep = get_max_rep(columns[i][1])
+                    rep_list = apply_group("column",list[j:j+max_rep])
+                    data.add_simple_element(columns[i][0],rep_list)
+                    j+= max_rep
                 #Lista com metodos
                 elif(len(columns[i]) == 3):
                     flag = validate_rep_method(list, columns[i][1],columns[i][2], j)
+                    max_rep = get_max_rep(columns[i][1])
+                    rep_list = apply_group("column",list[j:j+max_rep])
+                    data.add_method_element(columns[i][0],columns[i][2],rep_list)
+                    j+= max_rep
                 else:
                     flag = False
             # Verificacao de coluna simples(estilo nome)
@@ -148,21 +160,45 @@ def validate_line (columns, line, cols_number, pattern_file):
                 if(not list[j].group("column")):
                     flag = False
                 else:
-                    pass
+                    data.add_simple_element(columns[i],[list[j].group("column")])
                 j+=1
             i+=1
         if flag: print("valido ->" + line_to_read)
         else: print("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
     else:
         print("Invalido -> " + str(get_num_columns(line_to_read)) + line_to_read)
-        return False
-        #file_json.write(valid_line.group()) #escreve no ficheiro
-        #file_json.write("\n")
+        flag = False
+    return flag
+   
     
 
 
+class line:
+    cols = []
+    index = 0
+    def __init__(self,columns):
+        self.cols = [None] * len(columns)
+        print(len(columns))
+        
 
-
+    def add_simple_element(self,col_name,list):
+        self.cols[self.index] = (col_name,list)
+        self.index += 1
+        
+    def add_method_element(self,col_name,method,list):
+        result = 0
+        float_list = map(float,list)
+        if(method == "sum"):
+            result = sum(float_list)
+        elif(method == "media"):
+            total = 0
+            for e in float_list:
+                total += e
+            if(total != 0): 
+                result = total/len(float_list)
+        new_col_name = col_name + "_" + method
+        self.cols[self.index] = (new_col_name,result)
+        self.index += 1
 
 
 
@@ -186,12 +222,15 @@ columns = get_columns_names(line_to_read)
 cols_number = get_num_columns_array(columns)
 print("columns ->: " + str(cols_number))
 
-line_to_read = file_csv.readline()
 while (line_to_read != ""): #nao deteta EOF
-    validate_line(columns,line_to_read,cols_number,pattern_file)
+    data = line(columns)
+    valid = validate_line(columns,line_to_read,cols_number,pattern_file,data)
+    print(valid)
+    if valid: 
+        print(data.cols[0])
+    else:
+         del data
     line_to_read = file_csv.readline() #le proxima linha
-
-
 
 
 file_csv.close()

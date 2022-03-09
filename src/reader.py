@@ -2,6 +2,7 @@ from enum import Flag
 import sys
 import re
 
+#primeira linha do ficheiro json
 first_line = True
 
 #Le linha do csv para descobrir os headers
@@ -123,6 +124,7 @@ def validate_rep_method(line, limits, method, index):
 def validate_method (string):
     return string == "sum" or string == "media"
 
+#Aplica o metodo group em todos os elementos de uma lista
 def apply_group(column_name,list):
     new_list = []
     for l in list:
@@ -177,29 +179,33 @@ def validate_line (columns, line, cols_number, pattern_file,data):
     return flag
    
 
-
+#classe que guarda as colunas de uma linha de forma a serem facilmente 
+# identificaveis
 class line:
     cols = []
     index = 0
     def __init__(self,columns):
         self.cols = [None] * len(columns)
         
-
+    #adiciona um elemento simples na lista de colunas
     def add_simple_element(self,col_name,list):
         self.cols[self.index] = (col_name,list,0)
         self.index += 1
 
+    #adiciona uma lista na lista de colunas
     def add_list(self,col_name,list):
         self.cols[self.index] = (col_name,list,1)
         self.index += 1
-        
-    def add_method_element(self,col_name,method,list):
+    
+    #calcula o resultado de um metodo e adiciona na lista de colunas
+    def add_method_element(self,col_name,method,l):
         result = 0
-        float_list = map(float,list)
+        float_list = list(map(float,l))
         if(method == "sum"):
             result = sum(float_list)
         elif(method == "media"):
             total = 0
+            float_list
             for e in float_list:
                 total += e
             if(total != 0): 
@@ -208,22 +214,37 @@ class line:
         self.cols[self.index] = (new_col_name,result,1)
         self.index += 1
 
-def write_json_object(filename,data):
+
+#Funçao que escreve uma linha do csv, processada, para um ficheiro json
+def write_json_object(file,data):
     if(not first_line):
-        filename.write(",\n") #tab
-    filename.write("\t{\n")
+        file.write(",\n") #tab
+    file.write("\t{\n")
     i = 0
     size = len(data.cols)
     while(i < size):
+        file.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": ")
+        #caso contrario inclui-se ""
         if data.cols[i][2] == 0 :
-            filename.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": \"" + str(data.cols[i][1]) +"\"") #necessario fazer o parse dos tuplos
+            file.write("\"" + data.cols[i][1] +"\"") #necessario fazer o parse dos tuplos
+        #se for do tipo metodo ou lista nao se inclui ""
         elif data.cols[i][2] == 1 :
-            filename.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": " + str(data.cols[i][1]) +"") #necessario fazer o parse dos tuplos
+            #escrever lista
+            if(isinstance(data.cols[i][1], list)):
+                file.write("[")#necessario fazer o parse dos tuplos
+                j = 0
+                while(j<len(data.cols[i][1])-1):
+                    file.write(data.cols[i][1][i] + ",") #necessario fazer o parse dos tuplos
+                    j += 1
+                file.write(data.cols[i][1][j] + "]")
+            #escrever resultado de metodo
+            else:
+                file.write(str(data.cols[i][1])) #necessario fazer o parse dos tuplos
         if(i < size-1): 
-            filename.write(",")
-        filename.write("\n")
+            file.write(",")
+        file.write("\n")
         i+=1
-    filename.write("    }")
+    file.write("\t}")
 
 
 
@@ -237,10 +258,10 @@ pattern_file = re.compile(pattern_content)
 #ficheiro a abrir como input
 filename_to_open = sys.argv[1]
 
-file_csv = open(filename_to_open,"r")
+file_csv = open(filename_to_open,"r",encoding='utf8')
 
 filename_to_save = filename_to_open.replace("csv","json") #muda terminação de csv para json
-file_json = open(filename_to_save,'w')
+file_json = open(filename_to_save,'w',encoding='utf8')
 file_json.write("[\n")
 #Tratar da primeira linha
 line_to_read = file_csv.readline()

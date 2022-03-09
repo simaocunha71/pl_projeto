@@ -4,17 +4,17 @@
 		"Nome": "Cristiano Ronaldo",
 		"Curso": "Desporto",
 		"Notas": [11,11,11,11,12]
-    },
+	},
 	{
 		"Número": "264",
 		"Nome": "Marcelo Sousa",
 		"Curso": "Ciência Política",
 		"Notas": [20,20,20,20,12]
-    },
+	},
 	{
 		"Número": "2022",
 		"Nome": " Olazinho",
 		"Curso": " Cinema",
 		"Notas": [4,4,4,4,5]
-    }
+	}
 ]

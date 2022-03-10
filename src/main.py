@@ -1,6 +1,7 @@
 from enum import Flag
 import sys
 import re
+import statistics
 
 #primeira linha do ficheiro json
 first_line = True
@@ -122,7 +123,7 @@ def validate_rep_method(line, limits, method, index):
 
 #Valida os metodos
 def validate_method (string):
-    return string == "sum" or string == "media"
+    return string == "sum" or string == "subtr" or string == "prod" or string == "div" or string == "media" or string == "median" or string == "mode"
 
 #Aplica o metodo group em todos os elementos de uma lista
 def apply_group(column_name,list):
@@ -203,13 +204,36 @@ class line:
         float_list = list(map(float,l))
         if(method == "sum"):
             result = sum(float_list)
-        elif(method == "media"):
+        elif(method == "subtr"):
             total = 0
             float_list
             for e in float_list:
-                total += e
-            if(total != 0): 
-                result = total/len(float_list)
+                total = total - e
+            result = total
+        elif(method == "prod"):
+            total = 1
+            float_list
+            for e in float_list:
+                total = total * e
+            result = total
+        elif(method == "div"):
+            try:
+                total = float_list[0]
+                i = 1
+                float_list
+                size = len(float_list)-1
+                while (i < size):
+                    total = total / float_list[i]
+                    i+=1
+                result = total
+            except ZeroDivisionError:
+                result = 0
+        elif(method == "media"):
+            result = statistics.mean(float_list)
+        elif(method == "median"):
+            result = statistics.median(float_list)
+        elif(method == "mode"):
+            result = statistics.mode(float_list)
         new_col_name = col_name + "_" + method
         self.cols[self.index] = (new_col_name,result,1)
         self.index += 1
@@ -226,20 +250,20 @@ def write_json_object(file,data):
         file.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": ")
         #caso contrario inclui-se ""
         if data.cols[i][2] == 0 :
-            file.write("\"" + data.cols[i][1] +"\"") #necessario fazer o parse dos tuplos
+            file.write("\"" + data.cols[i][1] +"\"") 
         #se for do tipo metodo ou lista nao se inclui ""
         elif data.cols[i][2] == 1 :
             #escrever lista
             if(isinstance(data.cols[i][1], list)):
-                file.write("[")#necessario fazer o parse dos tuplos
+                file.write("[")
                 j = 0
                 while(j<len(data.cols[i][1])-1):
-                    file.write(data.cols[i][1][i] + ",") #necessario fazer o parse dos tuplos
+                    file.write(data.cols[i][1][i] + ",")
                     j += 1
                 file.write(data.cols[i][1][j] + "]")
             #escrever resultado de metodo
             else:
-                file.write(str(data.cols[i][1])) #necessario fazer o parse dos tuplos
+                file.write(str(data.cols[i][1])) 
         if(i < size-1): 
             file.write(",")
         file.write("\n")

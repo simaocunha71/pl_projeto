@@ -12,7 +12,15 @@ def get_columns_names(string):
     reg_exp = r'((((?P<nome>(\w|[À-ÿ ])+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
+
+
+
     for match in matches:
+        #verificar se no titulo tem o numero de virgulas certo *TALVEZ HAJA MELHOR FORMA DE SE FAZER*
+        #num_virg = get_max_rep(str(match.group("repetidos"))) #numero de colunas
+        #virg_str = string[-num_virg:] #retirar so o numero de caracteres com as virgulas
+        #size_virg_str = len(virg_str)
+        
         if(match.group("metodo") and match.group("repetidos") and match.group("nome")):
             columns.append((match.group("nome"),match.group("repetidos"), match.group("metodo")))
 
@@ -216,6 +224,7 @@ class line:
             for e in float_list:
                 total = total * e
             result = total
+            result = round(result,3)
         elif(method == "div"):
             try:
                 total = float_list[0]
@@ -226,6 +235,7 @@ class line:
                     total = total / float_list[i]
                     i+=1
                 result = total
+                result = round(result,3)
             except ZeroDivisionError:
                 result = 0
         elif(method == "media"):

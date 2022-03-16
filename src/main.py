@@ -1,7 +1,5 @@
-from enum import Flag
-import sys
-import re
-import statistics
+import os
+import sys , re, statistics, logs, time
 
 #primeira linha do ficheiro json
 first_line = True
@@ -12,8 +10,6 @@ def get_columns_names(string):
     reg_exp = r'((((?P<nome>(\w|[À-ÿ ])+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
-
-
 
     for match in matches:
         #verificar se no titulo tem o numero de virgulas certo *TALVEZ HAJA MELHOR FORMA DE SE FAZER*
@@ -35,7 +31,7 @@ def get_columns_names(string):
 #Devolve o numero de colunas máximo dos headers
 def get_num_columns_array(columns):
     count = 0
-    print("**************** \n Colunas: " + str(columns) + "\n****************\n")
+    #print("**************** \n Colunas: " + str(columns) + "\n****************\n")
     for col in columns:
         if(type(col) is tuple):
             max = get_max_rep(col[1])
@@ -180,10 +176,10 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                     data.add_simple_element(columns[i],list[j].group("column"))
                 j+=1
             i+=1
-        if flag: print("valido ->" + line_to_read)
-        else: print("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
+        #if flag: print("valido ->" + line_to_read)
+        #else: print("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
     else:
-        print("Invalido -> " + str(get_num_columns(line_to_read)) + line_to_read)
+        #print("Invalido -> " + str(get_num_columns(line_to_read)) + line_to_read)
         flag = False
     return flag
    
@@ -284,18 +280,27 @@ def write_json_object(file,data):
 
 
 ################################################ Script da leitura do csv #####################################################
+inicio = time.time()
 
+logs.send_message(logs.ANSII_COLOUR.GREEN + "Conversor de ficheiros csv para ficheiros json - Grupo 6 | Processamento de linguagens (2021/2022)" + logs.ANSII_COLOUR.RESET)
 
 pattern_content = r'((?P<column>(\w|[À-ÿ ])*)(,|$))'
 pattern_file = re.compile(pattern_content)
 
-#ficheiro a abrir como input
 filename_to_open = sys.argv[1]
 
-file_csv = open(filename_to_open,"r",encoding='utf8')
+re_name_file = r'^((.+)\/)?(?P<fn>(\w+\.\w+))$'
+p_nf = re.compile(re_name_file)
+fnopen_match = p_nf.search(filename_to_open)
 
+
+file_csv = open(filename_to_open,"r",encoding='utf8')
 filename_to_save = filename_to_open.replace("csv","json") #muda terminação de csv para json
+
 file_json = open(filename_to_save,'w',encoding='utf8')
+fnsave_match = p_nf.search(filename_to_save)
+
+
 file_json.write("[\n")
 #Tratar da primeira linha
 line_to_read = file_csv.readline()
@@ -309,18 +314,26 @@ while (line_to_read != ""): #nao deteta EOF
     if valid: 
         write_json_object(file_json,data)
         first_line = False
-        """
-        print("******DEBUG******")
-        print(data.cols[0])
-        print(data.cols[1])
-        print(data.cols[2])
-        print(data.cols[3])
-        print("*****************")
-        """
     else:
          del data
     line_to_read = file_csv.readline() #le proxima linha
 file_json.write("\n]\n")
-
+    
 file_csv.close()
 file_json.close()
+
+fim = time.time()
+
+###################################################################### LOGS ####################################################################
+
+if(fnopen_match):
+    logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + fnopen_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )
+else:
+    logs.send_error("Ficheiro a converter não encontrado!")
+
+if(fnsave_match):
+    logs.send_message("Novo ficheiro: " + logs.ANSII_COLOUR.YELLOW + fnsave_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_save).st_size) + " bytes) - disponível em " + logs.ANSII_COLOUR.YELLOW + filename_to_save + logs.ANSII_COLOUR.RESET )
+else:
+    logs.send_error("Novo ficheiro não encontrado!")
+
+logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")

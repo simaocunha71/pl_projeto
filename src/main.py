@@ -1,5 +1,6 @@
 import os
 import sys , re, statistics, logs, time
+from warnings import catch_warnings
 
 #primeira linha do ficheiro json
 first_line = True
@@ -289,13 +290,13 @@ pattern_file = re.compile(pattern_content)
 
 filename_to_open = sys.argv[1]
 
-re_name_file = r'^((.+)\/)?(?P<fn>(\w+\.\w+))$'
+re_name_file = r'^((.+)\/)?(?P<fn>(\w+\.+\w+(\.([cCsSvV]+))?))$'
 p_nf = re.compile(re_name_file)
 fnopen_match = p_nf.search(filename_to_open)
 
 
 file_csv = open(filename_to_open,"r",encoding='utf8')
-filename_to_save = filename_to_open.replace("csv","json") #muda terminação de csv para json
+filename_to_save = filename_to_open.replace(filename_to_open[-3:],"json") #muda terminação de csv para json
 
 file_json = open(filename_to_save,'w',encoding='utf8')
 fnsave_match = p_nf.search(filename_to_save)
@@ -326,14 +327,16 @@ fim = time.time()
 
 ###################################################################### LOGS ####################################################################
 
-if(fnopen_match):
+try:
     logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + fnopen_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )
-else:
-    logs.send_error("Ficheiro a converter não encontrado!")
+    logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")
+except Exception:
+    logs.send_error("Ficheiro a converter não é do tipo csv!")
+    #sys.exit(1)
 
-if(fnsave_match):
+try:
     logs.send_message("Novo ficheiro: " + logs.ANSII_COLOUR.YELLOW + fnsave_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_save).st_size) + " bytes) - disponível em " + logs.ANSII_COLOUR.YELLOW + filename_to_save + logs.ANSII_COLOUR.RESET )
-else:
-    logs.send_error("Novo ficheiro não encontrado!")
-
-logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")
+    logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")
+except Exception:
+    logs.send_error("Ficheiro json não encontrado!")
+    #sys.exit(1)

@@ -1,6 +1,12 @@
 import os
 import sys , re, statistics, logs, time
-from warnings import catch_warnings
+
+"""
+TODO:
+- Validar numero de virgulas certas na primeira linha
+- Se a lista for de strings ou se for uma funçao que nao disponibilizamos, nao aplicar a funçao que está na primeira linha (e escrever algo para os logs)
+- Tratar das aspas que estao no csv (ver exemplosStor.json) - mas ja esta incluida na expressao regular
+"""
 
 #primeira linha do ficheiro json
 first_line = True
@@ -8,16 +14,18 @@ first_line = True
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
-    reg_exp = r'((((?P<nome>(\w|[À-ÿ ])+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
+    reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
+    #reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,)+|$)))'
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
 
-    for match in matches:
-        #verificar se no titulo tem o numero de virgulas certo *TALVEZ HAJA MELHOR FORMA DE SE FAZER*
-        #num_virg = get_max_rep(str(match.group("repetidos"))) #numero de colunas
-        #virg_str = string[-num_virg:] #retirar so o numero de caracteres com as virgulas
-        #size_virg_str = len(virg_str)
-        
+    #verificar se no titulo tem o numero de virgulas certo *TALVEZ HAJA MELHOR FORMA DE SE FAZER*
+    #num_virg = get_max_rep(str(match.group("virgulas"))) #numero de colunas
+    #virg_str = line_to_read[-num_virg:] #retirar so o numero de caracteres com as virgulas
+    #size_virg_str = len(virg_str)
+    #print(str(match.group("virgulas")))
+    
+    for match in matches: 
         if(match.group("metodo") and match.group("repetidos") and match.group("nome")):
             columns.append((match.group("nome"),match.group("repetidos"), match.group("metodo")))
 

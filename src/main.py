@@ -1,12 +1,6 @@
 import os
 import sys , re, statistics, logs, time
 
-"""
-TODO:
-- Validar numero de virgulas certas na primeira linha
-- Se a lista for de strings ou se for uma funçao que nao disponibilizamos, nao aplicar a funçao que está na primeira linha (e escrever algo para os logs)
-- Tratar das aspas que estao no csv (ver exemplosStor.json) - mas ja esta incluida na expressao regular
-"""
 
 #primeira linha do ficheiro json
 first_line = True
@@ -79,7 +73,18 @@ def get_min_rep(reps):
 
 #Devolve o numero de colunas de uma linha do csv
 def get_num_columns (line):
-    return len(line.split(','))
+    qmark_flag = False
+    count = 0
+    for c in line:
+        if not qmark_flag:
+            if(c == ","):
+                count += 1
+            elif (c == "\""):
+                qmark_flag = True
+        else:
+            if (c == "\""):
+                qmark_flag = False
+    return count + 1 #ha sempre menos uma virgula do que o numero de colunas 
 
 #Valida se uma lista está preenchida um numero minimo de vezes (tuplo com 2 elems)
 def validate_rep(line, limits, index):
@@ -161,19 +166,21 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                 #Lista simples
                 if(len(columns[i]) == 2):
                     flag = validate_rep(list, columns[i][1], j)
-                    max_rep = get_max_rep(columns[i][1])
-                    # map que aplica group() a todos os elementos da lista, devolvendo
-                    # a lista dos resultados, retirando no caso de elemntos vazios
-                    rep_list = apply_group("column",list[j:j+max_rep])
-                    data.add_list(columns[i][0],rep_list)
-                    j+= max_rep
+                    if flag:
+                        max_rep = get_max_rep(columns[i][1])
+                        # map que aplica group() a todos os elementos da lista, devolvendo
+                        # a lista dos resultados, retirando no caso de elemntos vazios
+                        rep_list = apply_group("column",list[j:j+max_rep])
+                        data.add_list(columns[i][0],rep_list)
+                        j+= max_rep
                 #Lista com metodos
                 elif(len(columns[i]) == 3):
                     flag = validate_rep_method(list, columns[i][1],columns[i][2], j)
-                    max_rep = get_max_rep(columns[i][1])
-                    rep_list = apply_group("column",list[j:j+max_rep])
-                    data.add_method_element(columns[i][0],columns[i][2],rep_list)
-                    j+= max_rep
+                    if flag:
+                        max_rep = get_max_rep(columns[i][1])
+                        rep_list = apply_group("column",list[j:j+max_rep])
+                        data.add_method_element(columns[i][0],columns[i][2],rep_list)
+                        j+= max_rep
                 else:
                     flag = False
             # Verificacao de coluna simples(estilo nome)
@@ -186,9 +193,10 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                 j+=1
             i+=1
         #if flag: print("valido ->" + line_to_read)
+        if not flag: logs.send_error("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
         #else: print("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
     else:
-        #print("Invalido -> " + str(get_num_columns(line_to_read)) + line_to_read)
+        print("Invalido -> " + str(get_num_columns(line_to_read))  + " "+ line_to_read)
         flag = False
     return flag
    
@@ -254,6 +262,11 @@ class line:
         self.index += 1
 
 
+def process_column_name(col_name):
+    new_col_name = re.sub(r'"',r'\"',col_name)
+    return new_col_name
+
+
 #Funçao que escreve uma linha do csv, processada, para um ficheiro json
 def write_json_object(file,data):
     if(not first_line):
@@ -262,8 +275,9 @@ def write_json_object(file,data):
     i = 0
     size = len(data.cols)
     while(i < size):
-        file.write("\t\t" + "\"" + str(data.cols[i][0]) + "\": ")
-        #caso contrario inclui-se ""
+        column_name = process_column_name(str(data.cols[i][0]))
+        file.write("\t\t" + "\"" + column_name + "\": ")
+        #se nao for uma lista inclui-se ""
         if data.cols[i][2] == 0 :
             file.write("\"" + data.cols[i][1] +"\"") 
         #se for do tipo metodo ou lista nao se inclui ""
@@ -272,6 +286,7 @@ def write_json_object(file,data):
             if(isinstance(data.cols[i][1], list)):
                 file.write("[")
                 j = 0
+                #escrever elementos da lista
                 while(j<len(data.cols[i][1])-1):
                     file.write(data.cols[i][1][i] + ",")
                     j += 1
@@ -315,7 +330,7 @@ file_json.write("[\n")
 line_to_read = file_csv.readline()
 columns = get_columns_names(line_to_read)
 cols_number = get_num_columns_array(columns)
-#print("columns ->: " + str(cols_number))
+print("columns ->: " + str(cols_number))
 
 while (line_to_read != ""): #nao deteta EOF
     data = line(columns)

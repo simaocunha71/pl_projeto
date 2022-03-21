@@ -1,6 +1,12 @@
 import os
 import sys , re, statistics, logs, time
 
+"""
+TODO
+
+meter mensagens de erro bonitas
+"""
+
 
 #primeira linha do ficheiro json
 first_line = True
@@ -352,7 +358,6 @@ fim = time.time()
 
 try:
     logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + fnopen_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )
-    logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")
 except Exception:
     logs.send_error("Ficheiro a converter não é do tipo csv!")
     #sys.exit(1)

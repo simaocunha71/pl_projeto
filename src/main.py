@@ -4,7 +4,9 @@ import sys , re, statistics, logs, time
 """
 TODO
 
-meter mensagens de erro bonitas
+meter mensagens de erro bonitas (é possivel que haja mais)
+ver a questao das virgulas no header
+meter a dar match com listas de strings
 """
 
 
@@ -199,10 +201,9 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                 j+=1
             i+=1
         #if flag: print("valido ->" + line_to_read)
-        if not flag: logs.send_error("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
-        #else: print("invalido na iteracao i = " + str(i) +" j = " +str(j) +" ->" + line_to_read)
+        if not flag: logs.send_error("Linha "+str(i+1) + " inválida!")
     else:
-        print("Invalido -> " + str(get_num_columns(line_to_read))  + " "+ line_to_read)
+        #print("Invalido -> " + str(get_num_columns(line_to_read))  + " "+ line_to_read)
         flag = False
     return flag
    
@@ -268,7 +269,7 @@ class line:
         self.index += 1
 
 
-def process_column_name(col_name):
+def process_data_qmarks_name(col_name):
     new_col_name = re.sub(r'"',r'\"',col_name)
     return new_col_name
 
@@ -281,11 +282,12 @@ def write_json_object(file,data):
     i = 0
     size = len(data.cols)
     while(i < size):
-        column_name = process_column_name(str(data.cols[i][0]))
+        column_name = process_data_qmarks_name(str(data.cols[i][0]))
         file.write("\t\t" + "\"" + column_name + "\": ")
         #se nao for uma lista inclui-se ""
         if data.cols[i][2] == 0 :
-            file.write("\"" + data.cols[i][1] +"\"") 
+            content = process_data_qmarks_name(data.cols[i][1])
+            file.write("\"" + content +"\"") 
         #se for do tipo metodo ou lista nao se inclui ""
         elif data.cols[i][2] == 1 :
             #escrever lista
@@ -314,7 +316,7 @@ inicio = time.time()
 
 logs.send_message(logs.ANSII_COLOUR.GREEN + "Conversor de ficheiros csv para ficheiros json - Grupo 6 | Processamento de linguagens (2021/2022)" + logs.ANSII_COLOUR.RESET)
 
-pattern_content = r'((?P<column>(\w|[À-ÿ ])*)(,|$))'
+pattern_content = r'((?P<column>(\w|[À-ÿ ]|\".+\")*)(,|$))'
 pattern_file = re.compile(pattern_content)
 
 filename_to_open = sys.argv[1]
@@ -336,7 +338,7 @@ file_json.write("[\n")
 line_to_read = file_csv.readline()
 columns = get_columns_names(line_to_read)
 cols_number = get_num_columns_array(columns)
-print("columns ->: " + str(cols_number))
+#print("columns ->: " + str(cols_number))
 
 while (line_to_read != ""): #nao deteta EOF
     data = line(columns)
@@ -360,11 +362,11 @@ try:
     logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + fnopen_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )
 except Exception:
     logs.send_error("Ficheiro a converter não é do tipo csv!")
-    #sys.exit(1)
+    sys.exit(1)
 
 try:
     logs.send_message("Novo ficheiro: " + logs.ANSII_COLOUR.YELLOW + fnsave_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_save).st_size) + " bytes) - disponível em " + logs.ANSII_COLOUR.YELLOW + filename_to_save + logs.ANSII_COLOUR.RESET )
     logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")
 except Exception:
     logs.send_error("Ficheiro json não encontrado!")
-    #sys.exit(1)
+    sys.exit(1)

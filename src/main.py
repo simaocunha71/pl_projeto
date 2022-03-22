@@ -16,7 +16,7 @@ first_line = True
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
-    reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
+    reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\"[^"]*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
     #reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,)+|$)))'
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
@@ -115,7 +115,7 @@ def validate_rep(line, limits, index):
 
 #Verifica se uma string representa um numero
 def matchNumeric(string_num):
-    reg_exp = r'((\+|-)?\d+)(\.\d+)?'
+    reg_exp = r'^((\+|-)?\d+)(\.\d+)?$'
     p = re.compile(reg_exp)
     value = p.match(string_num)
     return value != None
@@ -295,10 +295,22 @@ def write_json_object(file,data):
                 file.write("[")
                 j = 0
                 #escrever elementos da lista
-                while(j<len(data.cols[i][1])-1):
-                    file.write(data.cols[i][1][i] + ",")
+                len_list = len(data.cols[i][1])
+                while(j< len_list -1):
+                    content = data.cols[i][1][j] 
+                    if matchNumeric(content):
+                        file.write(content + ",")
+                    else:
+                        content = process_data_qmarks_name(content)
+                        file.write('\"' + content + '\",')
                     j += 1
-                file.write(data.cols[i][1][j] + "]")
+                #ultimo elemento da lista
+                content = data.cols[i][1][j] 
+                if matchNumeric(content):
+                    file.write(content + "]")
+                else:
+                    content = process_data_qmarks_name(content)
+                    file.write('\"' + content + '\"]')
             #escrever resultado de metodo
             else:
                 file.write(str(data.cols[i][1])) 
@@ -316,7 +328,7 @@ inicio = time.time()
 
 logs.send_message(logs.ANSII_COLOUR.GREEN + "Conversor de ficheiros csv para ficheiros json - Grupo 6 | Processamento de linguagens (2021/2022)" + logs.ANSII_COLOUR.RESET)
 
-pattern_content = r'((?P<column>(\w|[À-ÿ ]|\".+\")*)(,|$))'
+pattern_content = r'((?P<column>(\w|[À-ÿ ]|(\"[^"]*\"))*)(,|$))'
 pattern_file = re.compile(pattern_content)
 
 filename_to_open = sys.argv[1]

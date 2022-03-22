@@ -147,6 +147,7 @@ def validate_rep_method(line, limits, method, index):
         else:
             return False
 
+
 #Valida os metodos
 def validate_method (string):
     return string == "sum" or string == "subtr" or string == "prod" or string == "div" or string == "media" or string == "median" or string == "mode"
@@ -201,7 +202,7 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                 j+=1
             i+=1
         #if flag: print("valido ->" + line_to_read)
-        if not flag: logs.send_error("Linha "+str(i+1) + " inválida!")
+        #if not flag: logs.send_error("Linha "+ str(i+1) + " inválida!")
     else:
         #print("Invalido -> " + str(get_num_columns(line_to_read))  + " "+ line_to_read)
         flag = False
@@ -257,6 +258,7 @@ class line:
                 result = total
                 result = round(result,3)
             except ZeroDivisionError:
+                logs.send_error("Detetada divisão por 0! Apresenta-se valor default 0.")
                 result = 0
         elif(method == "media"):
             result = statistics.mean(float_list)
@@ -333,7 +335,8 @@ pattern_file = re.compile(pattern_content)
 
 filename_to_open = sys.argv[1]
 
-re_name_file = r'^((.+)\/)?(?P<fn>(\w+\.+\w+(\.([cCsSvV]+))?))$'
+re_name_file = r'^((.+)\/)?(?P<fn>(\w+(\.+([cCsSvV]+))))$'
+
 p_nf = re.compile(re_name_file)
 fnopen_match = p_nf.search(filename_to_open)
 
@@ -342,7 +345,11 @@ file_csv = open(filename_to_open,"r",encoding='utf8')
 filename_to_save = filename_to_open.replace(filename_to_open[-3:],"json") #muda terminação de csv para json
 
 file_json = open(filename_to_save,'w',encoding='utf8')
-fnsave_match = p_nf.search(filename_to_save)
+
+#Expressao regular para reconhecer paths de ficheiros com formato json
+re_output = re.sub(r'[cCsSvV]+',r'json',re_name_file)
+p_re_output = re.compile(re_output)
+fnsave_match = p_re_output.search(filename_to_save)
 
 
 file_json.write("[\n")
@@ -350,6 +357,8 @@ file_json.write("[\n")
 line_to_read = file_csv.readline()
 columns = get_columns_names(line_to_read)
 cols_number = get_num_columns_array(columns)
+
+invalidLinesArray = []
 #print("columns ->: " + str(cols_number))
 
 while (line_to_read != ""): #nao deteta EOF
@@ -359,10 +368,10 @@ while (line_to_read != ""): #nao deteta EOF
         write_json_object(file_json,data)
         first_line = False
     else:
-         del data
+        del data
     line_to_read = file_csv.readline() #le proxima linha
 file_json.write("\n]\n")
-    
+
 file_csv.close()
 file_json.close()
 
@@ -376,9 +385,11 @@ except Exception:
     logs.send_error("Ficheiro a converter não é do tipo csv!")
     sys.exit(1)
 
-try:
+try: 
     logs.send_message("Novo ficheiro: " + logs.ANSII_COLOUR.YELLOW + fnsave_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_save).st_size) + " bytes) - disponível em " + logs.ANSII_COLOUR.YELLOW + filename_to_save + logs.ANSII_COLOUR.RESET )
-    logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")
+    
 except Exception:
     logs.send_error("Ficheiro json não encontrado!")
     sys.exit(1)
+
+logs.send_message("Tempo de execução: " + logs.ANSII_COLOUR.YELLOW + str(round(fim-inicio,5)) + logs.ANSII_COLOUR.RESET + " ms")

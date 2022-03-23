@@ -5,8 +5,7 @@ import sys , re, statistics, logs, time
 TODO
 
 meter mensagens de erro bonitas (é possivel que haja mais)
-ver a questao das virgulas no header
-meter a dar match com listas de strings
+contar nº de linhas invalidas e meter no logs
 """
 
 
@@ -16,33 +15,38 @@ first_line = True
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
-    reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\"[^"]*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))'
-    #reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,)+|$)))'
+    #reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\"[^"]*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))' CORRETO
+    reg_exp = r'(((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))'
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
-
-    #verificar se no titulo tem o numero de virgulas certo *TALVEZ HAJA MELHOR FORMA DE SE FAZER*
-    #num_virg = get_max_rep(str(match.group("virgulas"))) #numero de colunas
-    #virg_str = line_to_read[-num_virg:] #retirar so o numero de caracteres com as virgulas
-    #size_virg_str = len(virg_str)
-    #print(str(match.group("virgulas")))
-    
+    valid_header = True
     for match in matches: 
-        if(match.group("metodo") and match.group("repetidos") and match.group("nome")):
-            columns.append((match.group("nome"),match.group("repetidos"), match.group("metodo")))
+        if(match.group("repetidos") != None):
+            #verificaçao do nº de virgulas depois de uma lista
+            str_virgulas = match.group("virgulas")
+            n_virg = get_max_rep(match.group("repetidos"))-1
+            if(n_virg == len(str_virgulas)):
+                if(match.group("metodo") and match.group("repetidos") and match.group("nome") ):
+                    columns.append((match.group("nome"),match.group("repetidos"), match.group("metodo")))
 
-        elif(match.group("repetidos") and match.group("nome")):
-            columns.append((match.group("nome"), match.group("repetidos")))
+                elif(match.group("repetidos") and match.group("nome") ):
+                    columns.append((match.group("nome"), match.group("repetidos")))
 
-        elif(match.group("nome")):
-            columns.append(match.group("nome"))
-    
+                elif(match.group("nome")):
+                    columns.append(match.group("nome"))
+            else:
+                valid_header = False
+        else:
+            if(match.group("nome")):
+                columns.append(match.group("nome"))
+    if(valid_header == False):
+        columns = []
     return columns
 
 #Devolve o numero de colunas máximo dos headers
 def get_num_columns_array(columns):
     count = 0
-    #print("**************** \n Colunas: " + str(columns) + "\n****************\n")
+    print("**************** \n Colunas: " + str(columns) + "\n****************\n")
     for col in columns:
         if(type(col) is tuple):
             max = get_max_rep(col[1])
@@ -356,10 +360,15 @@ file_json.write("[\n")
 #Tratar da primeira linha
 line_to_read = file_csv.readline()
 columns = get_columns_names(line_to_read)
+if(len(columns) == 0):
+    logs.send_error("Header inválido! Ficheiro json vazio...")
 cols_number = get_num_columns_array(columns)
 
+
+line_to_read = file_csv.readline()
 invalidLinesArray = []
 #print("columns ->: " + str(cols_number))
+nLinhas = 0
 
 while (line_to_read != ""): #nao deteta EOF
     data = line(columns)
@@ -368,10 +377,13 @@ while (line_to_read != ""): #nao deteta EOF
         write_json_object(file_json,data)
         first_line = False
     else:
+        invalidLinesArray.append(nLinhas)
         del data
+    nLinhas += 1
     line_to_read = file_csv.readline() #le proxima linha
 file_json.write("\n]\n")
 
+print(str(invalidLinesArray))
 file_csv.close()
 file_json.close()
 

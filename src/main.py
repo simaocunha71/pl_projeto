@@ -3,9 +3,8 @@ import sys , re, statistics, logs, time
 
 """
 TODO
-
 meter mensagens de erro bonitas (é possivel que haja mais)
-contar nº de linhas invalidas e meter no logs
+arranjar datasets fixolas
 """
 
 
@@ -46,7 +45,7 @@ def get_columns_names(string):
 #Devolve o numero de colunas máximo dos headers
 def get_num_columns_array(columns):
     count = 0
-    print("**************** \n Colunas: " + str(columns) + "\n****************\n")
+    #print("**************** \n Colunas: " + str(columns) + "\n****************\n")
     for col in columns:
         if(type(col) is tuple):
             max = get_max_rep(col[1])
@@ -333,6 +332,7 @@ def write_json_object(file,data):
 inicio = time.time()
 
 logs.send_message(logs.ANSII_COLOUR.GREEN + "Conversor de ficheiros csv para ficheiros json - Grupo 6 | Processamento de linguagens (2021/2022)" + logs.ANSII_COLOUR.RESET)
+logs.send_message(logs.ANSII_COLOUR.BLUE + "A converter o ficheiro..." + logs.ANSII_COLOUR.RESET)
 
 pattern_content = r'((?P<column>(\w|[À-ÿ ]|(\"[^"]*\"))*)(,|$))'
 pattern_file = re.compile(pattern_content)
@@ -366,9 +366,9 @@ cols_number = get_num_columns_array(columns)
 
 
 line_to_read = file_csv.readline()
-invalidLinesArray = []
 #print("columns ->: " + str(cols_number))
-nLinhas = 0
+nLinhas = 2
+invalidLines = 0
 
 while (line_to_read != ""): #nao deteta EOF
     data = line(columns)
@@ -377,19 +377,25 @@ while (line_to_read != ""): #nao deteta EOF
         write_json_object(file_json,data)
         first_line = False
     else:
-        invalidLinesArray.append(nLinhas)
+        invalidLines+=1
         del data
-    nLinhas += 1
+    nLinhas+=1
     line_to_read = file_csv.readline() #le proxima linha
 file_json.write("\n]\n")
 
-print(str(invalidLinesArray))
 file_csv.close()
 file_json.close()
 
 fim = time.time()
 
 ###################################################################### LOGS ####################################################################
+
+if(invalidLines > 1):
+    logs.send_error("Foram encontradas " + str(invalidLines) + " linhas inválidas em " + str(nLinhas) + " linhas lidas.")
+elif(invalidLines == 1):
+    logs.send_error("Foi encontrada 1 linha inválida em " + str(nLinhas) + " linhas lidas.")
+else:
+    logs.send_message(logs.ANSII_COLOUR.GREEN +"Todas as linhas são válidas!" + logs.ANSII_COLOUR.RESET)
 
 try:
     logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + fnopen_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )

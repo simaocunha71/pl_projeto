@@ -5,6 +5,7 @@ import sys , re, statistics, logs, time
 TODO
 meter mensagens de erro bonitas (é possivel que haja mais)
 arranjar datasets fixolas
+ver regular expression para o header(está feia)
 """
 
 
@@ -14,8 +15,8 @@ first_line = True
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
-    #reg_exp = r'((((?P<nome>(\w|[À-ÿ ]|(\"[^"]*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(,|$)))' CORRETO
-    reg_exp = r'(((?P<nome>(\w|[À-ÿ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))'
+    reg_exp = r'(((?P<nome>((\w|[À-ÿ!-+\--\/:-@[-`{-~ ]|(\".*\"))+)+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))' #arranjar maneira de ficar mais bonito
+    #reg_exp = r'(((?P<nome>(\w|[À-ÿ %&()-]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))'    
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
     valid_header = True
@@ -377,10 +378,12 @@ while (line_to_read != ""): #nao deteta EOF
         write_json_object(file_json,data)
         first_line = False
     else:
+        #print(str(invalidLines) + ": \"" + line_to_read + "\"")
         invalidLines+=1
         del data
     nLinhas+=1
     line_to_read = file_csv.readline() #le proxima linha
+
 file_json.write("\n]\n")
 
 file_csv.close()
@@ -391,9 +394,9 @@ fim = time.time()
 ###################################################################### LOGS ####################################################################
 
 if(invalidLines > 1):
-    logs.send_error("Foram encontradas " + str(invalidLines) + " linhas inválidas em " + str(nLinhas) + " linhas lidas.")
+    logs.send_error("Foram encontradas " + str(invalidLines+1) + " linhas inválidas em " + str(nLinhas-1) + " linhas lidas.")
 elif(invalidLines == 1):
-    logs.send_error("Foi encontrada 1 linha inválida em " + str(nLinhas) + " linhas lidas.")
+    logs.send_error("Foi encontrada 1 linha inválida em " + str(nLinhas-1) + " linhas lidas.")
 else:
     logs.send_message(logs.ANSII_COLOUR.GREEN +"Todas as linhas são válidas!" + logs.ANSII_COLOUR.RESET)
 

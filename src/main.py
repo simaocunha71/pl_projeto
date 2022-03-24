@@ -15,7 +15,8 @@ first_line = True
 #Le linha do csv para descobrir os headers
 def get_columns_names(string):
     columns = []
-    reg_exp = r'(((?P<nome>((\w|[À-ÿ!-+\--\/:-@[-`{-~ ]|(\".*\"))+)+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))' #arranjar maneira de ficar mais bonito
+    reg_exp = r'((?P<nome>(\w|[^",{}\n]|(\"[^"]*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$)'
+    #reg_exp = r'(((?P<nome>(\w|[À-ÿ!#-+\--\/:-@[-`-~ ]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))' #arranjar maneira de ficar mais bonito
     #reg_exp = r'(((?P<nome>(\w|[À-ÿ %&()-]|(\".*\"))+)((?P<repetidos>{\d+(,\d+)?})(::(?P<metodo>(\w+)))?)?)(?P<virgulas>(,+))?(,|$))'    
     columns_pattern = re.compile(reg_exp)
     matches = columns_pattern.finditer(string)
@@ -48,6 +49,7 @@ def get_num_columns_array(columns):
     count = 0
     #print("**************** \n Colunas: " + str(columns) + "\n****************\n")
     for col in columns:
+        
         if(type(col) is tuple):
             max = get_max_rep(col[1])
             if(max > 0):
@@ -198,11 +200,7 @@ def validate_line (columns, line, cols_number, pattern_file,data):
                     flag = False
             # Verificacao de coluna simples(estilo nome)
             else: 
-                # Coluna tem de estar preenchida
-                if(not list[j].group("column")):
-                    flag = False
-                else:
-                    data.add_simple_element(columns[i],list[j].group("column"))
+                data.add_simple_element(columns[i],list[j].group("column"))
                 j+=1
             i+=1
         #if flag: print("valido ->" + line_to_read)

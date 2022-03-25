@@ -1,0 +1,101 @@
+Nome,Curso,Freguesia,Localidade,Notas{5}::sum,,,,
+Andre Santos,Programa de Pós-Graduação em Tecnologias da Informação e Gestão em Saúde,Quinta da Corriola,U.F. Carcavelos e Parede,20,12,15,10,19
+Raul Pato,Programa de Residência Médica em Clínica Médica,Conceição da Abóboda,São Domingos de Rana,1,12,10,4,9
+Bernardo Ronaldo,Programa de Residência Médica em Ortopedia e Traumatologia,Conceição da Abóboda,São Domingos de Rana,11,6,6,15,5
+Nuno Geremias,Curso de Nutrição,Guincho,U.F. Cascais e Estoril,3,1,6,7,17
+Goncalo Sousa,Curso de Fisioterapia,Murtal,São Domingos de Rana,14,14,12,3,6
+Goncalo Sousa,Curso de Especialização em Técnicas Avançadas de Diagnóstico por Imagem,Serra de Sintra,Alcabideche,10,20,8,8,3
+Gil Saraiva,Programa de Pós-Graduação em Tecnologias da Informação e Gestão em Saúde,Conceição da Abóboda,São Domingos de Rana,15,10,2,9,15
+Amilcar Leal,Programa de Pós-Graduação em Clínica Cirúrgica,Trajouce,São Domingos de Rana,14,5,13,12,11
+Patricio Jo,Programa de Residência Médica em Patologia,Areia,U.F. Cascais e Estoril,1,14,16,17,1
+Helder Faria,Curso de Química Medicinal,Zambujeiro,Alcabideche,3,2,11,16,18
+Tobias Costa,Programa de Residência Médica em Mastologia,Bairro de São João,U.F. Carcavelos e Parede,15,8,18,10,12
+Francisco Conceicao,Curso de Informática Biomédica,Bairro da Escola Técnica,U.F. Carcavelos e Parede,10,12,15,1,16
+Jo Amorim,Programa de Pós-Graduação em Medicina: Hepatologia,Carrascal de Alvide,Alcabideche,8,16,11,13,2
+Rui Pereira,Programa de Residência Médica em Infectologia,Bairro Octaviano,U.F. Carcavelos e Parede,19,15,3,1,2
+Francisco Conceicao,Curso de Especialização em Diagnóstico por imagem do tórax,Rana,São Domingos de Rana,2,2,1,11,10
+Cristiano Fagundes,Curso de Gestão em Saúde,Pai do Vento,Alcabideche,1,1,17,18,5
+Jose Rodrigues,Programa de Residência Médica em Transplante Renal Pediátrico - R5,Zambujeiro,Alcabideche,20,17,15,10,12
+Joao Barbosa,Programa de Pós-Graduação em Saúde da Família,Silveiras,U.F. Carcavelos e Parede,13,16,15,7,15
+Jose João,Curso de Química Medicinal,Atibá,Alcabideche,9,16,10,16,8
+Jo Amorim,Programa de Residência Médica em Coloproctologia,Bairro de São João,U.F. Carcavelos e Parede,14,15,4,19,16
+Paulo Carvalho,Programa de Residência Médica em Endocrinologia e Metabologia,Sassoeiros,U.F. Carcavelos e Parede,1,1,10,13,2
+Geremias Cunha,Programa de Pós-Graduação em Enfermagem,Alcorvim de Baixo,Alcabideche,8,5,8,19,6
+Nelson Braz,Programa de Residência Médica em Oncologia Pediátrica,Praia de Carcavelos,U.F. Carcavelos e Parede,18,13,9,10,18
+Rogerio Rocha,Programa de Residência Médica em Cardiologia,Areia,U.F. Cascais e Estoril,20,12,17,19,1
+Alexandre Martins,Curso de Informática Biomédica,Bairro  Santana,U.F. Cascais e Estoril,8,9,5,11,6
+Paulo Carvalho,Curso de Gestão em Saúde,Pai do Vento,Alcabideche,3,13,5,14,19
+Chico Ribeiro,Programa de Pós-Graduação Ensino na Saúde,Birre,U.F. Cascais e Estoril,7,19,10,7,1
+Goncalo Sousa,Programa de Residência Médica em Anestesiologia,Bairro da Martinha,U.F. Cascais e Estoril,19,12,7,7,1,
+Eder Palmeira,Curso de Física Médica,Quinta do Lameiro,U.F. Carcavelos e Parede,18,2,16,20,10
+Goncalo Sousa,Programa de Residência Médica em Oftalmologia,Rebelva,U.F. Carcavelos e Parede,5,10,18,11,5
+Hugo Oliveira,Programa de Residência Médica em Genética Médica,Polima,São Domingos de Rana,2,17,14,6,12
+Guilherme Cardozo,Curso de Medicina,Outeiro da Vela,U.F. Cascais e Estoril,14,10,14,3,17
+Tiago Silva,Programa de Residência Médica em Coloproctologia,Bairro das Caixas,U.F. Carcavelos e Parede,4,11,13,1,2
+Gil Saraiva,Programa de Pós-Graduação em Biociências,Bairro Azul,U.F. Carcavelos e Parede,5,7,4,3,10
+Eder Palmeira,Programa de Residência Médica em Mastologia,Carrascal de Alvide,Alcabideche,15,5,13,14,13
+Alexandre Martins,Curso de Tecnologia em Toxicologia Analítica,Alcorvim de Cima,Alcabideche,18,18,5,18,13
+Amilcar Leal,Curso de Tecnologia em Toxicologia Analítica,Figueira do Guincho,Alcabideche,16,1,13,12,5
+Tomas Queiros,Curso de Gestão em Saúde,Bairro Azul,U.F. Carcavelos e Parede,2,12,3,12,17
+Paulo Carvalho,Programa de Residência Médica em Cirurgia Cardiovascular,Bairro da Torre,U.F. Carcavelos e Parede,1,17,6,12,10
+Helder Faria,Programa de Pós-Graduação em Saúde da Família,Junqueiro,U.F. Carcavelos e Parede,5,2,8,19,19
+Rogerio Rocha,Programa de Residência Médica em Cirurgia Pediátrica,Penedo,São Domingos de Rana,17,14,4,8,17
+Alexandre Martins,Programa de Residência Médica em Endocrinologia e Metabologia,Bairro do Rosário,U.F. Cascais e Estoril,2,14,16,13,4
+Geremias Cunha,Programa de Pós-Graduação em Nutrição,Cascais,U.F. Cascais e Estoril,20,12,13,1,11
+Hugo Oliveira,Curso de Gestão em Saúde,Manique de Baixo,São Domingos de Rana,16,16,6,5,5
+Nelson Braz,Curso de Nutrição,Quinta da Alagoa,U.F. Carcavelos e Parede,6,11,13,2
+Tobias Costa,Programa de Pós-Graduação em Ciências da Saúde,Bairro de São João,U.F. Carcavelos e Parede,20,1,13,5
+Bernardo Ronaldo,Curso de Tecnologia em Alimentos,Malveira da Serra,Alcabideche,4,11,3,12,12
+Tobias Costa,Programa de Pós-Graduação em Biociências,Carrascal de Manique de Baixo,Alcabideche,16,13,5,6,17
+Ruben Manafa,Curso de Fonoaudiologia,Pai do Vento,Alcabideche,4,15,11,6,1
+Rui Pereira,Curso de Fonoaudiologia,Atibá,U.F. Cascais e Estoril,8,11,4,15,14
+Raul Pato,Programa de Residência Médica em Ortopedia e Traumatologia,Guia,U.F. Cascais e Estoril,14,18,8,15,12
+Antonio Dias,Programa de Residência Médica em Hematologia e Hemoterapia,Bairro Octaviano,U.F. Carcavelos e Parede,15,18,6,13,17
+Jorge Daniel,Programa de Residência Médica em Reumatologia,São Miguel das Encostas,U.F. Carcavelos e Parede,8,20,7,18,8
+Oscar Leite,Programa de Residência Médica em Neurologia,Madorna,São Domingos de Rana,16,3,11,10,14
+Armindo Ramos,Curso de Especialização em Diagnóstico por imagem do tórax,Madorna,U.F. Carcavelos e Parede,7,6,18,14,10
+Luis Barroso,Programa de Residência Médica em Medicina de Família e Comunidade,Alcabideche,2,7,2,19,14
+Zeferino Cruz,Curso de Tecnologia em Toxicologia Analítica,Ribeira da Penha Longa,Alcabideche,15,1,8,20,7
+Joao Barbosa,Curso de Física Médica,Bairro do Rosário,U.F. Cascais e Estoril,3,10,6,5,1
+Luis Barroso,Programa de Residência Médica em Cirurgia Pediátrica,Bairro de São João,U.F. Carcavelos e Parede,13,3,9,5,4
+Nuno Geremias,Curso de Nutrição,Casal da Torre,U.F. Carcavelos e Parede,19,12,10,19,2
+Andre Santos,Programa de Residência Médica em Psiquiatria,Penha Longa,Alcabideche,15,2,20,7,4
+Simao Sa,Programa de Residência Médica em Neurologia,Abuxarda,Alcabideche,19,14,12,6,3
+Goncalo Sousa,Programa de Residência Médica em Hematologia e Hemoterapia,Serra de Sintra,Alcabideche,9,2,5,7,19
+Joaquim Afonso,Programa de Residência Médica em Cirurgia Plástica,Arneiro,U.F. Carcavelos e Parede,8,8,11,11,5
+Bernardo Ronaldo,Programa de Residência Médica em Cirurgia do Aparelho Digestivo,Outeiro de Polima,São Domingos de Rana,3,13,13,7,14
+Rui Pereira,Programa de Pós-Graduação em Ciências da Reabilitação,Quinta das Encostas,U.F. Carcavelos e Parede,8,11,9,19,16
+Jonas Guimaraes,Programa de Pós-Graduação em Patologia,Estoril,U.F. Cascais e Estoril,15,14,20,4,6
+Raul Pato,Programa de Residência Médica em Genética Médica,Guincho,U.F. Cascais e Estoril,15,12,1,3,10
+Rogerio Rocha,Programa de Residência Médica em Pediatria,São Miguel das Encostas,U.F. Carcavelos e Parede,12,19,16,18,20
+Zeferino Cruz,Curso de Enfermagem,Tires,São Domingos de Rana,19,18,13,7,10
+Claudio Marchel,Curso de Especialização em Distúrbios do Movimento e Demência,Bairro da Torre,U.F. Carcavelos e Parede,15,20,3,14,9
+Tiago Silva,Ginecologia Infanto-Juvenil,Cobre,U.F. Cascais e Estoril,3,10,7,7,13
+Joaquim Afonso,Programa de Residência Médica em Pediatria,Alapraia,U.F. Cascais e Estoril,4,14,8,1,11
+Joaquim Afonso,Curso de Tecnologia em Alimentos,Serra de Sintra,Alcabideche,12,19,8,10,4
+Tobias Costa,Programa de Residência Médica em Cirurgia Vascular,Quinta do Lameiro,U.F. Carcavelos e Parede,2,15,16,12,14
+Luis Barroso,Programa de Residência Médica em Urologia,Alvide,Alcabideche,16,16,8,14,5
+Miguel Fernandes,Curso de Especialização em Nefrologia Adulto,Torre,U.F. Cascais e Estoril,2,7,10,10,18
+Runlo Cerqueira,Curso de Especialização em Diagnóstico por imagem do tórax,Abuxarda,Alcabideche,18,4,4,16,12
+Jo Amorim,Programa de Pós-Graduação em Medicina: Hepatologia,Rebelva,U.F. Carcavelos e Parede,9,6,15,13,19
+Luis Barroso,Curso de Especialização em Ginecologia Oncológica,Madorna,U.F. Carcavelos e Parede,18,12,17,16,7
+Rodrigo Alves,Curso de Tecnologia em Toxicologia Analítica,Alto dos Lombos,U.F. Carcavelos e Parede,11,8,6,11,13
+Xavier Coelho,Programa de Residência Médica em Coloproctologia,Conceição da Abóboda,São Domingos de Rana,14,14,17,15,19
+Eder Palmeira,Curso de Psicologia,Alcorvim de Cima,Alcabideche,12,20,10,17,15
+Goncalo Sousa,Programa de Residência Médica em Medicina de Família e Comunidade,Pampilheira,U.F. Cascais e Estoril,11,13,17,5,2
+Cristiano Fagundes,Programa de Residência Médica em Infectologia,Birre,U.F. Cascais e Estoril,15,20,4,11,5
+Tobias Costa,Programa de Residência Médica em Coloproctologia,Manique de Baixo,São Domingos de Rana,13,18,10,9,13
+Jonas Guimaraes,Programa de Residência Médica em Dermatologia,Quinta da Vinha,U.F. Carcavelos e Parede,10,1,20,8,1
+Eder Palmeira,Programa de Pós-Graduação em Psicologia e Saúde,Alcoitão,Alcabideche,11,13,4,1,1
+Nelson Braz,Programa de Residência Médica em Cirurgia de Cabeça e Pescoço,Bairro da Cruz Vermelha,Alcabideche,10,1,4,17,10
+Rafael Dinis,Curso de Especialização em Dermatologia,Zambujeiro,Alcabideche,18,17,20,3,14
+Gil Saraiva,Curso de Gestão em Saúde,Arneiro,U.F. Carcavelos e Parede,11,13,20,19,6
+Joaquim Afonso,Curso de Especialização em Neonatologia,Abano,Alcabideche,13,15,13,7,4
+Alexandre Martins,Curso de Nutrição,Carrascal de Alvide,Alcabideche,10,7,11,18,20
+Luis Barroso,Programa de Residência Médica em Cirurgia Plástica,Pampilheira,U.F. Cascais e Estoril,18,20,18,14,12
+Hugo Oliveira,Programa de Pós-Graduação Ensino na Saúde,Quinta dos Gafanhotos,U.F. Carcavelos e Parede,16,1,1,14,14
+Guilherme Cardozo,Programa de Residência Médica em Endocrinologia e Metabologia,Bairro das Caixas,U.F. Carcavelos e Parede,9,18,18,17,4,
+Runlo Cerqueira,Programa de Residência Médica em Dermatologia,Areia,U.F. Cascais e Estoril,17,16,12,19,5
+Gil Saraiva,Programa de Residência Médica em Nefrologia,Serra de Sintra,Alcabideche,10,14,8,5,11
+Rodrigo Alves,Programa de Residência Médica em Citopatologia U.F. Cascais e Estoril,8,15,1,2,9
+Ruben Manafa,Programa de Residência Médica em Transplante Renal Pediátrico - R5,Carrascal de Alvide,Alcabideche,5,4,11,10,13

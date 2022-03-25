@@ -1,0 +1,5024 @@
+[
+	{
+		"\"Game\"": "\"Age of Empires\"",
+		"\"ReleaseDate\"": "\"1997\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "81",
+		"\"OnlineEarnings\"": "89",
+		"\"TotalPlayers\"": "261",
+		"\"TotalTournaments\"": "99"
+	},
+	{
+		"\"Game\"": "\"Age of Empires II\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "8",
+		"\"OnlineEarnings\"": "87",
+		"\"TotalPlayers\"": "1528",
+		"\"TotalTournaments\"": "1140"
+	},
+	{
+		"\"Game\"": "\"Age of Empires III\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "65",
+		"\"OnlineEarnings\"": "41800",
+		"\"TotalPlayers\"": "139",
+		"\"TotalTournaments\"": "120"
+	},
+	{
+		"\"Game\"": "\"Age of Empires IV\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "75",
+		"\"OnlineEarnings\"": "217",
+		"\"TotalPlayers\"": "248",
+		"\"TotalTournaments\"": "79"
+	},
+	{
+		"\"Game\"": "\"Age of Empires Online\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "775",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "17"
+	},
+	{
+		"\"Game\"": "\"Age of Mythology\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "100701",
+		"\"OnlineEarnings\"": "52000",
+		"\"TotalPlayers\"": "129",
+		"\"TotalTournaments\"": "122"
+	},
+	{
+		"\"Game\"": "\"Among Us\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "86000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Auto Chess\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "28",
+		"\"OnlineEarnings\"": "28",
+		"\"TotalPlayers\"": "124",
+		"\"TotalTournaments\"": "39"
+	},
+	{
+		"\"Game\"": "\"Brawl Stars\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "2557950",
+		"\"OnlineEarnings\"": "1336250",
+		"\"TotalPlayers\"": "215",
+		"\"TotalTournaments\"": "31"
+	},
+	{
+		"\"Game\"": "\"Chess.com\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "33",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "782",
+		"\"TotalTournaments\"": "286"
+	},
+	{
+		"\"Game\"": "\"chess24\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "43",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "80",
+		"\"TotalTournaments\"": "19"
+	},
+	{
+		"\"Game\"": "\"Clash of Clans\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "87",
+		"\"OnlineEarnings\"": "87",
+		"\"TotalPlayers\"": "191",
+		"\"TotalTournaments\"": "40"
+	},
+	{
+		"\"Game\"": "\"Clash Royale\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "27",
+		"\"OnlineEarnings\"": "98",
+		"\"TotalPlayers\"": "290",
+		"\"TotalTournaments\"": "51"
+	},
+	{
+		"\"Game\"": "\"Command & Conquer 3\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "67",
+		"\"OnlineEarnings\"": "67",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Company of Heroes 2\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "22",
+		"\"OnlineEarnings\"": "22",
+		"\"TotalPlayers\"": "11",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"ComPet\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "2000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "50",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Dead By Daylight\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "60000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "35",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Dota Underlords\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "18",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "62",
+		"\"TotalTournaments\"": "36"
+	},
+	{
+		"\"Game\"": "\"Endgods\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Farming Simulator 19\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "88",
+		"\"OnlineEarnings\"": "81",
+		"\"TotalPlayers\"": "104",
+		"\"TotalTournaments\"": "19"
+	},
+	{
+		"\"Game\"": "\"Grey Goo\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "36400",
+		"\"OnlineEarnings\"": "30400",
+		"\"TotalPlayers\"": "18",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Heroes of Might and Magic III\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Identity V\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "1",
+		"\"OnlineEarnings\"": "1",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Internet Chess Club\"",
+		"\"ReleaseDate\"": "\"1995\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "10000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Iron Harvest\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Legion TD 2\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Lichess\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "78",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "336",
+		"\"TotalTournaments\"": "140"
+	},
+	{
+		"\"Game\"": "\"Men of War: Assault Squad 2\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Multigaming\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "33",
+		"\"OnlineEarnings\"": "33",
+		"\"TotalPlayers\"": "30",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Playchess.com\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "58",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "116",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Pok<U+00E9>mon VGC\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "211602",
+		"\"OnlineEarnings\"": "211500",
+		"\"TotalPlayers\"": "173",
+		"\"TotalTournaments\"": "25"
+	},
+	{
+		"\"Game\"": "\"Prophecy\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "13000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "27",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Rise of Nations: Rise of Legends\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "69600",
+		"\"OnlineEarnings\"": "69600",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Sea of Thieves\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "67",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Star Wars: Squadrons\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "800",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"StarCraft II\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "04",
+		"\"OnlineEarnings\"": "63",
+		"\"TotalPlayers\"": "2115",
+		"\"TotalTournaments\"": "6283"
+	},
+	{
+		"\"Game\"": "\"StarCraft: Brood War\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "61",
+		"\"OnlineEarnings\"": "32",
+		"\"TotalPlayers\"": "686",
+		"\"TotalTournaments\"": "690"
+	},
+	{
+		"\"Game\"": "\"Super Mario Party\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "220",
+		"\"OnlineEarnings\"": "220",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Supreme Commander\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "26",
+		"\"OnlineEarnings\"": "26",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Supreme Commander: Forged Alliance\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "01",
+		"\"OnlineEarnings\"": "01",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Teamfight Tactics\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "65",
+		"\"OnlineEarnings\"": "235250",
+		"\"TotalPlayers\"": "181",
+		"\"TotalTournaments\"": "16"
+	},
+	{
+		"\"Game\"": "\"TEPPEN\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "47",
+		"\"OnlineEarnings\"": "47",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"The Binding of Isaac\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "15000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"UNO\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "30000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "28",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"WarCraft III\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "73",
+		"\"OnlineEarnings\"": "86",
+		"\"TotalPlayers\"": "558",
+		"\"TotalTournaments\"": "1335"
+	},
+	{
+		"\"Game\"": "\"WarCraft III: Reforged\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "12",
+		"\"OnlineEarnings\"": "84",
+		"\"TotalPlayers\"": "103",
+		"\"TotalTournaments\"": "192"
+	},
+	{
+		"\"Game\"": "\"Warhammer 40,000: Dawn of War\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "5",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Warhammer 40,000: Dawn of War II\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Warparty\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "1175",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Windjammers\"",
+		"\"ReleaseDate\"": "\"1994\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "47",
+		"\"OnlineEarnings\"": "16",
+		"\"TotalPlayers\"": "35",
+		"\"TotalTournaments\"": "15"
+	},
+	{
+		"\"Game\"": "\"World in Conflict\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "23",
+		"\"OnlineEarnings\"": "23",
+		"\"TotalPlayers\"": "38",
+		"\"TotalTournaments\"": "11"
+	},
+	{
+		"\"Game\"": "\"World of Tanks\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "59",
+		"\"OnlineEarnings\"": "72",
+		"\"TotalPlayers\"": "404",
+		"\"TotalTournaments\"": "51"
+	},
+	{
+		"\"Game\"": "\"World of Tanks Blitz\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Strategy\"",
+		"\"TotalEarnings\"": "63330",
+		"\"OnlineEarnings\"": "60000",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Aim Gods\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "250000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "2",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Aliens versus Predator 2\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "40000",
+		"\"OnlineEarnings\"": "40000",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Alliance of Valiant Arms\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Battalion 1944\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "67",
+		"\"OnlineEarnings\"": "88",
+		"\"TotalPlayers\"": "121",
+		"\"TotalTournaments\"": "28"
+	},
+	{
+		"\"Game\"": "\"Battlefield 1\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Battlefield 2\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "22",
+		"\"OnlineEarnings\"": "22",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Battlefield 2142\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "14",
+		"\"OnlineEarnings\"": "14",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Battlefield 3\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "46",
+		"\"OnlineEarnings\"": "46",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Battlefield 4\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "46",
+		"\"OnlineEarnings\"": "31",
+		"\"TotalPlayers\"": "204",
+		"\"TotalTournaments\"": "145"
+	},
+	{
+		"\"Game\"": "\"Battlefield Hardline\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "28",
+		"\"OnlineEarnings\"": "28",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Battlefield V\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Beat Aim\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "430",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Big Buck Hunter Arcade\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "76200",
+		"\"OnlineEarnings\"": "76200",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Black Squad\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "72",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "57",
+		"\"TotalTournaments\"": "17"
+	},
+	{
+		"\"Game\"": "\"Blaston\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "12",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Borderlands 3\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Call of Duty\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "77",
+		"\"TotalPlayers\"": "51",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Call of Duty 2\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "51",
+		"\"OnlineEarnings\"": "71",
+		"\"TotalPlayers\"": "41",
+		"\"TotalTournaments\"": "17"
+	},
+	{
+		"\"Game\"": "\"Call of Duty 4: Modern Warfare\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "47",
+		"\"OnlineEarnings\"": "31",
+		"\"TotalPlayers\"": "422",
+		"\"TotalTournaments\"": "86"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Advanced Warfare\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "93",
+		"\"OnlineEarnings\"": "14",
+		"\"TotalPlayers\"": "783",
+		"\"TotalTournaments\"": "405"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Black Ops\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "48",
+		"\"OnlineEarnings\"": "18",
+		"\"TotalPlayers\"": "118",
+		"\"TotalTournaments\"": "23"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Black Ops 2\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "25",
+		"\"OnlineEarnings\"": "63",
+		"\"TotalPlayers\"": "187",
+		"\"TotalTournaments\"": "54"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Black Ops 4\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "95",
+		"\"OnlineEarnings\"": "95",
+		"\"TotalPlayers\"": "379",
+		"\"TotalTournaments\"": "68"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Black Ops Cold War\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "6035000",
+		"\"OnlineEarnings\"": "3500000",
+		"\"TotalPlayers\"": "243",
+		"\"TotalTournaments\"": "61"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Black Ops III\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "29",
+		"\"OnlineEarnings\"": "02",
+		"\"TotalPlayers\"": "419",
+		"\"TotalTournaments\"": "78"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Blackout\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "35",
+		"\"OnlineEarnings\"": "35",
+		"\"TotalPlayers\"": "175",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Ghosts\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "25",
+		"\"OnlineEarnings\"": "89",
+		"\"TotalPlayers\"": "199",
+		"\"TotalTournaments\"": "76"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Infinite Warfare\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "06",
+		"\"OnlineEarnings\"": "06",
+		"\"TotalPlayers\"": "341",
+		"\"TotalTournaments\"": "80"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Mobile\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "3057280",
+		"\"OnlineEarnings\"": "935280",
+		"\"TotalPlayers\"": "185",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Modern Warfare\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "5",
+		"\"TotalPlayers\"": "382",
+		"\"TotalTournaments\"": "81"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Modern Warfare 2\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "64",
+		"\"OnlineEarnings\"": "64",
+		"\"TotalPlayers\"": "65",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Modern Warfare 3\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "66",
+		"\"OnlineEarnings\"": "66",
+		"\"TotalPlayers\"": "209",
+		"\"TotalTournaments\"": "45"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Vanguard\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "626500",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "128",
+		"\"TotalTournaments\"": "16"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: Warzone\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "13",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "1125",
+		"\"TotalTournaments\"": "298"
+	},
+	{
+		"\"Game\"": "\"Call of Duty: World War II\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "4560271",
+		"\"OnlineEarnings\"": "4498605",
+		"\"TotalPlayers\"": "270",
+		"\"TotalTournaments\"": "65"
+	},
+	{
+		"\"Game\"": "\"Chex Quest\"",
+		"\"ReleaseDate\"": "\"1996\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "2",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Counter-Strike\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "46",
+		"\"OnlineEarnings\"": "72",
+		"\"TotalPlayers\"": "4225",
+		"\"TotalTournaments\"": "1017"
+	},
+	{
+		"\"Game\"": "\"Counter-Strike Online\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "6",
+		"\"OnlineEarnings\"": "6",
+		"\"TotalPlayers\"": "70",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Counter-Strike: Condition Zero\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "6",
+		"\"OnlineEarnings\"": "6",
+		"\"TotalPlayers\"": "111",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Counter-Strike: Global Offensive\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "91",
+		"\"OnlineEarnings\"": "76",
+		"\"TotalPlayers\"": "14708",
+		"\"TotalTournaments\"": "6081"
+	},
+	{
+		"\"Game\"": "\"Counter-Strike: Source\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "29",
+		"\"OnlineEarnings\"": "03",
+		"\"TotalPlayers\"": "1502",
+		"\"TotalTournaments\"": "333"
+	},
+	{
+		"\"Game\"": "\"Critical Ops\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "41",
+		"\"OnlineEarnings\"": "2500",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"CrossFire\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "02",
+		"\"OnlineEarnings\"": "23",
+		"\"TotalPlayers\"": "643",
+		"\"TotalTournaments\"": "310"
+	},
+	{
+		"\"Game\"": "\"Crysis\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "95",
+		"\"OnlineEarnings\"": "95",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Day of Defeat\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "41",
+		"\"OnlineEarnings\"": "41",
+		"\"TotalPlayers\"": "43",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Day of Defeat: Source\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "57",
+		"\"OnlineEarnings\"": "47",
+		"\"TotalPlayers\"": "50",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Descent 3\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "50000",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Diabotical\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "36",
+		"\"TotalPlayers\"": "340",
+		"\"TotalTournaments\"": "231"
+	},
+	{
+		"\"Game\"": "\"Doom (2016)\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "7000",
+		"\"OnlineEarnings\"": "7000",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Doom 3\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "16",
+		"\"OnlineEarnings\"": "16",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Doom II: Hell on Earth\"",
+		"\"ReleaseDate\"": "\"1994\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "2200",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"DOOMBRINGER\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Echo Arena\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Enemy Territory: Quake Wars\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "12",
+		"\"OnlineEarnings\"": "12",
+		"\"TotalPlayers\"": "27",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Escape from Tarkov\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "114600",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "150",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Evolve\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "1",
+		"\"TotalPlayers\"": "110",
+		"\"TotalTournaments\"": "33"
+	},
+	{
+		"\"Game\"": "\"F.E.A.R.\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "178000",
+		"\"OnlineEarnings\"": "178000",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Ghost Recon Advanced Warfighter\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "24000",
+		"\"OnlineEarnings\"": "24000",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Gundam Versus\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "280",
+		"\"OnlineEarnings\"": "280",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Guns of Boom\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "198750",
+		"\"OnlineEarnings\"": "190000",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "21"
+	},
+	{
+		"\"Game\"": "\"Halo 2\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "47",
+		"\"OnlineEarnings\"": "47",
+		"\"TotalPlayers\"": "126",
+		"\"TotalTournaments\"": "74"
+	},
+	{
+		"\"Game\"": "\"Halo 2 Anniversary\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "97",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Halo 3\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "4",
+		"\"OnlineEarnings\"": "4",
+		"\"TotalPlayers\"": "214",
+		"\"TotalTournaments\"": "43"
+	},
+	{
+		"\"Game\"": "\"Halo 4\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "76",
+		"\"OnlineEarnings\"": "76",
+		"\"TotalPlayers\"": "66",
+		"\"TotalTournaments\"": "19"
+	},
+	{
+		"\"Game\"": "\"Halo 5: Guardians\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "97",
+		"\"OnlineEarnings\"": "97",
+		"\"TotalPlayers\"": "239",
+		"\"TotalTournaments\"": "77"
+	},
+	{
+		"\"Game\"": "\"Halo: Combat Evolved\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "299281",
+		"\"OnlineEarnings\"": "299281",
+		"\"TotalPlayers\"": "118",
+		"\"TotalTournaments\"": "39"
+	},
+	{
+		"\"Game\"": "\"Halo: Infinite\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "101000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "50",
+		"\"TotalTournaments\"": "10"
+	},
+	{
+		"\"Game\"": "\"Halo: Reach\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "97",
+		"\"OnlineEarnings\"": "97",
+		"\"TotalPlayers\"": "121",
+		"\"TotalTournaments\"": "29"
+	},
+	{
+		"\"Game\"": "\"Ironsight\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Islands of Nyne\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Lemnis Gate\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "86",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"MechWarrior Online\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "143490",
+		"\"OnlineEarnings\"": "143490",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Metal Gear Online\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "8000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "37",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"osu!\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "8",
+		"\"OnlineEarnings\"": "59",
+		"\"TotalPlayers\"": "1366",
+		"\"TotalTournaments\"": "52"
+	},
+	{
+		"\"Game\"": "\"Overwatch\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "28",
+		"\"OnlineEarnings\"": "45",
+		"\"TotalPlayers\"": "3617",
+		"\"TotalTournaments\"": "765"
+	},
+	{
+		"\"Game\"": "\"Painkiller\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "1015000",
+		"\"OnlineEarnings\"": "1015000",
+		"\"TotalPlayers\"": "48",
+		"\"TotalTournaments\"": "13"
+	},
+	{
+		"\"Game\"": "\"Paladins\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "6",
+		"\"OnlineEarnings\"": "1659000",
+		"\"TotalPlayers\"": "599",
+		"\"TotalTournaments\"": "78"
+	},
+	{
+		"\"Game\"": "\"Point Blank\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "75",
+		"\"OnlineEarnings\"": "15",
+		"\"TotalPlayers\"": "297",
+		"\"TotalTournaments\"": "32"
+	},
+	{
+		"\"Game\"": "\"Quake 4\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "27",
+		"\"OnlineEarnings\"": "51",
+		"\"TotalPlayers\"": "103",
+		"\"TotalTournaments\"": "54"
+	},
+	{
+		"\"Game\"": "\"Quake Champions\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "7",
+		"\"OnlineEarnings\"": "6",
+		"\"TotalPlayers\"": "269",
+		"\"TotalTournaments\"": "249"
+	},
+	{
+		"\"Game\"": "\"Quake II\"",
+		"\"ReleaseDate\"": "\"1997\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "98",
+		"\"OnlineEarnings\"": "139800",
+		"\"TotalPlayers\"": "34",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Quake III Arena\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "64",
+		"\"OnlineEarnings\"": "61",
+		"\"TotalPlayers\"": "279",
+		"\"TotalTournaments\"": "107"
+	},
+	{
+		"\"Game\"": "\"Quake Live\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "12",
+		"\"OnlineEarnings\"": "93",
+		"\"TotalPlayers\"": "220",
+		"\"TotalTournaments\"": "412"
+	},
+	{
+		"\"Game\"": "\"QuakeWorld\"",
+		"\"ReleaseDate\"": "\"1996\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "67",
+		"\"OnlineEarnings\"": "44",
+		"\"TotalPlayers\"": "49",
+		"\"TotalTournaments\"": "17"
+	},
+	{
+		"\"Game\"": "\"Rage\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "5000",
+		"\"OnlineEarnings\"": "5000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Rainbow Six Siege\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "83",
+		"\"OnlineEarnings\"": "64",
+		"\"TotalPlayers\"": "2162",
+		"\"TotalTournaments\"": "352"
+	},
+	{
+		"\"Game\"": "\"Rainbow Six: Vegas\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "77",
+		"\"TotalPlayers\"": "137",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Rainbow Six: Vegas 2\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "79000",
+		"\"OnlineEarnings\"": "79000",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Realm Royale\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "263000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "47",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Reflex\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "37",
+		"\"OnlineEarnings\"": "66",
+		"\"TotalPlayers\"": "24",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Resistance 2\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "50400",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "194",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Resistance 2\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Return to Castle Wolfenstein\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "3",
+		"\"OnlineEarnings\"": "3",
+		"\"TotalPlayers\"": "30",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"S.K.I.L.L. - Special Force 2\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "93",
+		"\"OnlineEarnings\"": "81",
+		"\"TotalPlayers\"": "82",
+		"\"TotalTournaments\"": "21"
+	},
+	{
+		"\"Game\"": "\"S.T.A.L.K.E.R.: Shadow of Chernobyl\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "26",
+		"\"OnlineEarnings\"": "26",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Shadowrun\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "24000",
+		"\"OnlineEarnings\"": "24000",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"ShootMania Storm\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "69",
+		"\"OnlineEarnings\"": "5",
+		"\"TotalPlayers\"": "108",
+		"\"TotalTournaments\"": "43"
+	},
+	{
+		"\"Game\"": "\"Special Force\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "130250",
+		"\"OnlineEarnings\"": "130250",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Splatoon\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "1390",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Splatoon 2\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "10055",
+		"\"OnlineEarnings\"": "9755",
+		"\"TotalPlayers\"": "13",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Star Wars Jedi Knight II: Jedi Outcast\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "25",
+		"\"OnlineEarnings\"": "25",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Sudden Attack\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Team Fortress 2\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "81",
+		"\"OnlineEarnings\"": "2",
+		"\"TotalPlayers\"": "1364",
+		"\"TotalTournaments\"": "197"
+	},
+	{
+		"\"Game\"": "\"Uncharted 4: A Thief's End\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "07",
+		"\"OnlineEarnings\"": "07",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Unreal Tournament\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "89000",
+		"\"OnlineEarnings\"": "89000",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Unreal Tournament (2016)\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "97",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "82",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Unreal Tournament 2003\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "91",
+		"\"OnlineEarnings\"": "91",
+		"\"TotalPlayers\"": "33",
+		"\"TotalTournaments\"": "14"
+	},
+	{
+		"\"Game\"": "\"Unreal Tournament 2004\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "33",
+		"\"OnlineEarnings\"": "33",
+		"\"TotalPlayers\"": "41",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Unreal Tournament 3\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "82",
+		"\"OnlineEarnings\"": "82",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"VALORANT\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "88",
+		"\"TotalPlayers\"": "3614",
+		"\"TotalTournaments\"": "632"
+	},
+	{
+		"\"Game\"": "\"Warface\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "109555",
+		"\"OnlineEarnings\"": "109555",
+		"\"TotalPlayers\"": "32",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Warsow\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "183",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "2",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Wolfenstein: Enemy Territory\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "24",
+		"\"OnlineEarnings\"": "87",
+		"\"TotalPlayers\"": "152",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Xonotic\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "01",
+		"\"OnlineEarnings\"": "07",
+		"\"TotalPlayers\"": "146",
+		"\"TotalTournaments\"": "42"
+	},
+	{
+		"\"Game\"": "\"Zula\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"First-Person Shooter\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Arena of Valor\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "03",
+		"\"OnlineEarnings\"": "92",
+		"\"TotalPlayers\"": "812",
+		"\"TotalTournaments\"": "73"
+	},
+	{
+		"\"Game\"": "\"Battlerite\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "45",
+		"\"OnlineEarnings\"": "28000",
+		"\"TotalPlayers\"": "86",
+		"\"TotalTournaments\"": "75"
+	},
+	{
+		"\"Game\"": "\"Bloodline Champions\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "32",
+		"\"OnlineEarnings\"": "40850",
+		"\"TotalPlayers\"": "43",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Crab Game\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "45950",
+		"\"OnlineEarnings\"": "44000",
+		"\"TotalPlayers\"": "32",
+		"\"TotalTournaments\"": "11"
+	},
+	{
+		"\"Game\"": "\"Creative Destruction\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Defense of the Ancients\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "65",
+		"\"OnlineEarnings\"": "68",
+		"\"TotalPlayers\"": "468",
+		"\"TotalTournaments\"": "94"
+	},
+	{
+		"\"Game\"": "\"Dofus\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Dota 2\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "65",
+		"\"OnlineEarnings\"": "83",
+		"\"TotalPlayers\"": "4180",
+		"\"TotalTournaments\"": "1590"
+	},
+	{
+		"\"Game\"": "\"Heavy Metal Machines\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "33",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "35",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Heroes of Newerth\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "01",
+		"\"TotalPlayers\"": "813",
+		"\"TotalTournaments\"": "371"
+	},
+	{
+		"\"Game\"": "\"Heroes of the Storm\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "65",
+		"\"OnlineEarnings\"": "95",
+		"\"TotalPlayers\"": "1271",
+		"\"TotalTournaments\"": "478"
+	},
+	{
+		"\"Game\"": "\"Hyper Scape\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "299000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "260",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"League of Legends\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "98",
+		"\"OnlineEarnings\"": "3",
+		"\"TotalPlayers\"": "8018",
+		"\"TotalTournaments\"": "2665"
+	},
+	{
+		"\"Game\"": "\"League of Legends: Wild Rift\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "1024288",
+		"\"OnlineEarnings\"": "679288",
+		"\"TotalPlayers\"": "178",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Legend of Glory\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "66",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Minecraft\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "15",
+		"\"OnlineEarnings\"": "10000",
+		"\"TotalPlayers\"": "84",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"MOBA Legends\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "225",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Mobile Legends: Bang Bang\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "1316000",
+		"\"OnlineEarnings\"": "1316000",
+		"\"TotalPlayers\"": "124",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Pokemon Unite\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Roblox\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Shards of War\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "21",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"SMITE\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "75",
+		"\"OnlineEarnings\"": "57",
+		"\"TotalPlayers\"": "545",
+		"\"TotalTournaments\"": "97"
+	},
+	{
+		"\"Game\"": "\"Splitgate: Arena Warfare\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "64",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Teeworlds\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Vainglory\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Multiplayer Online Battle Arena\"",
+		"\"TotalEarnings\"": "19",
+		"\"OnlineEarnings\"": "87",
+		"\"TotalPlayers\"": "247",
+		"\"TotalTournaments\"": "35"
+	},
+	{
+		"\"Game\"": "\"Blade & Soul\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Role-Playing Game\"",
+		"\"TotalEarnings\"": "52",
+		"\"OnlineEarnings\"": "52",
+		"\"TotalPlayers\"": "51",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Guild Wars 2\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Role-Playing Game\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "350000",
+		"\"TotalPlayers\"": "152",
+		"\"TotalTournaments\"": "57"
+	},
+	{
+		"\"Game\"": "\"Old School Runescape\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Role-Playing Game\"",
+		"\"TotalEarnings\"": "2",
+		"\"OnlineEarnings\"": "28500",
+		"\"TotalPlayers\"": "77",
+		"\"TotalTournaments\"": "25"
+	},
+	{
+		"\"Game\"": "\"Red Stone\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Role-Playing Game\"",
+		"\"TotalEarnings\"": "58000",
+		"\"OnlineEarnings\"": "58000",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Stardew Valley\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Role-Playing Game\"",
+		"\"TotalEarnings\"": "54250",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "56",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"World of WarCraft\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Role-Playing Game\"",
+		"\"TotalEarnings\"": "61",
+		"\"OnlineEarnings\"": "91",
+		"\"TotalPlayers\"": "472",
+		"\"TotalTournaments\"": "164"
+	},
+	{
+		"\"Game\"": "\"Acceleration of SUGURI 2\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "410",
+		"\"OnlineEarnings\"": "210",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Akatsuki Blitzkampf\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "20",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Aquapazza: Aquaplus Dream Match\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "245",
+		"\"OnlineEarnings\"": "245",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Arcana Heart 3\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "1000",
+		"\"OnlineEarnings\"": "1000",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Arcana Heart 3: Love Max Six Stars!!!!!\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "570",
+		"\"OnlineEarnings\"": "520",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Arcana Heart 3: LOVE MAX!!!!!\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "410",
+		"\"OnlineEarnings\"": "410",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"ARMS\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "93",
+		"\"TotalPlayers\"": "110",
+		"\"TotalTournaments\"": "88"
+	},
+	{
+		"\"Game\"": "\"Asuka 120% LimitOver BURNING Fest.\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "10",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Attack on Titan Tribute Game\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "108650",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "21",
+		"\"TotalTournaments\"": "15"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Calamity Trigger\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "35",
+		"\"OnlineEarnings\"": "35",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Central Fiction\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "91",
+		"\"OnlineEarnings\"": "07",
+		"\"TotalPlayers\"": "90",
+		"\"TotalTournaments\"": "42"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Chronophantasma\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "58",
+		"\"OnlineEarnings\"": "58",
+		"\"TotalPlayers\"": "63",
+		"\"TotalTournaments\"": "15"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Chronophantasma Extend\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "77",
+		"\"TotalPlayers\"": "28",
+		"\"TotalTournaments\"": "11"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Continuum Shift Extend\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Continuum Shift II\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "01",
+		"\"OnlineEarnings\"": "01",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"BlazBlue: Cross Tag Battle\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "82",
+		"\"OnlineEarnings\"": "43",
+		"\"TotalPlayers\"": "110",
+		"\"TotalTournaments\"": "38"
+	},
+	{
+		"\"Game\"": "\"Brawlhalla\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "09",
+		"\"OnlineEarnings\"": "3",
+		"\"TotalPlayers\"": "645",
+		"\"TotalTournaments\"": "521"
+	},
+	{
+		"\"Game\"": "\"Brawlout\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Breakers Revenge\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "16",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Capcom vs. SNK\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "140",
+		"\"OnlineEarnings\"": "140",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Capcom vs. SNK 2\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "79",
+		"\"OnlineEarnings\"": "79",
+		"\"TotalPlayers\"": "37",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Chaos Code: New Sign of Catastrophe\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "140",
+		"\"OnlineEarnings\"": "140",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Dead or Alive 4\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "31",
+		"\"OnlineEarnings\"": "31",
+		"\"TotalPlayers\"": "45",
+		"\"TotalTournaments\"": "13"
+	},
+	{
+		"\"Game\"": "\"Dead or Alive 5\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Dead or Alive 5 Ultimate\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "37",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Dead or Alive 5: Last Round\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "82",
+		"\"OnlineEarnings\"": "82",
+		"\"TotalPlayers\"": "46",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Dead or Alive 6\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "54",
+		"\"OnlineEarnings\"": "54",
+		"\"TotalPlayers\"": "65",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Dead or Alive Ultimate\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "30000",
+		"\"OnlineEarnings\"": "30000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Def Jam: Fight for NY\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "190",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Dengeki Bunko: Fighting Climax\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "60",
+		"\"OnlineEarnings\"": "60",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Dengeki Bunko: Fighting Climax Ignition\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "8",
+		"\"OnlineEarnings\"": "3",
+		"\"TotalPlayers\"": "36",
+		"\"TotalTournaments\"": "13"
+	},
+	{
+		"\"Game\"": "\"Digimon Rumble Arena\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "200",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Divekick\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "5840",
+		"\"OnlineEarnings\"": "5840",
+		"\"TotalPlayers\"": "27",
+		"\"TotalTournaments\"": "11"
+	},
+	{
+		"\"Game\"": "\"Dragon Ball FighterZ\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "27",
+		"\"TotalPlayers\"": "226",
+		"\"TotalTournaments\"": "140"
+	},
+	{
+		"\"Game\"": "\"Dragon Ball Z: Budokai 3\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "06",
+		"\"OnlineEarnings\"": "06",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Duck Game\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "750",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Eternal Fighter Zero\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "6",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Fantasy Strike\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "8",
+		"\"OnlineEarnings\"": "2610",
+		"\"TotalPlayers\"": "21",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Fight of Animals\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "68",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Fighter's History Dynamite\"",
+		"\"ReleaseDate\"": "\"1994\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "195",
+		"\"OnlineEarnings\"": "195",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Fighting EX Layer\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "96",
+		"\"OnlineEarnings\"": "96",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Garou: Mark of the Wolves\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "71",
+		"\"OnlineEarnings\"": "71",
+		"\"TotalPlayers\"": "13",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Granblue Fantasy: Versus\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "32",
+		"\"OnlineEarnings\"": "21",
+		"\"TotalPlayers\"": "65",
+		"\"TotalTournaments\"": "71"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "32",
+		"\"OnlineEarnings\"": "32",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear -STRIVE-\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "89",
+		"\"OnlineEarnings\"": "57",
+		"\"TotalPlayers\"": "124",
+		"\"TotalTournaments\"": "34"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear Xrd -REVELATOR-\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "43",
+		"\"OnlineEarnings\"": "43",
+		"\"TotalPlayers\"": "61",
+		"\"TotalTournaments\"": "19"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear Xrd -SIGN-\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "66",
+		"\"OnlineEarnings\"": "66",
+		"\"TotalPlayers\"": "80",
+		"\"TotalTournaments\"": "38"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear Xrd REV 2\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "37",
+		"\"OnlineEarnings\"": "37",
+		"\"TotalPlayers\"": "118",
+		"\"TotalTournaments\"": "57"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear XX\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear XX #Reload\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear XX Accent Core\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "10365",
+		"\"OnlineEarnings\"": "10365",
+		"\"TotalPlayers\"": "33",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear XX Accent Core Plus\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear XX Accent Core Plus R\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "14",
+		"\"OnlineEarnings\"": "5530",
+		"\"TotalPlayers\"": "79",
+		"\"TotalTournaments\"": "29"
+	},
+	{
+		"\"Game\"": "\"Guilty Gear XX Slash\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "10250",
+		"\"OnlineEarnings\"": "10250",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Hokuto no Ken\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "145",
+		"\"OnlineEarnings\"": "145",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Hyper Street Fighter II\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "10250",
+		"\"OnlineEarnings\"": "10250",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"HYPERFIGHT\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "140",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Injustice 2\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "16",
+		"\"OnlineEarnings\"": "57",
+		"\"TotalPlayers\"": "81",
+		"\"TotalTournaments\"": "38"
+	},
+	{
+		"\"Game\"": "\"Injustice: Gods Among Us\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "89",
+		"\"OnlineEarnings\"": "89",
+		"\"TotalPlayers\"": "101",
+		"\"TotalTournaments\"": "117"
+	},
+	{
+		"\"Game\"": "\"JoJo's Bizarre Adventure: Heritage for the Future\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "99",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Kill la Kill the Game: IF\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "920",
+		"\"OnlineEarnings\"": "770",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Killer Instinct (2013)\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "96",
+		"\"OnlineEarnings\"": "96",
+		"\"TotalPlayers\"": "129",
+		"\"TotalTournaments\"": "56"
+	},
+	{
+		"\"Game\"": "\"King of Fighters 2002 Unlimited Match\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "760",
+		"\"OnlineEarnings\"": "760",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"King of Fighters 98\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "57",
+		"\"OnlineEarnings\"": "57",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"King of Fighters XI\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "25",
+		"\"OnlineEarnings\"": "25",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"King of Fighters XIII\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "28",
+		"\"OnlineEarnings\"": "28",
+		"\"TotalPlayers\"": "107",
+		"\"TotalTournaments\"": "43"
+	},
+	{
+		"\"Game\"": "\"King of Fighters XIV\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "09",
+		"\"OnlineEarnings\"": "09",
+		"\"TotalPlayers\"": "90",
+		"\"TotalTournaments\"": "39"
+	},
+	{
+		"\"Game\"": "\"Kirby Fighters 2\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "86",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Koihime Enbu\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "1765",
+		"\"OnlineEarnings\"": "1615",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Lethal League Blaze\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "92",
+		"\"OnlineEarnings\"": "75",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Maiden & Spell\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "325",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Marvel vs. Capcom 2\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "39060",
+		"\"OnlineEarnings\"": "39050",
+		"\"TotalPlayers\"": "60",
+		"\"TotalTournaments\"": "28"
+	},
+	{
+		"\"Game\"": "\"Marvel vs. Capcom 3\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "62",
+		"\"OnlineEarnings\"": "62",
+		"\"TotalPlayers\"": "38",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Marvel vs. Capcom: Infinite\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "72",
+		"\"OnlineEarnings\"": "12",
+		"\"TotalPlayers\"": "60",
+		"\"TotalTournaments\"": "22"
+	},
+	{
+		"\"Game\"": "\"Melty Blood: Actress Again\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "10",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Melty Blood: Actress Again Current Code\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "93",
+		"\"OnlineEarnings\"": "6765",
+		"\"TotalPlayers\"": "60",
+		"\"TotalTournaments\"": "22"
+	},
+	{
+		"\"Game\"": "\"Melty Blood: Type Lumina\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "59",
+		"\"OnlineEarnings\"": "59",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Mighty Fight Federation\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Million Arthur: Arcana Blood\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "7540",
+		"\"OnlineEarnings\"": "7530",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Mordhau\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "16623",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "40",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Mortal Kombat 11\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "88",
+		"\"OnlineEarnings\"": "68",
+		"\"TotalPlayers\"": "210",
+		"\"TotalTournaments\"": "49"
+	},
+	{
+		"\"Game\"": "\"Mortal Kombat 9\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "67",
+		"\"OnlineEarnings\"": "67",
+		"\"TotalPlayers\"": "67",
+		"\"TotalTournaments\"": "26"
+	},
+	{
+		"\"Game\"": "\"Mortal Kombat vs. DC Universe\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Mortal Kombat X\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "42",
+		"\"OnlineEarnings\"": "42",
+		"\"TotalPlayers\"": "100",
+		"\"TotalTournaments\"": "62"
+	},
+	{
+		"\"Game\"": "\"Mortal Kombat XL\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "79",
+		"\"OnlineEarnings\"": "79",
+		"\"TotalPlayers\"": "55",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Mystery Game Tournament\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "10995",
+		"\"OnlineEarnings\"": "10995",
+		"\"TotalPlayers\"": "56",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Naruto Shippuden: Ultimate Ninja Storm 4\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "4550",
+		"\"OnlineEarnings\"": "2000",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Naruto: Gekitou Ninja Taisen! 4\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "200",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Nitroplus Blasterz: Heroines Infinite Duel\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "1994",
+		"\"OnlineEarnings\"": "1994",
+		"\"TotalPlayers\"": "10",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Persona 4 Arena\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "63",
+		"\"OnlineEarnings\"": "63",
+		"\"TotalPlayers\"": "42",
+		"\"TotalTournaments\"": "11"
+	},
+	{
+		"\"Game\"": "\"Persona 4 Arena Ultimax\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "16",
+		"\"OnlineEarnings\"": "16",
+		"\"TotalPlayers\"": "61",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Pocket Rumble\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "185",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Pokk<U+00E9>n Tournament\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "66",
+		"\"OnlineEarnings\"": "66",
+		"\"TotalPlayers\"": "65",
+		"\"TotalTournaments\"": "26"
+	},
+	{
+		"\"Game\"": "\"Pokk<U+00E9>n Tournament DX\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "4",
+		"\"OnlineEarnings\"": "21914",
+		"\"TotalPlayers\"": "44",
+		"\"TotalTournaments\"": "28"
+	},
+	{
+		"\"Game\"": "\"Power Instinct: Matrimelee\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "90",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Power Rangers: Battle for the Grid\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "6",
+		"\"OnlineEarnings\"": "880",
+		"\"TotalPlayers\"": "22",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Power Rangers: Legacy Wars\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "55",
+		"\"OnlineEarnings\"": "55",
+		"\"TotalPlayers\"": "2",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Project Justice\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "165",
+		"\"OnlineEarnings\"": "165",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Project M\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "09",
+		"\"OnlineEarnings\"": "09",
+		"\"TotalPlayers\"": "560",
+		"\"TotalTournaments\"": "335"
+	},
+	{
+		"\"Game\"": "\"Project Plus\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "195",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Punch Planet\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "400",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Red Earth\"",
+		"\"ReleaseDate\"": "\"1996\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Rising Thunder\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "1000",
+		"\"OnlineEarnings\"": "1000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Rivals of Aether\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "62",
+		"\"OnlineEarnings\"": "36737",
+		"\"TotalPlayers\"": "50",
+		"\"TotalTournaments\"": "21"
+	},
+	{
+		"\"Game\"": "\"Roof Rage\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "50",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Rushdown Revolt\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "09",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "31",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Sailor Moon S\"",
+		"\"ReleaseDate\"": "\"1995\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "19",
+		"\"OnlineEarnings\"": "19",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Samurai Shodown (2019)\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "31",
+		"\"OnlineEarnings\"": "31",
+		"\"TotalPlayers\"": "72",
+		"\"TotalTournaments\"": "19"
+	},
+	{
+		"\"Game\"": "\"Samurai Shodown III\"",
+		"\"ReleaseDate\"": "\"1995\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "70",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Samurai Shodown V Special\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "57",
+		"\"OnlineEarnings\"": "11",
+		"\"TotalPlayers\"": "15",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Schwarzerblitz\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "200",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Sekiro: Shadows Die Twice\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "19596",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Shovel Knight Showdown\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "60",
+		"\"OnlineEarnings\"": "60",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Shrek SuperSlam\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "80",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Skullgirls\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "300",
+		"\"OnlineEarnings\"": "300",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Skullgirls 2nd Encore\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "02",
+		"\"OnlineEarnings\"": "18351",
+		"\"TotalPlayers\"": "40",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Skullgirls Encore\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "4",
+		"\"OnlineEarnings\"": "4",
+		"\"TotalPlayers\"": "37",
+		"\"TotalTournaments\"": "13"
+	},
+	{
+		"\"Game\"": "\"Slap City\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "600",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"SLAYERS FOR HIRE\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "600",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Smash Remix\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "06",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"SNK Heroines: Tag Team Frenzy\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "430",
+		"\"OnlineEarnings\"": "430",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Soul Calibur II\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "4980",
+		"\"OnlineEarnings\"": "4980",
+		"\"TotalPlayers\"": "17",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Soul Calibur II HD Online\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "41",
+		"\"OnlineEarnings\"": "41",
+		"\"TotalPlayers\"": "29",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Soul Calibur IV\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "260",
+		"\"OnlineEarnings\"": "260",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Soul Calibur V\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "54",
+		"\"OnlineEarnings\"": "54",
+		"\"TotalPlayers\"": "79",
+		"\"TotalTournaments\"": "27"
+	},
+	{
+		"\"Game\"": "\"Soul Calibur VI\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "08",
+		"\"OnlineEarnings\"": "09",
+		"\"TotalPlayers\"": "114",
+		"\"TotalTournaments\"": "65"
+	},
+	{
+		"\"Game\"": "\"Street Fighter Alpha 2\"",
+		"\"ReleaseDate\"": "\"1996\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "69",
+		"\"OnlineEarnings\"": "1480",
+		"\"TotalPlayers\"": "23",
+		"\"TotalTournaments\"": "10"
+	},
+	{
+		"\"Game\"": "\"Street Fighter Alpha 3\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "340",
+		"\"OnlineEarnings\"": "340",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Street Fighter EX2 Plus\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "350",
+		"\"OnlineEarnings\"": "350",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Street Fighter III: 3rd Strike\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "58",
+		"\"OnlineEarnings\"": "36",
+		"\"TotalPlayers\"": "92",
+		"\"TotalTournaments\"": "40"
+	},
+	{
+		"\"Game\"": "\"Street Fighter IV\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "22",
+		"\"OnlineEarnings\"": "22",
+		"\"TotalPlayers\"": "41",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Street Fighter V\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "43",
+		"\"OnlineEarnings\"": "43",
+		"\"TotalPlayers\"": "239",
+		"\"TotalTournaments\"": "122"
+	},
+	{
+		"\"Game\"": "\"Street Fighter V: Arcade Edition\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "95",
+		"\"OnlineEarnings\"": "95",
+		"\"TotalPlayers\"": "235",
+		"\"TotalTournaments\"": "105"
+	},
+	{
+		"\"Game\"": "\"Street Fighter V: Champion Edition\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "93",
+		"\"OnlineEarnings\"": "47",
+		"\"TotalPlayers\"": "175",
+		"\"TotalTournaments\"": "105"
+	},
+	{
+		"\"Game\"": "\"Street Fighter X Tekken\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "64",
+		"\"OnlineEarnings\"": "34",
+		"\"TotalPlayers\"": "115",
+		"\"TotalTournaments\"": "93"
+	},
+	{
+		"\"Game\"": "\"Super Smash Bros.\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "81",
+		"\"OnlineEarnings\"": "81",
+		"\"TotalPlayers\"": "238",
+		"\"TotalTournaments\"": "126"
+	},
+	{
+		"\"Game\"": "\"Super Smash Bros. Brawl\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "83",
+		"\"OnlineEarnings\"": "83",
+		"\"TotalPlayers\"": "503",
+		"\"TotalTournaments\"": "345"
+	},
+	{
+		"\"Game\"": "\"Super Smash Bros. for Wii U\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "47",
+		"\"OnlineEarnings\"": "47",
+		"\"TotalPlayers\"": "1281",
+		"\"TotalTournaments\"": "1035"
+	},
+	{
+		"\"Game\"": "\"Super Smash Bros. Melee\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "71",
+		"\"OnlineEarnings\"": "94",
+		"\"TotalPlayers\"": "1913",
+		"\"TotalTournaments\"": "2628"
+	},
+	{
+		"\"Game\"": "\"Super Smash Bros. Ultimate\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "39",
+		"\"OnlineEarnings\"": "32",
+		"\"TotalPlayers\"": "2242",
+		"\"TotalTournaments\"": "1564"
+	},
+	{
+		"\"Game\"": "\"Super Street Fighter II Turbo\"",
+		"\"ReleaseDate\"": "\"1994\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "45",
+		"\"OnlineEarnings\"": "45",
+		"\"TotalPlayers\"": "109",
+		"\"TotalTournaments\"": "47"
+	},
+	{
+		"\"Game\"": "\"Super Street Fighter II Turbo HD Remix\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "16360",
+		"\"OnlineEarnings\"": "16360",
+		"\"TotalPlayers\"": "29",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Super Street Fighter IV\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "3",
+		"\"OnlineEarnings\"": "3",
+		"\"TotalPlayers\"": "43",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Super Street Fighter IV Arcade Edition\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "67",
+		"\"OnlineEarnings\"": "67",
+		"\"TotalPlayers\"": "154",
+		"\"TotalTournaments\"": "204"
+	},
+	{
+		"\"Game\"": "\"Tatsunoko vs. Capcom: Ultimate All-Stars\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "76",
+		"\"OnlineEarnings\"": "81",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "16"
+	},
+	{
+		"\"Game\"": "\"Teenage Mutant Ninja Turtles: Tournament Fighters\"",
+		"\"ReleaseDate\"": "\"1993\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "820",
+		"\"OnlineEarnings\"": "820",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Tekken 4\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "12500",
+		"\"OnlineEarnings\"": "12500",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Tekken 5\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "10250",
+		"\"OnlineEarnings\"": "10250",
+		"\"TotalPlayers\"": "10",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Tekken 5: Dark Resurrection\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "12180",
+		"\"OnlineEarnings\"": "12180",
+		"\"TotalPlayers\"": "18",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Tekken 6\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "64",
+		"\"OnlineEarnings\"": "64",
+		"\"TotalPlayers\"": "59",
+		"\"TotalTournaments\"": "30"
+	},
+	{
+		"\"Game\"": "\"Tekken 7\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "88",
+		"\"OnlineEarnings\"": "77",
+		"\"TotalPlayers\"": "455",
+		"\"TotalTournaments\"": "266"
+	},
+	{
+		"\"Game\"": "\"Tekken Tag Tournament\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "7",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Tekken Tag Tournament 2\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "7",
+		"\"OnlineEarnings\"": "7",
+		"\"TotalPlayers\"": "143",
+		"\"TotalTournaments\"": "140"
+	},
+	{
+		"\"Game\"": "\"The Last Blade 2\"",
+		"\"ReleaseDate\"": "\"1998\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "60",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Them's Fightin' Herds\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "19",
+		"\"OnlineEarnings\"": "530",
+		"\"TotalPlayers\"": "28",
+		"\"TotalTournaments\"": "29"
+	},
+	{
+		"\"Game\"": "\"Toribash\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Tough Love Arena\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Touhou Hisoutensoku ~ Choudokyuu Ginyoru no Nazo o Oe\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "52",
+		"\"OnlineEarnings\"": "220",
+		"\"TotalPlayers\"": "18",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"TowerFall: Ascension\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Ultimate Marvel vs. Capcom 3\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "42",
+		"\"OnlineEarnings\"": "07",
+		"\"TotalPlayers\"": "195",
+		"\"TotalTournaments\"": "178"
+	},
+	{
+		"\"Game\"": "\"Ultimate Mortal Kombat 3\"",
+		"\"ReleaseDate\"": "\"1995\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "150",
+		"\"OnlineEarnings\"": "150",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Ultra Fight Da! Kyanta 2\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "320",
+		"\"OnlineEarnings\"": "320",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Ultra Street Fighter IV\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "46",
+		"\"OnlineEarnings\"": "46",
+		"\"TotalPlayers\"": "231",
+		"\"TotalTournaments\"": "230"
+	},
+	{
+		"\"Game\"": "\"Umineko: Golden Fantasia\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "190",
+		"\"OnlineEarnings\"": "90",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Under Night In-Birth EXE: Late\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "76",
+		"\"OnlineEarnings\"": "76",
+		"\"TotalPlayers\"": "52",
+		"\"TotalTournaments\"": "23"
+	},
+	{
+		"\"Game\"": "\"Under Night In-Birth EXE: Late[st]\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "33",
+		"\"OnlineEarnings\"": "33",
+		"\"TotalPlayers\"": "109",
+		"\"TotalTournaments\"": "40"
+	},
+	{
+		"\"Game\"": "\"Under Night In-Birth Exe:Late[cl-r]\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "13",
+		"\"OnlineEarnings\"": "37",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Vampire Savior\"",
+		"\"ReleaseDate\"": "\"1997\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "95",
+		"\"OnlineEarnings\"": "74",
+		"\"TotalPlayers\"": "32",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Virtua Fighter 4: Evolution\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Virtua Fighter 5\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "39830",
+		"\"OnlineEarnings\"": "39830",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Virtua Fighter 5 Final Showdown\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "77",
+		"\"TotalPlayers\"": "28",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Virtua Fighter 5: Ultimate Showdown\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "1000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "13",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"WWE 2K20\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Fighting Game\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Asphalt 4\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "29500",
+		"\"OnlineEarnings\"": "29500",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Asphalt 9: Legends\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "51520",
+		"\"OnlineEarnings\"": "51520",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Assetto Corsa\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "75",
+		"\"OnlineEarnings\"": "6",
+		"\"TotalPlayers\"": "244",
+		"\"TotalTournaments\"": "94"
+	},
+	{
+		"\"Game\"": "\"Assetto Corsa Competizione\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "268281",
+		"\"OnlineEarnings\"": "172370",
+		"\"TotalPlayers\"": "249",
+		"\"TotalTournaments\"": "33"
+	},
+	{
+		"\"Game\"": "\"Dirt Rally 2.0\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "30000",
+		"\"OnlineEarnings\"": "10000",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"F1 2018\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "21",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"F1 2019\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "38",
+		"\"OnlineEarnings\"": "38",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"F1 2020\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "752235",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "42",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"F1 2021\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "750339",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Forza Horizon 5\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Forza Motorsport 2\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "222000",
+		"\"OnlineEarnings\"": "222000",
+		"\"TotalPlayers\"": "17",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Forza Motorsport 3\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "11000",
+		"\"OnlineEarnings\"": "11000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Forza Motorsport 4\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "37",
+		"\"OnlineEarnings\"": "37",
+		"\"TotalPlayers\"": "2",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Forza Motorsport 6\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "172600",
+		"\"OnlineEarnings\"": "170200",
+		"\"TotalPlayers\"": "43",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Forza Motorsport 7\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "820200",
+		"\"OnlineEarnings\"": "616200",
+		"\"TotalPlayers\"": "124",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Gran Turismo 3: A-Spec\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "3250",
+		"\"OnlineEarnings\"": "3250",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Gran Turismo 4\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "44000",
+		"\"OnlineEarnings\"": "44000",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Gran Turismo Sport\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "27511",
+		"\"TotalPlayers\"": "119",
+		"\"TotalTournaments\"": "22"
+	},
+	{
+		"\"Game\"": "\"GRID (2019)\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "75",
+		"\"OnlineEarnings\"": "75",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Hot Lap League\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"iRacing.com\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "43",
+		"\"OnlineEarnings\"": "1",
+		"\"TotalPlayers\"": "1141",
+		"\"TotalTournaments\"": "152"
+	},
+	{
+		"\"Game\"": "\"KartRider\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "35",
+		"\"OnlineEarnings\"": "35",
+		"\"TotalPlayers\"": "76",
+		"\"TotalTournaments\"": "20"
+	},
+	{
+		"\"Game\"": "\"Live for Speed\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "14",
+		"\"OnlineEarnings\"": "14",
+		"\"TotalPlayers\"": "22",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Mad Skills Motocross 2\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "20163",
+		"\"OnlineEarnings\"": "20163",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Mario Kart 8 Deluxe\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "44",
+		"\"OnlineEarnings\"": "44",
+		"\"TotalPlayers\"": "30",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"NASCAR Heat 4\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "200500",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "34",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Nascar Heat 5\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "6125",
+		"\"OnlineEarnings\"": "2500",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"NASCAR Thunder 2002\"",
+		"\"ReleaseDate\"": "\"2001\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "25",
+		"\"OnlineEarnings\"": "25",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"NASCAR Thunder 2003\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "5",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Need for Speed Carbon\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "58",
+		"\"OnlineEarnings\"": "58",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Need for Speed: Most Wanted\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "54",
+		"\"OnlineEarnings\"": "54",
+		"\"TotalPlayers\"": "18",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Need for Speed: ProStreet\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "46",
+		"\"OnlineEarnings\"": "46",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Need for Speed: Shift\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "10500",
+		"\"OnlineEarnings\"": "10500",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Need for Speed: Underground\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "35000",
+		"\"OnlineEarnings\"": "35000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Need for Speed: Underground 2\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "48",
+		"\"OnlineEarnings\"": "48",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Project Cars\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "21",
+		"\"OnlineEarnings\"": "71",
+		"\"TotalPlayers\"": "50",
+		"\"TotalTournaments\"": "115"
+	},
+	{
+		"\"Game\"": "\"Project Cars 2\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "66150",
+		"\"OnlineEarnings\"": "58150",
+		"\"TotalPlayers\"": "37",
+		"\"TotalTournaments\"": "22"
+	},
+	{
+		"\"Game\"": "\"Project Gotham Racing 2\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "35000",
+		"\"OnlineEarnings\"": "35000",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Project Gotham Racing 3\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "85",
+		"\"OnlineEarnings\"": "85",
+		"\"TotalPlayers\"": "33",
+		"\"TotalTournaments\"": "10"
+	},
+	{
+		"\"Game\"": "\"Project Gotham Racing 4\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "46",
+		"\"OnlineEarnings\"": "46",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"RaceRoom Racing Experience\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "2",
+		"\"OnlineEarnings\"": "7",
+		"\"TotalPlayers\"": "159",
+		"\"TotalTournaments\"": "26"
+	},
+	{
+		"\"Game\"": "\"rFactor\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "51",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"rFactor 2\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "42",
+		"\"OnlineEarnings\"": "94",
+		"\"TotalPlayers\"": "350",
+		"\"TotalTournaments\"": "81"
+	},
+	{
+		"\"Game\"": "\"Speedrunners\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "150",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Trackmania (2020)\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "68",
+		"\"OnlineEarnings\"": "42",
+		"\"TotalPlayers\"": "285",
+		"\"TotalTournaments\"": "239"
+	},
+	{
+		"\"Game\"": "\"TrackMania 2: Canyon\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "74",
+		"\"OnlineEarnings\"": "04",
+		"\"TotalPlayers\"": "21",
+		"\"TotalTournaments\"": "36"
+	},
+	{
+		"\"Game\"": "\"TrackMania 2: Stadium\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "27",
+		"\"OnlineEarnings\"": "31",
+		"\"TotalPlayers\"": "349",
+		"\"TotalTournaments\"": "284"
+	},
+	{
+		"\"Game\"": "\"Trackmania 2: Valley\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "34",
+		"\"OnlineEarnings\"": "34",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"TrackMania Nations\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "66",
+		"\"OnlineEarnings\"": "66",
+		"\"TotalPlayers\"": "18",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"TrackMania Nations Forever\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "65",
+		"\"OnlineEarnings\"": "75",
+		"\"TotalPlayers\"": "109",
+		"\"TotalTournaments\"": "73"
+	},
+	{
+		"\"Game\"": "\"Trackmania Turbo\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "41",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Trackmania United\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "5",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Trackmania United Forever\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Trials Fusion\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Turbo Racing League\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Racing\"",
+		"\"TotalEarnings\"": "06",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"Carom 3D\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "60500",
+		"\"OnlineEarnings\"": "60500",
+		"\"TotalPlayers\"": "11",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Dream league Soccer\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"FIFA 03\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "44",
+		"\"OnlineEarnings\"": "44",
+		"\"TotalPlayers\"": "10",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"FIFA 04\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "40000",
+		"\"OnlineEarnings\"": "40000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"FIFA 05\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "01",
+		"\"OnlineEarnings\"": "01",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"FIFA 06\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "53",
+		"\"OnlineEarnings\"": "53",
+		"\"TotalPlayers\"": "23",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"FIFA 07\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "23",
+		"\"OnlineEarnings\"": "23",
+		"\"TotalPlayers\"": "43",
+		"\"TotalTournaments\"": "14"
+	},
+	{
+		"\"Game\"": "\"FIFA 08\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "94",
+		"\"OnlineEarnings\"": "94",
+		"\"TotalPlayers\"": "68",
+		"\"TotalTournaments\"": "17"
+	},
+	{
+		"\"Game\"": "\"FIFA 09\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "34",
+		"\"OnlineEarnings\"": "42",
+		"\"TotalPlayers\"": "52",
+		"\"TotalTournaments\"": "19"
+	},
+	{
+		"\"Game\"": "\"FIFA 10\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "71",
+		"\"OnlineEarnings\"": "21",
+		"\"TotalPlayers\"": "64",
+		"\"TotalTournaments\"": "48"
+	},
+	{
+		"\"Game\"": "\"FIFA 11\"",
+		"\"ReleaseDate\"": "\"2010\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "77",
+		"\"OnlineEarnings\"": "02",
+		"\"TotalPlayers\"": "72",
+		"\"TotalTournaments\"": "78"
+	},
+	{
+		"\"Game\"": "\"FIFA 12\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "52",
+		"\"OnlineEarnings\"": "42",
+		"\"TotalPlayers\"": "53",
+		"\"TotalTournaments\"": "66"
+	},
+	{
+		"\"Game\"": "\"FIFA 13\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "82",
+		"\"OnlineEarnings\"": "59",
+		"\"TotalPlayers\"": "53",
+		"\"TotalTournaments\"": "62"
+	},
+	{
+		"\"Game\"": "\"FIFA 14\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "81",
+		"\"OnlineEarnings\"": "48",
+		"\"TotalPlayers\"": "57",
+		"\"TotalTournaments\"": "69"
+	},
+	{
+		"\"Game\"": "\"FIFA 15\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "99",
+		"\"OnlineEarnings\"": "15",
+		"\"TotalPlayers\"": "168",
+		"\"TotalTournaments\"": "352"
+	},
+	{
+		"\"Game\"": "\"FIFA 16\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "11",
+		"\"OnlineEarnings\"": "94",
+		"\"TotalPlayers\"": "61",
+		"\"TotalTournaments\"": "28"
+	},
+	{
+		"\"Game\"": "\"FIFA 17\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "63",
+		"\"OnlineEarnings\"": "63",
+		"\"TotalPlayers\"": "156",
+		"\"TotalTournaments\"": "48"
+	},
+	{
+		"\"Game\"": "\"FIFA 18\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "69",
+		"\"OnlineEarnings\"": "08",
+		"\"TotalPlayers\"": "235",
+		"\"TotalTournaments\"": "48"
+	},
+	{
+		"\"Game\"": "\"FIFA 19\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "34",
+		"\"OnlineEarnings\"": "83",
+		"\"TotalPlayers\"": "299",
+		"\"TotalTournaments\"": "48"
+	},
+	{
+		"\"Game\"": "\"FIFA 20\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "76",
+		"\"OnlineEarnings\"": "14",
+		"\"TotalPlayers\"": "297",
+		"\"TotalTournaments\"": "61"
+	},
+	{
+		"\"Game\"": "\"FIFA 2000\"",
+		"\"ReleaseDate\"": "\"1999\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "50000",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"FIFA 2001\"",
+		"\"ReleaseDate\"": "\"2000\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "46000",
+		"\"OnlineEarnings\"": "46000",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"FIFA 2002 World Cup\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "43000",
+		"\"OnlineEarnings\"": "43000",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"FIFA 21\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "53",
+		"\"OnlineEarnings\"": "13",
+		"\"TotalPlayers\"": "234",
+		"\"TotalTournaments\"": "26"
+	},
+	{
+		"\"Game\"": "\"FIFA 22\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "56",
+		"\"TotalPlayers\"": "16",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"FIFA Online 3\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "9",
+		"\"OnlineEarnings\"": "9",
+		"\"TotalPlayers\"": "88",
+		"\"TotalTournaments\"": "9"
+	},
+	{
+		"\"Game\"": "\"FIFA Online 4\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "1681120",
+		"\"OnlineEarnings\"": "791120",
+		"\"TotalPlayers\"": "155",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Golf With Your Friends\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "19400",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "11",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Guitar Hero 5\"",
+		"\"ReleaseDate\"": "\"2009\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "10500",
+		"\"OnlineEarnings\"": "10500",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Guitar Hero III: Legends of Rock\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "19000",
+		"\"OnlineEarnings\"": "19000",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Guitar Hero: World Tour\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Just Dance 2014\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 19\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "125000",
+		"\"OnlineEarnings\"": "125000",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2004\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "1500",
+		"\"OnlineEarnings\"": "1500",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2006\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2007\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2008\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2009\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2013\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "05",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2016\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "50000",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2017\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "1004000",
+		"\"OnlineEarnings\"": "1004000",
+		"\"TotalPlayers\"": "42",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Madden NFL 2018\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "62",
+		"\"OnlineEarnings\"": "62",
+		"\"TotalPlayers\"": "40",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Mario Tennis Aces\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "3",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"NBA 2K Online\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"NBA 2K18\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "06",
+		"\"OnlineEarnings\"": "06",
+		"\"TotalPlayers\"": "91",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"NBA 2K19\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"NBA 2K20\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"NBA 2K21\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "501",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"NHL '94\"",
+		"\"ReleaseDate\"": "\"1993\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "56",
+		"\"OnlineEarnings\"": "56",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"NHL 12\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "93",
+		"\"OnlineEarnings\"": "93",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"NHL 13\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "70000",
+		"\"OnlineEarnings\"": "70000",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"NHL 14\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "96",
+		"\"OnlineEarnings\"": "96",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"NHL 15\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "16",
+		"\"OnlineEarnings\"": "16",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"NHL 17\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"NHL 18\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "102700",
+		"\"OnlineEarnings\"": "90000",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"NHL 19\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "67",
+		"\"OnlineEarnings\"": "67",
+		"\"TotalPlayers\"": "10",
+		"\"TotalTournaments\"": "8"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2008\"",
+		"\"ReleaseDate\"": "\"2007\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "15",
+		"\"OnlineEarnings\"": "15",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2009\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "97",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2013\"",
+		"\"ReleaseDate\"": "\"2012\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2014\"",
+		"\"ReleaseDate\"": "\"2013\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "25",
+		"\"OnlineEarnings\"": "25",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2015\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "76",
+		"\"OnlineEarnings\"": "76",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2016\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "84",
+		"\"OnlineEarnings\"": "84",
+		"\"TotalPlayers\"": "17",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2017\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "71",
+		"\"OnlineEarnings\"": "71",
+		"\"TotalPlayers\"": "39",
+		"\"TotalTournaments\"": "16"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2018\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "250000",
+		"\"OnlineEarnings\"": "250000",
+		"\"TotalPlayers\"": "20",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 2019\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "216000",
+		"\"OnlineEarnings\"": "216000",
+		"\"TotalPlayers\"": "25",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 3\"",
+		"\"ReleaseDate\"": "\"2003\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "25000",
+		"\"OnlineEarnings\"": "25000",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 4\"",
+		"\"ReleaseDate\"": "\"2004\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "64",
+		"\"OnlineEarnings\"": "64",
+		"\"TotalPlayers\"": "11",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 5\"",
+		"\"ReleaseDate\"": "\"2005\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "32000",
+		"\"OnlineEarnings\"": "32000",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Pro Evolution Soccer 6\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "82",
+		"\"OnlineEarnings\"": "82",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Rocket League\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "34",
+		"\"OnlineEarnings\"": "99",
+		"\"TotalPlayers\"": "1985",
+		"\"TotalTournaments\"": "1969"
+	},
+	{
+		"\"Game\"": "\"Rocket League Sideswipe\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "2500",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "1",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Slapshot Rebound\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Soccer Stars\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Zwift\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Sports\"",
+		"\"TotalEarnings\"": "08",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Artifact Classic\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "54",
+		"\"OnlineEarnings\"": "81",
+		"\"TotalPlayers\"": "277",
+		"\"TotalTournaments\"": "170"
+	},
+	{
+		"\"Game\"": "\"Artifact Foundry\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "5",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "21",
+		"\"TotalTournaments\"": "12"
+	},
+	{
+		"\"Game\"": "\"Faeria\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "4100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Gwent\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "17",
+		"\"OnlineEarnings\"": "17",
+		"\"TotalPlayers\"": "324",
+		"\"TotalTournaments\"": "113"
+	},
+	{
+		"\"Game\"": "\"Hand of the Gods\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "2",
+		"\"OnlineEarnings\"": "72500",
+		"\"TotalPlayers\"": "48",
+		"\"TotalTournaments\"": "36"
+	},
+	{
+		"\"Game\"": "\"Hearthstone\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "78",
+		"\"OnlineEarnings\"": "37",
+		"\"TotalPlayers\"": "2665",
+		"\"TotalTournaments\"": "948"
+	},
+	{
+		"\"Game\"": "\"Hearthstone Battlegrounds\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "203630",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "40",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"KARDS, The World War II Card Game\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Legends of Runeterra\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "03",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "47",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Magic: The Gathering Arena\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "8488000",
+		"\"OnlineEarnings\"": "5354000",
+		"\"TotalPlayers\"": "282",
+		"\"TotalTournaments\"": "48"
+	},
+	{
+		"\"Game\"": "\"Magic: The Gathering Online\"",
+		"\"ReleaseDate\"": "\"2002\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "1218000",
+		"\"OnlineEarnings\"": "1218000",
+		"\"TotalPlayers\"": "130",
+		"\"TotalTournaments\"": "10"
+	},
+	{
+		"\"Game\"": "\"Mythgard\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "3000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Pok<U+00E9>mon TCG\"",
+		"\"ReleaseDate\"": "\"1996\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Shadowverse\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "09",
+		"\"OnlineEarnings\"": "09",
+		"\"TotalPlayers\"": "239",
+		"\"TotalTournaments\"": "42"
+	},
+	{
+		"\"Game\"": "\"Shardbound\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"The Elder Scrolls: Legends\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "5000",
+		"\"OnlineEarnings\"": "5000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Yu-Gi-Oh! Duel Links\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Collectible Card Game\"",
+		"\"TotalEarnings\"": "72",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "328",
+		"\"TotalTournaments\"": "219"
+	},
+	{
+		"\"Game\"": "\"Catherine\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "1545",
+		"\"OnlineEarnings\"": "1470",
+		"\"TotalPlayers\"": "11",
+		"\"TotalTournaments\"": "7"
+	},
+	{
+		"\"Game\"": "\"Catherine: Full Body\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "185",
+		"\"OnlineEarnings\"": "185",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Cultris II\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "95",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Jstris\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "275",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Magical Drop III\"",
+		"\"ReleaseDate\"": "\"1997\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "130",
+		"\"OnlineEarnings\"": "130",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Microsoft Excel\"",
+		"\"ReleaseDate\"": "\"1985\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "1400",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "8",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Pac-man\"",
+		"\"ReleaseDate\"": "\"1981\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Panel Attack\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "140",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "5",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Puyo Puyo Champions\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "3",
+		"\"OnlineEarnings\"": "8",
+		"\"TotalPlayers\"": "14",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Puyo Puyo Tetris\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "84",
+		"\"OnlineEarnings\"": "75",
+		"\"TotalPlayers\"": "31",
+		"\"TotalTournaments\"": "16"
+	},
+	{
+		"\"Game\"": "\"Puyo Puyo Tetris 2\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "02",
+		"\"OnlineEarnings\"": "85",
+		"\"TotalPlayers\"": "10",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Tetr.io\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "88",
+		"\"OnlineEarnings\"": "4",
+		"\"TotalPlayers\"": "27",
+		"\"TotalTournaments\"": "13"
+	},
+	{
+		"\"Game\"": "\"Tetris\"",
+		"\"ReleaseDate\"": "\"1989\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "99",
+		"\"OnlineEarnings\"": "17",
+		"\"TotalPlayers\"": "67",
+		"\"TotalTournaments\"": "28"
+	},
+	{
+		"\"Game\"": "\"Tetris Effect: Connected\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "91",
+		"\"OnlineEarnings\"": "88",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Tetris Ultimate\"",
+		"\"ReleaseDate\"": "\"2014\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "221",
+		"\"OnlineEarnings\"": "221",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Twinkle Star Sprites\"",
+		"\"ReleaseDate\"": "\"1996\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "150",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "4",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Wise Star 2\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Puzzle Game\"",
+		"\"TotalEarnings\"": "12000",
+		"\"OnlineEarnings\"": "12000",
+		"\"TotalPlayers\"": "3",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Apex Legends\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "69",
+		"\"OnlineEarnings\"": "75",
+		"\"TotalPlayers\"": "1538",
+		"\"TotalTournaments\"": "414"
+	},
+	{
+		"\"Game\"": "\"Ark: Survival Of The Fittest\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Fall Guys\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "83",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "250",
+		"\"TotalTournaments\"": "6"
+	},
+	{
+		"\"Game\"": "\"Fortnite\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "61",
+		"\"TotalPlayers\"": "4931",
+		"\"TotalTournaments\"": "750"
+	},
+	{
+		"\"Game\"": "\"Free Fire\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "23",
+		"\"OnlineEarnings\"": "23",
+		"\"TotalPlayers\"": "659",
+		"\"TotalTournaments\"": "31"
+	},
+	{
+		"\"Game\"": "\"H1Z1\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "2067122",
+		"\"OnlineEarnings\"": "2067122",
+		"\"TotalPlayers\"": "119",
+		"\"TotalTournaments\"": "13"
+	},
+	{
+		"\"Game\"": "\"PLAYERUNKNOWN'S BATTLEGROUNDS Mobile\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "32",
+		"\"OnlineEarnings\"": "97",
+		"\"TotalPlayers\"": "1814",
+		"\"TotalTournaments\"": "74"
+	},
+	{
+		"\"Game\"": "\"PLAYERUNKNOWN’S BATTLEGROUNDS\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "41",
+		"\"OnlineEarnings\"": "2",
+		"\"TotalPlayers\"": "3052",
+		"\"TotalTournaments\"": "388"
+	},
+	{
+		"\"Game\"": "\"Radical Heights\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "120000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "12",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"Ring of Elysium\"",
+		"\"ReleaseDate\"": "\"2018\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "70000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "9",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Rocket Arena\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "05",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "24",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Rules Of Survival\"",
+		"\"ReleaseDate\"": "\"2017\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Spellbreak\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Battle Royale\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "42",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Gears 5\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "1783000",
+		"\"OnlineEarnings\"": "680000",
+		"\"TotalPlayers\"": "160",
+		"\"TotalTournaments\"": "22"
+	},
+	{
+		"\"Game\"": "\"Gears of War\"",
+		"\"ReleaseDate\"": "\"2006\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "57",
+		"\"OnlineEarnings\"": "57",
+		"\"TotalPlayers\"": "33",
+		"\"TotalTournaments\"": "18"
+	},
+	{
+		"\"Game\"": "\"Gears of War 2\"",
+		"\"ReleaseDate\"": "\"2008\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "135000",
+		"\"OnlineEarnings\"": "135000",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "5"
+	},
+	{
+		"\"Game\"": "\"Gears of War 3\"",
+		"\"ReleaseDate\"": "\"2011\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "81",
+		"\"OnlineEarnings\"": "81",
+		"\"TotalPlayers\"": "13",
+		"\"TotalTournaments\"": "4"
+	},
+	{
+		"\"Game\"": "\"Gears of War 4\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "3087285",
+		"\"OnlineEarnings\"": "3055000",
+		"\"TotalPlayers\"": "135",
+		"\"TotalTournaments\"": "41"
+	},
+	{
+		"\"Game\"": "\"Gears of War: Ultimate Edition\"",
+		"\"ReleaseDate\"": "\"2015\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "170000",
+		"\"OnlineEarnings\"": "170000",
+		"\"TotalPlayers\"": "39",
+		"\"TotalTournaments\"": "3"
+	},
+	{
+		"\"Game\"": "\"Knockout City\"",
+		"\"ReleaseDate\"": "\"2021\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "0",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "0",
+		"\"TotalTournaments\"": "0"
+	},
+	{
+		"\"Game\"": "\"Mobile Suit Gundam: Extreme Vs Maxi Boost ON\"",
+		"\"ReleaseDate\"": "\"2016\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "100",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "6",
+		"\"TotalTournaments\"": "1"
+	},
+	{
+		"\"Game\"": "\"Rogue Company\"",
+		"\"ReleaseDate\"": "\"2020\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "50000",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "48",
+		"\"TotalTournaments\"": "2"
+	},
+	{
+		"\"Game\"": "\"The Division 2\"",
+		"\"ReleaseDate\"": "\"2019\"",
+		"\"Genre\"": "\"Third-Person Shooter\"",
+		"\"TotalEarnings\"": "27250",
+		"\"OnlineEarnings\"": "0",
+		"\"TotalPlayers\"": "40",
+		"\"TotalTournaments\"": "2"
+	}
+]

@@ -94,10 +94,10 @@ if(len(sys.argv) > 1 and len(sys.argv) <= 3):
     fnopen_match = p_nf.search(filename_to_open)
 
 
-    file_csv = open(filename_to_open,"r",encoding='utf8')
+    file_csv = open(filename_to_open,"r",encoding='utf8',errors="surrogateescape")
     filename_to_save = filename_to_open.replace(filename_to_open[-3:],"json") #muda terminação de csv para json
 
-    file_json = open(filename_to_save,'w',encoding='utf8')
+    file_json = open(filename_to_save,'w',encoding='utf8',errors="surrogateescape")
 
     #Expressao regular para reconhecer paths de ficheiros com formato json
     re_output = re.sub(r'[cCsSvV]+',r'json',re_name_file)

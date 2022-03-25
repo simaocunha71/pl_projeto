@@ -79,7 +79,6 @@ if(len(sys.argv) > 1 and len(sys.argv) <= 3):
     if(flag_logs):
         inicio = time.time()
         logs.send_message(logs.ANSII_COLOUR.GREEN + "Conversor de ficheiros csv para ficheiros json - Grupo 6 | Processamento de linguagens (2021/2022)" + logs.ANSII_COLOUR.RESET)
-        logs.send_message(logs.ANSII_COLOUR.BLUE + "A converter o ficheiro..." + logs.ANSII_COLOUR.RESET)
 
     #expressao para ler colunas
     pattern_content = r'((?P<column>(\w|[À-ÿ ]|(\"[^"]*\"))*)(,|$))'

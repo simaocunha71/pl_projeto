@@ -81,7 +81,7 @@ if(len(sys.argv) > 1 and len(sys.argv) <= 3):
         logs.send_message(logs.ANSII_COLOUR.GREEN + "Conversor de ficheiros csv para ficheiros json - Grupo 6 | Processamento de linguagens (2021/2022)" + logs.ANSII_COLOUR.RESET)
 
     #expressao para ler colunas
-    pattern_content = r'((?P<column>(\w|[À-ÿ ]|(\"[^"]*\"))*)(,|$))'
+    pattern_content = r'((?P<column>(\w|[^",{}\n]|(\"[^"]*\"))*)(,|$))'
     pattern_file = re.compile(pattern_content)
 
     filename_to_open = sys.argv[1]

@@ -70,6 +70,8 @@ def write_json_object(file,data):
 
 
 ################################################ Script da leitura do csv #####################################################
+flag_validName = True
+
 
 if(len(sys.argv) > 1 and len(sys.argv) <= 3):
     #verificacao da flag dos logs
@@ -87,55 +89,53 @@ if(len(sys.argv) > 1 and len(sys.argv) <= 3):
     filename_to_open = sys.argv[1]
 
     #expressao para verificar se a extensao do ficheiro e valida
-    re_name_file = r'^((.+)\/)?(?P<fn>(\w+(\.+([cCsSvV]+))))$'
+    re_name_file = r'^((.+)\/)?(?P<fn>(\w+(\.+)))(?P<ext>[cC][sS][vV])$'
 
     p_nf = re.compile(re_name_file)
     fnopen_match = p_nf.search(filename_to_open)
 
+    if(fnopen_match != None):
+        file_csv = open(filename_to_open,"r",encoding='utf8',errors="surrogateescape")
+        filename_to_save = filename_to_open.replace(filename_to_open[-3:],"json") #muda terminação de csv para json
 
-    file_csv = open(filename_to_open,"r",encoding='utf8',errors="surrogateescape")
-    filename_to_save = filename_to_open.replace(filename_to_open[-3:],"json") #muda terminação de csv para json
+        file_json = open(filename_to_save,'w',encoding='utf8',errors="surrogateescape")
 
-    file_json = open(filename_to_save,'w',encoding='utf8',errors="surrogateescape")
+        only_nameInput = fnopen_match.group("fn") + fnopen_match.group("ext")
+        only_nameOutput = fnopen_match.group("fn") + "json"
 
-    #Expressao regular para reconhecer paths de ficheiros com formato json
-    re_output = re.sub(r'[cCsSvV]+',r'json',re_name_file)
-    p_re_output = re.compile(re_output)
-    fnsave_match = p_re_output.search(filename_to_save)
-
-
-    file_json.write("[\n")
-    #Tratar da primeira linha
-    line_to_read = file_csv.readline()
-    columns = get_columns_names(line_to_read)
-    if(len(columns) == 0):
-        logs.send_error("Header inválido! Ficheiro json vazio...")
-    else:
-        cols_number = get_num_columns_array(columns)
-
-
+        file_json.write("[\n")
+        #Tratar da primeira linha
         line_to_read = file_csv.readline()
-        #print("columns ->: " + str(cols_number))
-        nLinhas = 2
-        #tratar linha a linha do ficheiro
-        while (line_to_read != ""): #nao deteta EOF
-            data = line(columns)
-            valid = validate_line(columns,line_to_read,cols_number,pattern_file,data)
-            if valid: 
-                write_json_object(file_json,data)
-                first_line = False
-            else:
-                #print(str(invalidLines) + ": \"" + line_to_read + "\"")
-                invalidLines+=1
-                del data
-            nLinhas+=1
-            line_to_read = file_csv.readline() #le proxima linha
+        columns = get_columns_names(line_to_read)
+        if(len(columns) == 0):
+            logs.send_error("Header inválido! Ficheiro json vazio...")
+        else:
+            cols_number = get_num_columns_array(columns)
 
-    file_json.write("\n]\n")
 
-    file_csv.close()
-    file_json.close()
+            line_to_read = file_csv.readline()
+            #print("columns ->: " + str(cols_number))
+            nLinhas = 2
+            #tratar linha a linha do ficheiro
+            while (line_to_read != ""): #nao deteta EOF
+                data = line(columns)
+                valid = validate_line(columns,line_to_read,cols_number,pattern_file,data)
+                if valid: 
+                    write_json_object(file_json,data)
+                    first_line = False
+                else:
+                    #print(str(invalidLines) + ": \"" + line_to_read + "\"")
+                    invalidLines+=1
+                    del data
+                nLinhas+=1
+                line_to_read = file_csv.readline() #le proxima linha
 
+        file_json.write("\n]\n")
+
+        file_csv.close()
+        file_json.close()
+    else:
+        flag_validName = False
     fim = time.time()
 
     ###################################################################### LOGS ####################################################################
@@ -144,17 +144,17 @@ if(len(sys.argv) > 1 and len(sys.argv) <= 3):
             logs.send_error("Foram encontradas " + str(invalidLines+1) + " linhas inválidas em " + str(nLinhas-1) + " linhas lidas.")
         elif(invalidLines == 1):
             logs.send_error("Foi encontrada 1 linha inválida em " + str(nLinhas-1) + " linhas lidas.")
-        else:
+        elif(flag_validName == True):
             logs.send_message(logs.ANSII_COLOUR.GREEN +"Todas as linhas são válidas!" + logs.ANSII_COLOUR.RESET)
 
         try:
-            logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + fnopen_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )
+            logs.send_message("Ficheiro a converter: "+ logs.ANSII_COLOUR.YELLOW + only_nameInput + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_open).st_size) + " bytes) - encontrado na diretoria " + logs.ANSII_COLOUR.YELLOW + filename_to_open + logs.ANSII_COLOUR.RESET )
         except Exception:
             logs.send_error("Ficheiro a converter não é do tipo csv!")
             sys.exit(1)
 
         try: 
-            logs.send_message("Novo ficheiro: " + logs.ANSII_COLOUR.YELLOW + fnsave_match.group("fn") + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_save).st_size) + " bytes) - disponível em " + logs.ANSII_COLOUR.YELLOW + filename_to_save + logs.ANSII_COLOUR.RESET )
+            logs.send_message("Novo ficheiro: " + logs.ANSII_COLOUR.YELLOW + only_nameOutput + logs.ANSII_COLOUR.RESET + " (" + str(os.stat(filename_to_save).st_size) + " bytes) - disponível em " + logs.ANSII_COLOUR.YELLOW + filename_to_save + logs.ANSII_COLOUR.RESET )
             
         except Exception:
             logs.send_error("Ficheiro json não encontrado!")

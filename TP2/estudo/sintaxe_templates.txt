@@ -1,0 +1,192 @@
+WEBSITE: https://pandoc.org/MANUAL.html#templates
+
+Ver o template: 
+   $ pandoc -D [formato]
+   $ pandoc -D html
+   $ pandoc -D latex
+   ...
+////////////////////                              Comentários                           /////////////////////////////////
+$--[conteudo]\n
+
+////////////////////                             Delimitadores                          /////////////////////////////////
+$[conteudo]$
+${[conteudo]}$
+$$                <- Usar o caracter '$'
+
+////////////////////                          Interpolated strings                      /////////////////////////////////
+***********Exemplo*************
+>>> var = 'Bark'
+>>> print(f'A dog says {var}!')
+*******************************
+> Tem que começar por uma letra e pode conter letras, digitos, '_', '-' e '.'.
+> As seguintes keywords não podem ser usadas como interpolated strings: it, if, else, endif, for, sep, endfor
+> As keywords com '.' referem-se a structs. Por exemplo, a string "aluno.nome" devolve o nome do aluno
+
+> Exemplos gerais:
+$foo$
+$foo.bar.baz$
+$foo_bar.baz-bim$
+$ foo $
+${foo}
+${foo.bar.baz}
+${foo_bar.baz-bim}
+${ foo }
+
+////////////////////                               Condições                            /////////////////////////////////
+
+> Exemplos gerais:
+$if(foo)$bar$endif$
+
+$if(foo)$
+  $foo$
+$endif$
+
+$if(foo)$
+part one
+$else$
+part two
+$endif$
+
+${if(foo)}bar${endif}
+
+${if(foo)}
+  ${foo}
+${endif}
+
+${if(foo)}
+${ foo.bar }
+${else}
+no foo!
+${endif}
+
+***********************************************************************
+The keyword elseif may be used to simplify complex nested conditionals:
+
+$if(foo)$
+XXX
+$elseif(bar)$
+YYY
+$else$
+ZZZ
+$endif$
+////////////////////                               Ciclos                               /////////////////////////////////
+
+> Exemplos gerais:
+$for(foo)$$foo$$sep$, $endfor$
+
+$for(foo)$
+  - $foo.last$, $foo.first$
+$endfor$
+
+${ for(foo.bar) }
+  - ${ foo.bar.last }, ${ foo.bar.first }
+${ endfor }
+
+$for(mymap)$
+$it.name$: $it.office$
+$endfor$
+************************************************************************************************************
+Podemos especificar opcionalmente o separador entre valores consecutivos através da keyword 'sep'.
+
+${ for(foo) }${ foo }${ sep }, ${ endfor }
+
+************************************************************************************************************
+Instead of using variable inside the loop, the special anaphoric keyword it may be used.
+
+${ for(foo.bar) }
+  - ${ it.last }, ${ it.first }
+${ endfor }
+
+////////////////////                               Partials                               ////////////////////////////////
+> Subtemplates noutros ficheiros
+> Contém partes que constituem o template principal (https://middlemanapp.com/basics/partials/)
+
+${ styles() }
+
+${ styles.html() }
+
+> Partials podem ser aplicados a variáveis:
+${ date:fancy() }
+
+**************************
+${ articles:bibentry() } 
+        --
+       |  |
+      _|  |_ 'articles' é um array;
+      \    / (é equivalente a)
+       \  /
+        \/
+
+${ for(articles) }
+${ it:bibentry() }
+${ endfor }
+**************************
+${months[, ]}$
+
+${articles:bibentry()[; ]$
+
+////////////////////                               Nesting                               ////////////////////////////////
+> Exemplo 1:
+$item.number$  $^$$item.description$ ($item.price$)
+
+(é aplicado ao exemplo abaixo:)
+00123  A fine bottle of 18-year old
+       Oban whiskey. ($148)
+
+> Exemplo 2:
+$item.number$  $^$$item.description$ ($item.price$)
+               (Available til $item.sellby$.)
+
+00123  A fine bottle of 18-year old
+       Oban whiskey. ($148)
+       (Available til March 30, 2020.)
+
+////////////////////                           Breakable spaces                          ////////////////////////////////
+$~$This long line may break if the document is rendered
+with a short line length.$~$
+
+////////////////////                               Pipes                                 ////////////////////////////////
+> Transforma o valor de uma variável ou de um partial
+> Exemplo:
+$for(name)$
+$name/uppercase$
+$endfor$
+
+$for(metadata/pairs)$
+- $it.key$: $it.value$
+$endfor$
+
+$employee:name()/uppercase$
+
+> Os pipes podem ser encadeados
+> Exemplo:
+$for(employees/pairs)$
+$it.key/alpha/uppercase$. $it.name$
+$endfor$
+
+> Os pipes podem ter parâmetros:
+> Exemplo:
+|----------------------|------------|
+$for(employee)$
+$it.name.first/uppercase/left 20 "| "$$it.name.salary/right 10 " | " " |"$
+$endfor$
+|----------------------|------------
+
+
+NOTA: Já existem alguns pipes pré-definidos:
+> pairs
+> uppercase
+> lowercase
+> length
+> reverse
+> first
+> last
+> rest
+> allbutlast
+> chomp
+> nowrap
+> alpha
+> roman
+> left n "leftborder" "rightborder"
+> right n "leftborder" "rightborder"
+> center n "leftborder" "rightborder"

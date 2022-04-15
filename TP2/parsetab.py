@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = "CONST ELSE ELSEIF ENDFOR ENDIF FOR IF VAR\n    prog : comandos\n\n    comandos : \n             | terminator comandos\n             | IF '(' VAR ')' '$' content condition ENDIF \n             | FOR '(' VAR ')' '$' content condition ENDFOR \n\n    condition : condition_sing\n              | condition_rec\n\n\n    condition_sing : ELSE comandos\n\n    condition_rec :\n                  | ELSEIF '('  VAR  ')' '$'  comandos condition_rec\n\n    content :\n            | terminator content\n\n    terminator : '$' VAR '$' \n                | CONST\n      "
+_lr_signature = "CONST ELSE ELSEIF ENDFOR ENDIF FOR IF VAR\n    prog : comandos\n\n    comandos : \n            | CONST comandos\n            | '$' VAR '$' comandos\n            | IF VAR ')' '$' comandos alternative ENDIF comandos\n            | FOR VAR ')' '$' comandos ENDFOR comandos\n\n    alternative :\n            | condition_sing\n            | condition_rec\n\n    condition_sing : ELSE comandos\n\n    condition_rec :\n                  | ELSEIF VAR  ')' '$'  comandos condition_rec\n           \n    \n               \n      "
     
-_lr_action_items = {'$end':([0,1,2,3,7,8,13,29,32,],[-2,0,-1,-2,-14,-3,-13,-4,-5,]),'IF':([0,3,7,13,25,35,],[4,4,-14,-13,4,4,]),'FOR':([0,3,7,13,25,35,],[6,6,-14,-13,6,6,]),'$':([0,3,7,10,13,15,16,17,18,20,25,34,35,],[5,5,-14,13,-13,17,18,5,5,5,5,35,5,]),'CONST':([0,3,7,13,17,18,20,25,35,],[7,7,-14,-13,7,7,7,7,7,]),'ENDIF':([3,7,8,13,17,19,20,22,23,24,25,27,29,30,32,35,36,37,],[-2,-14,-3,-13,-11,-9,-11,29,-6,-7,-2,-12,-4,-8,-5,-2,-9,-10,]),'ENDFOR':([3,7,8,13,18,20,21,23,24,25,27,28,29,30,32,35,36,37,],[-2,-14,-3,-13,-11,-11,-9,-6,-7,-2,-12,32,-4,-8,-5,-2,-9,-10,]),'ELSEIF':([3,7,8,13,17,18,19,20,21,27,29,32,35,36,],[-2,-14,-3,-13,-11,-11,26,-11,26,-12,-4,-5,-2,26,]),'(':([4,6,26,],[9,11,31,]),'VAR':([5,9,11,31,],[10,12,14,33,]),'ELSE':([7,13,17,18,19,20,21,27,],[-14,-13,-11,-11,25,-11,25,-12,]),')':([12,14,33,],[15,16,34,]),}
+_lr_action_items = {'$end':([0,1,2,3,7,11,14,24,25,28,29,],[-2,0,-1,-2,-3,-2,-4,-2,-2,-6,-5,]),'CONST':([0,3,11,15,16,22,24,25,31,],[3,3,3,3,3,3,3,3,3,]),'$':([0,3,8,11,12,13,15,16,22,24,25,30,31,],[4,4,11,4,15,16,4,4,4,4,4,31,4,]),'IF':([0,3,11,15,16,22,24,25,31,],[5,5,5,5,5,5,5,5,5,]),'FOR':([0,3,11,15,16,22,24,25,31,],[6,6,6,6,6,6,6,6,6,]),'ELSE':([3,7,11,14,15,17,24,25,28,29,],[-2,-3,-2,-4,-2,22,-2,-2,-6,-5,]),'ELSEIF':([3,7,11,14,15,17,24,25,28,29,31,32,],[-2,-3,-2,-4,-2,23,-2,-2,-6,-5,-2,23,]),'ENDIF':([3,7,11,14,15,17,19,20,21,22,24,25,26,28,29,31,32,33,],[-2,-3,-2,-4,-2,-7,25,-8,-9,-2,-2,-2,-10,-6,-5,-2,-11,-12,]),'ENDFOR':([3,7,11,14,16,18,24,25,28,29,],[-2,-3,-2,-4,-2,24,-2,-2,-6,-5,]),'VAR':([4,5,6,23,],[8,9,10,27,]),')':([9,10,27,],[12,13,30,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'prog':([0,],[1,]),'comandos':([0,3,25,35,],[2,8,30,36,]),'terminator':([0,3,17,18,20,25,35,],[3,3,20,20,20,3,3,]),'content':([17,18,20,],[19,21,27,]),'condition':([19,21,],[22,28,]),'condition_sing':([19,21,],[23,23,]),'condition_rec':([19,21,36,],[24,24,37,]),}
+_lr_goto_items = {'prog':([0,],[1,]),'comandos':([0,3,11,15,16,22,24,25,31,],[2,7,14,17,18,26,28,29,32,]),'alternative':([17,],[19,]),'condition_sing':([17,],[20,]),'condition_rec':([17,32,],[21,33,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -29,16 +29,14 @@ _lr_productions = [
   ("S' -> prog","S'",1,None,None,None),
   ('prog -> comandos','prog',1,'p_grammar','main.py',158),
   ('comandos -> <empty>','comandos',0,'p_grammar','main.py',160),
-  ('comandos -> terminator comandos','comandos',2,'p_grammar','main.py',161),
-  ('comandos -> IF ( VAR ) $ content condition ENDIF','comandos',8,'p_grammar','main.py',162),
-  ('comandos -> FOR ( VAR ) $ content condition ENDFOR','comandos',8,'p_grammar','main.py',163),
-  ('condition -> condition_sing','condition',1,'p_grammar','main.py',165),
-  ('condition -> condition_rec','condition',1,'p_grammar','main.py',166),
-  ('condition_sing -> ELSE comandos','condition_sing',2,'p_grammar','main.py',169),
-  ('condition_rec -> <empty>','condition_rec',0,'p_grammar','main.py',171),
-  ('condition_rec -> ELSEIF ( VAR ) $ comandos condition_rec','condition_rec',7,'p_grammar','main.py',172),
-  ('content -> <empty>','content',0,'p_grammar','main.py',174),
-  ('content -> terminator content','content',2,'p_grammar','main.py',175),
-  ('terminator -> $ VAR $','terminator',3,'p_grammar','main.py',177),
-  ('terminator -> CONST','terminator',1,'p_grammar','main.py',178),
+  ('comandos -> CONST comandos','comandos',2,'p_grammar','main.py',161),
+  ('comandos -> $ VAR $ comandos','comandos',4,'p_grammar','main.py',162),
+  ('comandos -> IF VAR ) $ comandos alternative ENDIF comandos','comandos',8,'p_grammar','main.py',163),
+  ('comandos -> FOR VAR ) $ comandos ENDFOR comandos','comandos',7,'p_grammar','main.py',164),
+  ('alternative -> <empty>','alternative',0,'p_grammar','main.py',166),
+  ('alternative -> condition_sing','alternative',1,'p_grammar','main.py',167),
+  ('alternative -> condition_rec','alternative',1,'p_grammar','main.py',168),
+  ('condition_sing -> ELSE comandos','condition_sing',2,'p_grammar','main.py',170),
+  ('condition_rec -> <empty>','condition_rec',0,'p_grammar','main.py',172),
+  ('condition_rec -> ELSEIF VAR ) $ comandos condition_rec','condition_rec',6,'p_grammar','main.py',173),
 ]

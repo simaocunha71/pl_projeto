@@ -56,27 +56,27 @@ t_ignore = "\n\t\r "
 # LEXICO
 
 def t_IF(t):
-    r'$if'
+    r'\$if\('
     return t
 
 def t_ENDIF(t):
-    r'$endif$'
+    r'\$endif\$'
     return t
 
 def t_ELSEIF(t):
-    r'$elseif'
+    r'\$elseif\('
     return t
 
 def t_ELSE(t):
-    r'$else$'
+    r'\$else\$'
     return t
 
 def t_FOR(t):
-    r'$for'
+    r'\$for\('
     return t
 
 def t_ENDFOR(t):
-    r'$endfor$'
+    r'\$endfor\$'
     return t
 
 def t_VAR(t):
@@ -88,7 +88,7 @@ def t_CONST(t):
     return t
 
 def t_error(t):
-    print("Ta Mal", t.value[0])
+    print("Ta Mal", t)
 
 
 
@@ -107,11 +107,11 @@ def p_comandos_terminator(p):
   print("p2")
 
 def p_comandos_if(p):
-  "comandos : IF '(' VAR ')' '$' terminator condition  ENDIF"
+  "comandos : '$' IF '(' VAR ')' '$' terminator condition  '$' ENDIF '$'"
   print("p3")
 
 def p_comandos_for(p):
-  "comandos : FOR '(' VAR ')' '$' condition ENDFOR"
+  "comandos : '$' FOR '(' VAR ')' '$'  condition  '$' ENDFOR '$'"
   print("p4")
 
 def p_condition_vazio(p):
@@ -158,24 +158,22 @@ def p_grammar(p):
     prog : comandos
 
     comandos : 
-             | terminator comandos
-             | IF '(' VAR ')' '$' content condition ENDIF 
-             | FOR '(' VAR ')' '$' content condition ENDFOR 
+            | CONST comandos
+            | '$' VAR '$' comandos
+            | IF VAR ')' '$' comandos alternative ENDIF comandos
+            | FOR VAR ')' '$' comandos ENDFOR comandos
 
-    condition : condition_sing
-              | condition_rec
-
+    alternative :
+            | condition_sing
+            | condition_rec
 
     condition_sing : ELSE comandos
 
     condition_rec :
-                  | ELSEIF '('  VAR  ')' '$'  comandos condition_rec
-
-    content :
-            | terminator content
-
-    terminator : '$' VAR '$' 
-                | CONST
+                  | ELSEIF VAR  ')' '$'  comandos condition_rec
+           
+    
+               
       """
 
 def p_error(p):
@@ -188,12 +186,19 @@ parser = yacc.yacc()
 import sys
 
 
-
+#print("$if(titleblock)$\n$titleblock$\n\n$endif$")
 f = open("templates_teste/template_md.txt", "r")
 
 lines = f.read()
 
-line = "$if(titleblock)$\n$titleblock$\n\n$endif$"
+line ="""  $if(titleblock)$
+$titleblock$
+
+$endif$
+$for(header-includes)$
+$header-includes$
+
+$endfor$ """
 
 lexer.input(lines)
 #for tok in lexer:
@@ -203,6 +208,6 @@ lexer.input(lines)
 
 #parser.parse(lines)
 
-parser.parse(line)
+parser.parse(lines)
 
 f.close()

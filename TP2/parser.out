@@ -5,35 +5,35 @@ Grammar
 Rule 0     S' -> prog
 Rule 1     prog -> comandos
 Rule 2     comandos -> <empty>
-Rule 3     comandos -> CONST comandos
-Rule 4     comandos -> $ VAR $ comandos
-Rule 5     comandos -> IF VAR ) $ comandos alternative ENDIF comandos
-Rule 6     comandos -> FOR VAR ) $ comandos ENDFOR comandos
-Rule 7     alternative -> <empty>
+Rule 3     comandos -> comandos VARIABLE
+Rule 4     comandos -> comandos WORD
+Rule 5     comandos -> comandos CONST
+Rule 6     comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF
+Rule 7     comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR
 Rule 8     alternative -> condition_sing
 Rule 9     alternative -> condition_rec
 Rule 10    condition_sing -> ELSE comandos
 Rule 11    condition_rec -> <empty>
-Rule 12    condition_rec -> ELSEIF VAR ) $ comandos condition_rec
+Rule 12    condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos
 
 Terminals, with rules where they appear
 
-$                    : 4 4 5 6 12
-)                    : 5 6 12
-CONST                : 3
+CONST                : 5
 ELSE                 : 10
 ELSEIF               : 12
-ENDFOR               : 6
-ENDIF                : 5
-FOR                  : 6
-IF                   : 5
-VAR                  : 4 5 6 12
+ENDCONDITION         : 6 7 12
+ENDFOR               : 7
+ENDIF                : 6
+FOR                  : 7
+IF                   : 6
+VARIABLE             : 3
+WORD                 : 4 6 7 12
 error                : 
 
 Nonterminals, with rules where they appear
 
-alternative          : 5
-comandos             : 1 3 4 5 5 6 6 10 12
+alternative          : 6
+comandos             : 1 3 4 5 6 6 7 7 10 12
 condition_rec        : 9 12
 condition_sing       : 8
 prog                 : 0
@@ -45,16 +45,18 @@ state 0
     (0) S' -> . prog
     (1) prog -> . comandos
     (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
+    (3) comandos -> . comandos VARIABLE
+    (4) comandos -> . comandos WORD
+    (5) comandos -> . comandos CONST
+    (6) comandos -> . comandos IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> . comandos FOR WORD ENDCONDITION comandos ENDFOR
 
+    VARIABLE        reduce using rule 2 (comandos -> .)
+    WORD            reduce using rule 2 (comandos -> .)
+    CONST           reduce using rule 2 (comandos -> .)
+    IF              reduce using rule 2 (comandos -> .)
+    FOR             reduce using rule 2 (comandos -> .)
     $end            reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
 
     prog                           shift and go to state 1
     comandos                       shift and go to state 2
@@ -68,361 +70,319 @@ state 1
 state 2
 
     (1) prog -> comandos .
+    (3) comandos -> comandos . VARIABLE
+    (4) comandos -> comandos . WORD
+    (5) comandos -> comandos . CONST
+    (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
 
     $end            reduce using rule 1 (prog -> comandos .)
+    VARIABLE        shift and go to state 3
+    WORD            shift and go to state 4
+    CONST           shift and go to state 5
+    IF              shift and go to state 6
+    FOR             shift and go to state 7
 
 
 state 3
 
-    (3) comandos -> CONST . comandos
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
+    (3) comandos -> comandos VARIABLE .
 
-    $end            reduce using rule 2 (comandos -> .)
-    ELSE            reduce using rule 2 (comandos -> .)
-    ELSEIF          reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
-    ENDFOR          reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
+    VARIABLE        reduce using rule 3 (comandos -> comandos VARIABLE .)
+    WORD            reduce using rule 3 (comandos -> comandos VARIABLE .)
+    CONST           reduce using rule 3 (comandos -> comandos VARIABLE .)
+    IF              reduce using rule 3 (comandos -> comandos VARIABLE .)
+    FOR             reduce using rule 3 (comandos -> comandos VARIABLE .)
+    $end            reduce using rule 3 (comandos -> comandos VARIABLE .)
+    ELSE            reduce using rule 3 (comandos -> comandos VARIABLE .)
+    ENDIF           reduce using rule 3 (comandos -> comandos VARIABLE .)
+    ELSEIF          reduce using rule 3 (comandos -> comandos VARIABLE .)
+    ENDFOR          reduce using rule 3 (comandos -> comandos VARIABLE .)
 
-    comandos                       shift and go to state 7
 
 state 4
 
-    (4) comandos -> $ . VAR $ comandos
+    (4) comandos -> comandos WORD .
 
-    VAR             shift and go to state 8
+    VARIABLE        reduce using rule 4 (comandos -> comandos WORD .)
+    WORD            reduce using rule 4 (comandos -> comandos WORD .)
+    CONST           reduce using rule 4 (comandos -> comandos WORD .)
+    IF              reduce using rule 4 (comandos -> comandos WORD .)
+    FOR             reduce using rule 4 (comandos -> comandos WORD .)
+    $end            reduce using rule 4 (comandos -> comandos WORD .)
+    ELSE            reduce using rule 4 (comandos -> comandos WORD .)
+    ENDIF           reduce using rule 4 (comandos -> comandos WORD .)
+    ELSEIF          reduce using rule 4 (comandos -> comandos WORD .)
+    ENDFOR          reduce using rule 4 (comandos -> comandos WORD .)
 
 
 state 5
 
-    (5) comandos -> IF . VAR ) $ comandos alternative ENDIF comandos
+    (5) comandos -> comandos CONST .
 
-    VAR             shift and go to state 9
+    VARIABLE        reduce using rule 5 (comandos -> comandos CONST .)
+    WORD            reduce using rule 5 (comandos -> comandos CONST .)
+    CONST           reduce using rule 5 (comandos -> comandos CONST .)
+    IF              reduce using rule 5 (comandos -> comandos CONST .)
+    FOR             reduce using rule 5 (comandos -> comandos CONST .)
+    $end            reduce using rule 5 (comandos -> comandos CONST .)
+    ELSE            reduce using rule 5 (comandos -> comandos CONST .)
+    ENDIF           reduce using rule 5 (comandos -> comandos CONST .)
+    ELSEIF          reduce using rule 5 (comandos -> comandos CONST .)
+    ENDFOR          reduce using rule 5 (comandos -> comandos CONST .)
 
 
 state 6
 
-    (6) comandos -> FOR . VAR ) $ comandos ENDFOR comandos
+    (6) comandos -> comandos IF . WORD ENDCONDITION comandos alternative ENDIF
 
-    VAR             shift and go to state 10
+    WORD            shift and go to state 8
 
 
 state 7
 
-    (3) comandos -> CONST comandos .
+    (7) comandos -> comandos FOR . WORD ENDCONDITION comandos ENDFOR
 
-    $end            reduce using rule 3 (comandos -> CONST comandos .)
-    ELSE            reduce using rule 3 (comandos -> CONST comandos .)
-    ELSEIF          reduce using rule 3 (comandos -> CONST comandos .)
-    ENDIF           reduce using rule 3 (comandos -> CONST comandos .)
-    ENDFOR          reduce using rule 3 (comandos -> CONST comandos .)
+    WORD            shift and go to state 9
 
 
 state 8
 
-    (4) comandos -> $ VAR . $ comandos
+    (6) comandos -> comandos IF WORD . ENDCONDITION comandos alternative ENDIF
 
-    $               shift and go to state 11
+    ENDCONDITION    shift and go to state 10
 
 
 state 9
 
-    (5) comandos -> IF VAR . ) $ comandos alternative ENDIF comandos
+    (7) comandos -> comandos FOR WORD . ENDCONDITION comandos ENDFOR
 
-    )               shift and go to state 12
+    ENDCONDITION    shift and go to state 11
 
 
 state 10
 
-    (6) comandos -> FOR VAR . ) $ comandos ENDFOR comandos
+    (6) comandos -> comandos IF WORD ENDCONDITION . comandos alternative ENDIF
+    (2) comandos -> .
+    (3) comandos -> . comandos VARIABLE
+    (4) comandos -> . comandos WORD
+    (5) comandos -> . comandos CONST
+    (6) comandos -> . comandos IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> . comandos FOR WORD ENDCONDITION comandos ENDFOR
 
-    )               shift and go to state 13
+    VARIABLE        reduce using rule 2 (comandos -> .)
+    WORD            reduce using rule 2 (comandos -> .)
+    CONST           reduce using rule 2 (comandos -> .)
+    IF              reduce using rule 2 (comandos -> .)
+    FOR             reduce using rule 2 (comandos -> .)
+    ELSE            reduce using rule 2 (comandos -> .)
+    ENDIF           reduce using rule 2 (comandos -> .)
+    ELSEIF          reduce using rule 2 (comandos -> .)
 
+    comandos                       shift and go to state 12
 
 state 11
 
-    (4) comandos -> $ VAR $ . comandos
+    (7) comandos -> comandos FOR WORD ENDCONDITION . comandos ENDFOR
     (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
+    (3) comandos -> . comandos VARIABLE
+    (4) comandos -> . comandos WORD
+    (5) comandos -> . comandos CONST
+    (6) comandos -> . comandos IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> . comandos FOR WORD ENDCONDITION comandos ENDFOR
 
-    $end            reduce using rule 2 (comandos -> .)
-    ELSE            reduce using rule 2 (comandos -> .)
-    ELSEIF          reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
     ENDFOR          reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
+    VARIABLE        reduce using rule 2 (comandos -> .)
+    WORD            reduce using rule 2 (comandos -> .)
+    CONST           reduce using rule 2 (comandos -> .)
+    IF              reduce using rule 2 (comandos -> .)
+    FOR             reduce using rule 2 (comandos -> .)
 
-    comandos                       shift and go to state 14
+    comandos                       shift and go to state 13
 
 state 12
 
-    (5) comandos -> IF VAR ) . $ comandos alternative ENDIF comandos
-
-    $               shift and go to state 15
-
-
-state 13
-
-    (6) comandos -> FOR VAR ) . $ comandos ENDFOR comandos
-
-    $               shift and go to state 16
-
-
-state 14
-
-    (4) comandos -> $ VAR $ comandos .
-
-    $end            reduce using rule 4 (comandos -> $ VAR $ comandos .)
-    ELSE            reduce using rule 4 (comandos -> $ VAR $ comandos .)
-    ELSEIF          reduce using rule 4 (comandos -> $ VAR $ comandos .)
-    ENDIF           reduce using rule 4 (comandos -> $ VAR $ comandos .)
-    ENDFOR          reduce using rule 4 (comandos -> $ VAR $ comandos .)
-
-
-state 15
-
-    (5) comandos -> IF VAR ) $ . comandos alternative ENDIF comandos
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
-
-    ELSE            reduce using rule 2 (comandos -> .)
-    ELSEIF          reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
-
-    comandos                       shift and go to state 17
-
-state 16
-
-    (6) comandos -> FOR VAR ) $ . comandos ENDFOR comandos
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
-
-    ENDFOR          reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
-
-    comandos                       shift and go to state 18
-
-state 17
-
-    (5) comandos -> IF VAR ) $ comandos . alternative ENDIF comandos
-    (7) alternative -> .
+    (6) comandos -> comandos IF WORD ENDCONDITION comandos . alternative ENDIF
+    (3) comandos -> comandos . VARIABLE
+    (4) comandos -> comandos . WORD
+    (5) comandos -> comandos . CONST
+    (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
     (8) alternative -> . condition_sing
     (9) alternative -> . condition_rec
     (10) condition_sing -> . ELSE comandos
     (11) condition_rec -> .
-    (12) condition_rec -> . ELSEIF VAR ) $ comandos condition_rec
+    (12) condition_rec -> . condition_rec ELSEIF WORD ENDCONDITION comandos
 
-  ! reduce/reduce conflict for ENDIF resolved using rule 7 (alternative -> .)
-    ENDIF           reduce using rule 7 (alternative -> .)
-    ELSE            shift and go to state 22
-    ELSEIF          shift and go to state 23
+    VARIABLE        shift and go to state 3
+    WORD            shift and go to state 4
+    CONST           shift and go to state 5
+    IF              shift and go to state 6
+    FOR             shift and go to state 7
+    ELSE            shift and go to state 17
+    ELSEIF          reduce using rule 11 (condition_rec -> .)
+    ENDIF           reduce using rule 11 (condition_rec -> .)
 
-  ! ENDIF           [ reduce using rule 11 (condition_rec -> .) ]
+    alternative                    shift and go to state 14
+    condition_sing                 shift and go to state 15
+    condition_rec                  shift and go to state 16
 
-    alternative                    shift and go to state 19
-    condition_sing                 shift and go to state 20
-    condition_rec                  shift and go to state 21
+state 13
 
-state 18
+    (7) comandos -> comandos FOR WORD ENDCONDITION comandos . ENDFOR
+    (3) comandos -> comandos . VARIABLE
+    (4) comandos -> comandos . WORD
+    (5) comandos -> comandos . CONST
+    (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
 
-    (6) comandos -> FOR VAR ) $ comandos . ENDFOR comandos
-
-    ENDFOR          shift and go to state 24
-
-
-state 19
-
-    (5) comandos -> IF VAR ) $ comandos alternative . ENDIF comandos
-
-    ENDIF           shift and go to state 25
+    ENDFOR          shift and go to state 18
+    VARIABLE        shift and go to state 3
+    WORD            shift and go to state 4
+    CONST           shift and go to state 5
+    IF              shift and go to state 6
+    FOR             shift and go to state 7
 
 
-state 20
+state 14
+
+    (6) comandos -> comandos IF WORD ENDCONDITION comandos alternative . ENDIF
+
+    ENDIF           shift and go to state 19
+
+
+state 15
 
     (8) alternative -> condition_sing .
 
     ENDIF           reduce using rule 8 (alternative -> condition_sing .)
 
 
-state 21
+state 16
 
     (9) alternative -> condition_rec .
+    (12) condition_rec -> condition_rec . ELSEIF WORD ENDCONDITION comandos
 
     ENDIF           reduce using rule 9 (alternative -> condition_rec .)
+    ELSEIF          shift and go to state 20
+
+
+state 17
+
+    (10) condition_sing -> ELSE . comandos
+    (2) comandos -> .
+    (3) comandos -> . comandos VARIABLE
+    (4) comandos -> . comandos WORD
+    (5) comandos -> . comandos CONST
+    (6) comandos -> . comandos IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> . comandos FOR WORD ENDCONDITION comandos ENDFOR
+
+    VARIABLE        reduce using rule 2 (comandos -> .)
+    WORD            reduce using rule 2 (comandos -> .)
+    CONST           reduce using rule 2 (comandos -> .)
+    IF              reduce using rule 2 (comandos -> .)
+    FOR             reduce using rule 2 (comandos -> .)
+    ENDIF           reduce using rule 2 (comandos -> .)
+
+    comandos                       shift and go to state 21
+
+state 18
+
+    (7) comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .
+
+    VARIABLE        reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    WORD            reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    CONST           reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    IF              reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    FOR             reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    $end            reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    ELSE            reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    ENDIF           reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    ELSEIF          reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    ENDFOR          reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+
+
+state 19
+
+    (6) comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .
+
+    VARIABLE        reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    WORD            reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    CONST           reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    IF              reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    FOR             reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    $end            reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    ELSE            reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    ENDIF           reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    ELSEIF          reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    ENDFOR          reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+
+
+state 20
+
+    (12) condition_rec -> condition_rec ELSEIF . WORD ENDCONDITION comandos
+
+    WORD            shift and go to state 22
+
+
+state 21
+
+    (10) condition_sing -> ELSE comandos .
+    (3) comandos -> comandos . VARIABLE
+    (4) comandos -> comandos . WORD
+    (5) comandos -> comandos . CONST
+    (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
+
+    ENDIF           reduce using rule 10 (condition_sing -> ELSE comandos .)
+    VARIABLE        shift and go to state 3
+    WORD            shift and go to state 4
+    CONST           shift and go to state 5
+    IF              shift and go to state 6
+    FOR             shift and go to state 7
 
 
 state 22
 
-    (10) condition_sing -> ELSE . comandos
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
+    (12) condition_rec -> condition_rec ELSEIF WORD . ENDCONDITION comandos
 
-    ENDIF           reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
+    ENDCONDITION    shift and go to state 23
 
-    comandos                       shift and go to state 26
 
 state 23
 
-    (12) condition_rec -> ELSEIF . VAR ) $ comandos condition_rec
+    (12) condition_rec -> condition_rec ELSEIF WORD ENDCONDITION . comandos
+    (2) comandos -> .
+    (3) comandos -> . comandos VARIABLE
+    (4) comandos -> . comandos WORD
+    (5) comandos -> . comandos CONST
+    (6) comandos -> . comandos IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> . comandos FOR WORD ENDCONDITION comandos ENDFOR
 
-    VAR             shift and go to state 27
+    VARIABLE        reduce using rule 2 (comandos -> .)
+    WORD            reduce using rule 2 (comandos -> .)
+    CONST           reduce using rule 2 (comandos -> .)
+    IF              reduce using rule 2 (comandos -> .)
+    FOR             reduce using rule 2 (comandos -> .)
+    ELSEIF          reduce using rule 2 (comandos -> .)
+    ENDIF           reduce using rule 2 (comandos -> .)
 
+    comandos                       shift and go to state 24
 
 state 24
 
-    (6) comandos -> FOR VAR ) $ comandos ENDFOR . comandos
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
+    (12) condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos .
+    (3) comandos -> comandos . VARIABLE
+    (4) comandos -> comandos . WORD
+    (5) comandos -> comandos . CONST
+    (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
+    (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
 
-    $end            reduce using rule 2 (comandos -> .)
-    ELSE            reduce using rule 2 (comandos -> .)
-    ELSEIF          reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
-    ENDFOR          reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
+    ELSEIF          reduce using rule 12 (condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos .)
+    ENDIF           reduce using rule 12 (condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos .)
+    VARIABLE        shift and go to state 3
+    WORD            shift and go to state 4
+    CONST           shift and go to state 5
+    IF              shift and go to state 6
+    FOR             shift and go to state 7
 
-    comandos                       shift and go to state 28
-
-state 25
-
-    (5) comandos -> IF VAR ) $ comandos alternative ENDIF . comandos
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
-
-    $end            reduce using rule 2 (comandos -> .)
-    ELSE            reduce using rule 2 (comandos -> .)
-    ELSEIF          reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
-    ENDFOR          reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
-
-    comandos                       shift and go to state 29
-
-state 26
-
-    (10) condition_sing -> ELSE comandos .
-
-    ENDIF           reduce using rule 10 (condition_sing -> ELSE comandos .)
-
-
-state 27
-
-    (12) condition_rec -> ELSEIF VAR . ) $ comandos condition_rec
-
-    )               shift and go to state 30
-
-
-state 28
-
-    (6) comandos -> FOR VAR ) $ comandos ENDFOR comandos .
-
-    $end            reduce using rule 6 (comandos -> FOR VAR ) $ comandos ENDFOR comandos .)
-    ELSE            reduce using rule 6 (comandos -> FOR VAR ) $ comandos ENDFOR comandos .)
-    ELSEIF          reduce using rule 6 (comandos -> FOR VAR ) $ comandos ENDFOR comandos .)
-    ENDIF           reduce using rule 6 (comandos -> FOR VAR ) $ comandos ENDFOR comandos .)
-    ENDFOR          reduce using rule 6 (comandos -> FOR VAR ) $ comandos ENDFOR comandos .)
-
-
-state 29
-
-    (5) comandos -> IF VAR ) $ comandos alternative ENDIF comandos .
-
-    $end            reduce using rule 5 (comandos -> IF VAR ) $ comandos alternative ENDIF comandos .)
-    ELSE            reduce using rule 5 (comandos -> IF VAR ) $ comandos alternative ENDIF comandos .)
-    ELSEIF          reduce using rule 5 (comandos -> IF VAR ) $ comandos alternative ENDIF comandos .)
-    ENDIF           reduce using rule 5 (comandos -> IF VAR ) $ comandos alternative ENDIF comandos .)
-    ENDFOR          reduce using rule 5 (comandos -> IF VAR ) $ comandos alternative ENDIF comandos .)
-
-
-state 30
-
-    (12) condition_rec -> ELSEIF VAR ) . $ comandos condition_rec
-
-    $               shift and go to state 31
-
-
-state 31
-
-    (12) condition_rec -> ELSEIF VAR ) $ . comandos condition_rec
-    (2) comandos -> .
-    (3) comandos -> . CONST comandos
-    (4) comandos -> . $ VAR $ comandos
-    (5) comandos -> . IF VAR ) $ comandos alternative ENDIF comandos
-    (6) comandos -> . FOR VAR ) $ comandos ENDFOR comandos
-
-    ELSEIF          reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
-    CONST           shift and go to state 3
-    $               shift and go to state 4
-    IF              shift and go to state 5
-    FOR             shift and go to state 6
-
-    comandos                       shift and go to state 32
-
-state 32
-
-    (12) condition_rec -> ELSEIF VAR ) $ comandos . condition_rec
-    (11) condition_rec -> .
-    (12) condition_rec -> . ELSEIF VAR ) $ comandos condition_rec
-
-    ENDIF           reduce using rule 11 (condition_rec -> .)
-    ELSEIF          shift and go to state 23
-
-    condition_rec                  shift and go to state 33
-
-state 33
-
-    (12) condition_rec -> ELSEIF VAR ) $ comandos condition_rec .
-
-    ENDIF           reduce using rule 12 (condition_rec -> ELSEIF VAR ) $ comandos condition_rec .)
-
-WARNING: 
-WARNING: Conflicts:
-WARNING: 
-WARNING: reduce/reduce conflict in state 17 resolved using rule (alternative -> <empty>)
-WARNING: rejected rule (condition_rec -> <empty>) in state 17

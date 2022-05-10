@@ -14,28 +14,29 @@ Rule 8     alternative -> condition_sing
 Rule 9     alternative -> condition_rec
 Rule 10    condition_sing -> ELSE comandos
 Rule 11    condition_rec -> <empty>
-Rule 12    condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos
+Rule 12    condition_rec -> ELSEIF WORD ENDCONDITION comandos condition_rec
+Rule 13    condition_rec -> ELSEIF WORD ENDCONDITION comandos condition_sing
 
 Terminals, with rules where they appear
 
 CONST                : 5
 ELSE                 : 10
-ELSEIF               : 12
-ENDCONDITION         : 6 7 12
+ELSEIF               : 12 13
+ENDCONDITION         : 6 7 12 13
 ENDFOR               : 7
 ENDIF                : 6
 FOR                  : 7
 IF                   : 6
 VARIABLE             : 3
-WORD                 : 4 6 7 12
+WORD                 : 4 6 7 12 13
 error                : 
 
 Nonterminals, with rules where they appear
 
 alternative          : 6
-comandos             : 1 3 4 5 6 6 7 7 10 12
+comandos             : 1 3 4 5 6 6 7 7 10 12 13
 condition_rec        : 9 12
-condition_sing       : 8
+condition_sing       : 8 13
 prog                 : 0
 
 Parsing method: LALR
@@ -95,8 +96,8 @@ state 3
     FOR             reduce using rule 3 (comandos -> comandos VARIABLE .)
     $end            reduce using rule 3 (comandos -> comandos VARIABLE .)
     ELSE            reduce using rule 3 (comandos -> comandos VARIABLE .)
-    ENDIF           reduce using rule 3 (comandos -> comandos VARIABLE .)
     ELSEIF          reduce using rule 3 (comandos -> comandos VARIABLE .)
+    ENDIF           reduce using rule 3 (comandos -> comandos VARIABLE .)
     ENDFOR          reduce using rule 3 (comandos -> comandos VARIABLE .)
 
 
@@ -111,8 +112,8 @@ state 4
     FOR             reduce using rule 4 (comandos -> comandos WORD .)
     $end            reduce using rule 4 (comandos -> comandos WORD .)
     ELSE            reduce using rule 4 (comandos -> comandos WORD .)
-    ENDIF           reduce using rule 4 (comandos -> comandos WORD .)
     ELSEIF          reduce using rule 4 (comandos -> comandos WORD .)
+    ENDIF           reduce using rule 4 (comandos -> comandos WORD .)
     ENDFOR          reduce using rule 4 (comandos -> comandos WORD .)
 
 
@@ -127,8 +128,8 @@ state 5
     FOR             reduce using rule 5 (comandos -> comandos CONST .)
     $end            reduce using rule 5 (comandos -> comandos CONST .)
     ELSE            reduce using rule 5 (comandos -> comandos CONST .)
-    ENDIF           reduce using rule 5 (comandos -> comandos CONST .)
     ELSEIF          reduce using rule 5 (comandos -> comandos CONST .)
+    ENDIF           reduce using rule 5 (comandos -> comandos CONST .)
     ENDFOR          reduce using rule 5 (comandos -> comandos CONST .)
 
 
@@ -176,8 +177,8 @@ state 10
     IF              reduce using rule 2 (comandos -> .)
     FOR             reduce using rule 2 (comandos -> .)
     ELSE            reduce using rule 2 (comandos -> .)
-    ENDIF           reduce using rule 2 (comandos -> .)
     ELSEIF          reduce using rule 2 (comandos -> .)
+    ENDIF           reduce using rule 2 (comandos -> .)
 
     comandos                       shift and go to state 12
 
@@ -212,7 +213,8 @@ state 12
     (9) alternative -> . condition_rec
     (10) condition_sing -> . ELSE comandos
     (11) condition_rec -> .
-    (12) condition_rec -> . condition_rec ELSEIF WORD ENDCONDITION comandos
+    (12) condition_rec -> . ELSEIF WORD ENDCONDITION comandos condition_rec
+    (13) condition_rec -> . ELSEIF WORD ENDCONDITION comandos condition_sing
 
     VARIABLE        shift and go to state 3
     WORD            shift and go to state 4
@@ -220,8 +222,8 @@ state 12
     IF              shift and go to state 6
     FOR             shift and go to state 7
     ELSE            shift and go to state 17
-    ELSEIF          reduce using rule 11 (condition_rec -> .)
     ENDIF           reduce using rule 11 (condition_rec -> .)
+    ELSEIF          shift and go to state 18
 
     alternative                    shift and go to state 14
     condition_sing                 shift and go to state 15
@@ -236,7 +238,7 @@ state 13
     (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
     (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
 
-    ENDFOR          shift and go to state 18
+    ENDFOR          shift and go to state 19
     VARIABLE        shift and go to state 3
     WORD            shift and go to state 4
     CONST           shift and go to state 5
@@ -248,7 +250,7 @@ state 14
 
     (6) comandos -> comandos IF WORD ENDCONDITION comandos alternative . ENDIF
 
-    ENDIF           shift and go to state 19
+    ENDIF           shift and go to state 20
 
 
 state 15
@@ -261,10 +263,8 @@ state 15
 state 16
 
     (9) alternative -> condition_rec .
-    (12) condition_rec -> condition_rec . ELSEIF WORD ENDCONDITION comandos
 
     ENDIF           reduce using rule 9 (alternative -> condition_rec .)
-    ELSEIF          shift and go to state 20
 
 
 state 17
@@ -288,6 +288,14 @@ state 17
 
 state 18
 
+    (12) condition_rec -> ELSEIF . WORD ENDCONDITION comandos condition_rec
+    (13) condition_rec -> ELSEIF . WORD ENDCONDITION comandos condition_sing
+
+    WORD            shift and go to state 22
+
+
+state 19
+
     (7) comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .
 
     VARIABLE        reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
@@ -297,12 +305,12 @@ state 18
     FOR             reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
     $end            reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
     ELSE            reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
-    ENDIF           reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
     ELSEIF          reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
+    ENDIF           reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
     ENDFOR          reduce using rule 7 (comandos -> comandos FOR WORD ENDCONDITION comandos ENDFOR .)
 
 
-state 19
+state 20
 
     (6) comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .
 
@@ -313,16 +321,9 @@ state 19
     FOR             reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
     $end            reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
     ELSE            reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
-    ENDIF           reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
     ELSEIF          reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
+    ENDIF           reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
     ENDFOR          reduce using rule 6 (comandos -> comandos IF WORD ENDCONDITION comandos alternative ENDIF .)
-
-
-state 20
-
-    (12) condition_rec -> condition_rec ELSEIF . WORD ENDCONDITION comandos
-
-    WORD            shift and go to state 22
 
 
 state 21
@@ -344,14 +345,16 @@ state 21
 
 state 22
 
-    (12) condition_rec -> condition_rec ELSEIF WORD . ENDCONDITION comandos
+    (12) condition_rec -> ELSEIF WORD . ENDCONDITION comandos condition_rec
+    (13) condition_rec -> ELSEIF WORD . ENDCONDITION comandos condition_sing
 
     ENDCONDITION    shift and go to state 23
 
 
 state 23
 
-    (12) condition_rec -> condition_rec ELSEIF WORD ENDCONDITION . comandos
+    (12) condition_rec -> ELSEIF WORD ENDCONDITION . comandos condition_rec
+    (13) condition_rec -> ELSEIF WORD ENDCONDITION . comandos condition_sing
     (2) comandos -> .
     (3) comandos -> . comandos VARIABLE
     (4) comandos -> . comandos WORD
@@ -365,24 +368,47 @@ state 23
     IF              reduce using rule 2 (comandos -> .)
     FOR             reduce using rule 2 (comandos -> .)
     ELSEIF          reduce using rule 2 (comandos -> .)
+    ELSE            reduce using rule 2 (comandos -> .)
     ENDIF           reduce using rule 2 (comandos -> .)
 
     comandos                       shift and go to state 24
 
 state 24
 
-    (12) condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos .
+    (12) condition_rec -> ELSEIF WORD ENDCONDITION comandos . condition_rec
+    (13) condition_rec -> ELSEIF WORD ENDCONDITION comandos . condition_sing
     (3) comandos -> comandos . VARIABLE
     (4) comandos -> comandos . WORD
     (5) comandos -> comandos . CONST
     (6) comandos -> comandos . IF WORD ENDCONDITION comandos alternative ENDIF
     (7) comandos -> comandos . FOR WORD ENDCONDITION comandos ENDFOR
+    (11) condition_rec -> .
+    (12) condition_rec -> . ELSEIF WORD ENDCONDITION comandos condition_rec
+    (13) condition_rec -> . ELSEIF WORD ENDCONDITION comandos condition_sing
+    (10) condition_sing -> . ELSE comandos
 
-    ELSEIF          reduce using rule 12 (condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos .)
-    ENDIF           reduce using rule 12 (condition_rec -> condition_rec ELSEIF WORD ENDCONDITION comandos .)
     VARIABLE        shift and go to state 3
     WORD            shift and go to state 4
     CONST           shift and go to state 5
     IF              shift and go to state 6
     FOR             shift and go to state 7
+    ENDIF           reduce using rule 11 (condition_rec -> .)
+    ELSEIF          shift and go to state 18
+    ELSE            shift and go to state 17
+
+    condition_rec                  shift and go to state 25
+    condition_sing                 shift and go to state 26
+
+state 25
+
+    (12) condition_rec -> ELSEIF WORD ENDCONDITION comandos condition_rec .
+
+    ENDIF           reduce using rule 12 (condition_rec -> ELSEIF WORD ENDCONDITION comandos condition_rec .)
+
+
+state 26
+
+    (13) condition_rec -> ELSEIF WORD ENDCONDITION comandos condition_sing .
+
+    ENDIF           reduce using rule 13 (condition_rec -> ELSEIF WORD ENDCONDITION comandos condition_sing .)
 

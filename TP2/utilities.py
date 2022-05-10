@@ -28,3 +28,96 @@ def remove_dolars(string):
     return match.group(1)
   else:
     return string
+
+
+def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
+
+  #caso especial da variavel "it"
+  if variable.split('.')[0] == "it" and not isinstance(condition,bool):
+    variable = re.sub(r'(it)(\.\w)*',condition.split('.')[0]+r'\2',variable)
+
+  if dic_contains(variable,dictionary,condition,type,j):
+    splits = variable.split('.')
+    if isinstance(splits,list):
+      iterations = len(splits)
+
+    i = 0
+    result = dictionary
+    var_append = splits[0]
+    error = False
+    while(i<iterations and not error):
+      if not isinstance(condition,bool):
+        if i > 0:
+          var_append = var_append + "." + splits[i]
+      if var_append == condition:
+        condition = True
+        result = result[splits[i]]
+        if isinstance(result,list):
+          if j < len(result):
+            result = result[j]
+          else:
+            error = True
+      else:
+        result = result[splits[i]]
+      i += 1
+
+    if not error:
+      #lista, se for fora de um ciclo ou for diferente da condicao deste, escreve-se todos os elementos
+      if((isinstance(result,list) and variable != condition) or (isinstance(result,list) and type != 2)):
+        for var in result:
+          file.write(str(var)+" ")
+
+      #lista, se for dentro de um ciclo com a variavel igual a condicao
+                                                    #fazer uma funcao para tratar desta condicao no caso de objetos ou variavel "it"
+      elif(isinstance(result,list) and variable == condition and type == 2):
+          file.write(str(result[j]))
+      #variavel simples
+      else:
+        file.write(str(result))
+
+
+
+
+
+def dic_contains(variable,dictionary,condition = True,type = 0,j = 0):
+  contains = True
+  error = False
+  i = 0
+  iterations = 1
+  #caso especial da variavel "it"
+  if variable.split('.')[0] == "it" and not isinstance(condition,bool):
+    variable = re.sub(r'(it)(\.\w)*',condition.split('.')[0]+r'\2',variable)
+
+  splits = variable.split('.')
+
+  if isinstance(splits,list):
+    iterations = len(splits)
+  dic = dictionary
+  var_append = splits[0]
+  
+  
+  while(contains and i < iterations and not error):
+    if not isinstance(condition,bool):
+      if i > 0:
+        var_append = var_append + "." + splits[i]
+    if var_append == condition:
+      condition = True
+      if dic.__contains__(splits[i]):
+        dic = dic[splits[i]]
+        if isinstance(dic,list):
+          if j < len(dic):
+            dic = dic[j]
+          else:
+            error = True
+      else:
+        contains = False
+    else:
+      if not dic.__contains__(splits[i]):
+        contains = False
+      else:
+        contains = dic.__contains__(splits[i])
+        dic = dic[splits[i]]
+    i += 1
+
+  return contains
+

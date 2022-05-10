@@ -24,11 +24,27 @@ dictionary = {
   'date' : 'today-date',
   'toc' : 'TOC',
   'body' : 'corpo do html',
-  'include-after' : 'include after' 
+  'include-after' : 'include after', 
+  'teste' : {
+    'fixe' : [1,3,5,6],
+    'cool' : 'nice',
+    'porreiro' : [
+      {
+      'another_one' : 'cool1'
+    },
+    {
+      'another_one' : 'cool2'
+    }
+    ]
+  }
 }
 
+#file = sys.stdout
+#print(dic_contains("it.porreiro.another_one",dictionary,"teste.porreiro",2,1))
+#dic_write_var("teste.fixe",dictionary,file,"teste.porreiro",2,0)
+#file.close()
 
-expand_T1("templates_teste/template_md.txt",dictionary,"teste.txt")
+expand_T1("templates_teste/template_html.txt",dictionary,"teste.txt")
 #else: 
 #  sys.exit("Invalid arguments")
 

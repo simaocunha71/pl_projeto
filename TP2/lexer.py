@@ -4,7 +4,7 @@ import ply.lex as lex
 tokens = ["VARIABLE","WORD","CONST","IF","ENDIF","ELSEIF","ELSE","FOR","ENDFOR","ENDCONDITION"]
 literals = ["$", "(", ")", "{", "}", "-", ".", "=",":"]
 
-t_ignore = "\t\r"
+t_ignore = "\r"
 
 
 # LEXICO
@@ -14,7 +14,7 @@ def t_IF(t):
     return t
 
 def t_ENDIF(t):
-    r'\$endif\$'
+    r'\$endif\$(\n)?'
     return t
 
 def t_ELSEIF(t):
@@ -22,7 +22,7 @@ def t_ELSEIF(t):
     return t
 
 def t_ELSE(t):
-    r'\$else\$'
+    r'\$else\$(\n)?'
     return t
 
 def t_FOR(t):
@@ -30,12 +30,12 @@ def t_FOR(t):
     return t
 
 def t_ENDFOR(t):
-    r'\$endfor\$'
+    r'\$endfor\$(\n)?'
     return t
 
 
 def t_ENDCONDITION(t):
-  r'\)\$'
+  r'\)\$(\n)?'
   return t
 
 def t_VARIABLE(t):

@@ -25,6 +25,7 @@ def p_grammar(p):
 """
 
 id = 1
+tabs = 0
 
 def p_prog(p):
   "prog : comandos"
@@ -45,7 +46,8 @@ def p_comandos_WORD(p):
 
 def p_comandos_CONST(p):
   "comandos : comandos CONST"
-  p[0] = p[1] + f'(CONS,"{p[2]}")'  
+  p[0] = p[1] + f'(CONS,"{p[2]}")' 
+
 
 def p_comandos_if(p):
   "comandos : comandos IF WORD ENDCONDITION comandos alternative ENDIF"
@@ -79,7 +81,11 @@ def p_condition_rec_vazio(p):
   p[0] = ""
 
 def p_condition_rec(p):
-  "condition_rec : condition_rec ELSEIF WORD  ENDCONDITION  comandos"
+  "condition_rec : ELSEIF WORD  ENDCONDITION  comandos condition_rec"
+  p[0] = f'(ELSEIF,"{p[3]}")' + p[4] + p[5]
+
+def p_condition_rec_sing(p):
+  "condition_rec : ELSEIF WORD  ENDCONDITION  comandos condition_sing"
   p[0] = f'(ELSEIF,"{p[3]}")' + p[4] + p[5]
 
 

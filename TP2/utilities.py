@@ -30,11 +30,13 @@ def remove_dolars(string):
     return string
 
 
+#funcao que procura uma dada variavel num dicionario e a escreve no ficheiro explicitado
+# apresenta argumentos opcionais para procura da variavel no dicionario e escrita no ficheiro
 def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
 
   #caso especial da variavel "it"
   if variable.split('.')[0] == "it" and not isinstance(condition,bool):
-    variable = re.sub(r'(it)(\.\w)*',condition.split('.')[0]+r'\2',variable)
+    variable = re.sub(r'(it)(\.\w)*',condition +r'\2',variable)
 
   if dic_contains(variable,dictionary,condition,type,j):
     splits = variable.split('.')
@@ -48,11 +50,13 @@ def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
     while(i<iterations and not error):
       if not isinstance(condition,bool):
         if i > 0:
-          var_append = var_append + "." + splits[i]
+          var_append = var_append + "." + splits[i] 
+      #se a variavel for a da condicao e for pedida por um "for", pega apenas
+      # na variavel correspondente a iteracao atual, dada por j
       if var_append == condition:
         condition = True
         result = result[splits[i]]
-        if isinstance(result,list):
+        if isinstance(result,list) and type == 2:
           if j < len(result):
             result = result[j]
           else:
@@ -78,7 +82,9 @@ def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
 
 
 
-
+#funcao utiliada para verificar se uma variavel pertence ao dicionario
+# tem argumentos opcionais para auxilio na procura, caso de "for"
+# neste casos especial, e possivel escolher uma variavel de uma lista
 def dic_contains(variable,dictionary,condition = True,type = 0,j = 0):
   contains = True
   error = False
@@ -100,20 +106,23 @@ def dic_contains(variable,dictionary,condition = True,type = 0,j = 0):
     if not isinstance(condition,bool):
       if i > 0:
         var_append = var_append + "." + splits[i]
+
     if var_append == condition:
       condition = True
       if dic.__contains__(splits[i]):
         dic = dic[splits[i]]
-        if isinstance(dic,list):
+        if isinstance(dic,list) and type == 2:
           if j < len(dic):
             dic = dic[j]
           else:
             error = True
+            contains = False
       else:
         contains = False
     else:
       if not dic.__contains__(splits[i]):
         contains = False
+      # possivel procurar em dicionarios dentro do dicionario
       else:
         contains = dic.__contains__(splits[i])
         dic = dic[splits[i]]

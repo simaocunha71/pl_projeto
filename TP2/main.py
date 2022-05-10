@@ -16,7 +16,7 @@ dictionary = {
   'highlighting-css' : 'h-css',
   'css' : 'css',
   'math' : '1+1',
-  'header-includes' : ['header 1'],
+  'header-includes' : ['header 1','header 2'],
   'include-before' : ['include 1'],
   'title' : 'template',
   'idprefix' : 'prefixo',
@@ -28,8 +28,7 @@ dictionary = {
 }
 
 
-
-expand_T1("templates_teste/template_html.txt",dictionary,"teste.txt")
+expand_T1("templates_teste/template_md.txt",dictionary,"teste.txt")
 #else: 
 #  sys.exit("Invalid arguments")
 

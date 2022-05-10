@@ -1,4 +1,5 @@
 import ply.yacc as yacc
+import expand_T1
 
 """
     
@@ -23,6 +24,8 @@ def p_grammar(p):
            
 """
 
+id = 1
+
 def p_prog(p):
   "prog : comandos"
   p[0] = p[1]
@@ -46,12 +49,16 @@ def p_comandos_CONST(p):
 
 def p_comandos_if(p):
   "comandos : comandos IF WORD ENDCONDITION comandos alternative ENDIF"
-  p[0] = p[1] + f'(IF,"{p[3]}")' + p[5] + p[6] + "(ENDIF)"
+  global id
+  p[0] = p[1] + f'(IF{id},"{p[3]}")' + p[5] + p[6] + f"(ENDIF{id})"
+  id+=1
 
 
 def p_comandos_for(p):
   "comandos : comandos FOR WORD ENDCONDITION comandos ENDFOR "
-  p[0] = p[1] + f'(FOR,"{p[3]}")' + p[5] + p[6] + "(ENDFOR)"
+  global id
+  p[0] = p[1] + f'(FOR{id},"{p[3]}")' + p[5] + p[6] + f"(ENDFOR{id})"
+  id+=1
 
 
 def p_alternative_cond_sing(p):
@@ -78,3 +85,4 @@ def p_condition_rec(p):
 
 def p_error(p):
     print(f"Syntax error! -> {p}")
+    expand_T1.error = True

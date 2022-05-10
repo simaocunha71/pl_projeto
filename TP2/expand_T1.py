@@ -4,60 +4,73 @@ from utilities import *
 from lexer import *
 from syntax import *
 
+error = False
 
-def get_for(tuple_stack,i):
-  endfor = False
+for_regex = r'^(FOR)(\d+)$'
+comp_for = re.compile(for_regex)
+
+if_regex = r'^(IF)(\d+)$'
+comp_if = re.compile(for_regex)
+
+
+
+def get_nest_tuples(tuple_stack,i,instruction):
+  end = False
+  search = ""
   cicle = []
-  while(i<len(tuple_stack) and not endfor):
-    if(tuple_stack[i][0] == "ENDFOR"):
-      endfor = True
+
+  if comp_for.search(instruction):
+    search = f"ENDFOR{comp_for.search(instruction).group(2)}"
+  elif comp_if.search(instruction):
+    search = f"ENDIF{comp_for.search(instruction).group(2)}"
+  else:
+    end = True
+
+  while(i<len(tuple_stack) and not end):
+    if(tuple_stack[i][0] == search):
+      end = True
     else:
       cicle.append(tuple_stack[i])
     i+=1
   return cicle
 
 
-
-def compile_template(tuple_stack, dictionary, file, condition = True):
-  if(isinstance(condition,bool)):
-    validation = True
-  elif(isinstance(condition,list)):
-    if(len(condition) > 0):
-      validation = True
-    else:
-      validation = False
-  else:
-    validation = True
-  i = 0 
+def compile_for(tuple_stack, dictionary, file, condition = True):
+  iterate = 1
+  if dictionary.__contains__(condition):
+    if isinstance(dictionary[condition],list):
+      iterate = len(dictionary[condition])
+  
   j = 0
-  while(i<len(tuple_stack) and validation):
+  while j<iterate: 
+    print(str(j) + " " + condition)
+    compile_template(tuple_stack,dictionary,file,condition,j)
+    j+=1
+
+
+def compile_template(tuple_stack, dictionary, file, condition = True,j=0):
+  i = 0 
+  while i<len(tuple_stack):
     tuple = tuple_stack[i]
-    if(tuple[0] == "CONS"):
+    if tuple[0] == "CONS":
       file.write(tuple[1])
     if(tuple[0] == "VAR"):
-      variable = remove_dolars(tuple[1])
-      if(dictionary[variable]):
-        if(isinstance(dictionary[variable],list)):
-          file.write(dictionary[variable][j])
-          j+=1
-        else:
-          file.write(dictionary[variable])
-    elif(tuple[0] == "FOR"):
-      if dictionary[tuple[1]]:
-        i+=1
-        cicle = get_for(tuple_stack,i)
-        i += len(cicle)
-        compile_template(cicle,dictionary,file,dictionary[tuple[1]])
-    print(condition)
-    if(isinstance(condition,bool)):
-      pass
-    elif(isinstance(condition,list)):
-      if(len(condition) > j):
-        validation = condition[j]  
-      else:
-        validation = False
-    else:
-      validation = False
+        variable = remove_dolars(tuple[1])
+        if dictionary.__contains__(variable):
+          if(isinstance(dictionary[variable],list) and variable != condition):
+            for var in dictionary[variable]:
+              file.write(var)
+          elif(isinstance(dictionary[variable],list) and variable == condition):
+              file.write(dictionary[variable][j])
+          else:
+            file.write(dictionary[variable])
+    elif(comp_for.search(tuple[0])):
+      variable = tuple[1]
+      i+=1
+      cicle = get_nest_tuples(tuple_stack,i,tuple[0])
+      i += len(cicle)
+      if dictionary.__contains__(variable):
+        compile_for(cicle,dictionary,file,tuple[1])
     i+=1
 
 
@@ -78,36 +91,39 @@ def expand_T1(template,dictionary,output=False):
   #Parsing do template para verificar integridade lexica e gramatical
   stack = parser.parse(lines)
 
-  #print(stack)
+  if not error:
+    print("No syntax error")
 
-  #Expressao regular para separar os diferentes tuplos na string stack
-  reg_exp_tuples = r'\((\w+)(,([^(),"]+|"([^"]*|")*"))?\)'
-  compile = re.compile(reg_exp_tuples)
-  matches = compile.finditer(stack)
+    #Expressao regular para separar os diferentes tuplos na string stack
+    reg_exp_tuples = r'\((\w+)(,([^(),"]+|"([^"]*|")*"))?\)'
+    compile = re.compile(reg_exp_tuples)
+    matches = compile.finditer(stack)
 
-  #transforma os diferentes tuplos do tipo string para tuplos
-  tuple_stack = matches_to_tuples(matches)
+    #transforma os diferentes tuplos do tipo string para tuplos
+    tuple_stack = matches_to_tuples(matches)
 
-  
+    
 
-  #for i in tuple_stack:
-  #  print(i)
+    #for i in tuple_stack:
+    #  print(i)
 
-  #variables = {}
-  #for i in tuple_stack:
-  #  if i[0] == "VAR" or i[0] == "IF" or i[0] == "ELSEIF" or i[0] == "FOR":
-  #    variable = remove_dolars(i[1])
-  #    variables[variable] = variable
-  #for v in variables:
-  #  print(v)
+    #variables = {}
+    #for i in tuple_stack:
+    #  if i[0] == "VAR" or i[0] == "IF" or i[0] == "ELSEIF" or i[0] == "FOR":
+    #    variable = remove_dolars(i[1])
+    #    variables[variable] = variable
+    #for v in variables:
+    #  print(v)
 
-  file = sys.stdout
-  if output:
-    file = open(output,'w+',encoding='utf8',errors="surrogateescape")
-  
-  compile_template(tuple_stack, dictionary, file)  
+    file = sys.stdout
+    if output:
+      file = open(output,'w+',encoding='utf8',errors="surrogateescape")
+    
+    compile_template(tuple_stack, dictionary, file)  
 
-  file.close()
+    file.close()
+  else:
+    print("Syntax Error")
 
 
 

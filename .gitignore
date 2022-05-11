@@ -3,3 +3,13 @@ src/files/exemplosStor.json
 src/files/porreiro.json
 src/files/turma-sum.csv
 src/files/turma-sum - Cópia.csv
+TP2/ply/__init__.py
+TP2/ply/__pycache__/__init__.cpython-310.pyc
+TP2/ply/__pycache__/__init__.cpython-38.pyc
+TP2/ply/__pycache__/lex.cpython-310.pyc
+TP2/ply/__pycache__/lex.cpython-38.pyc
+TP2/ply/__pycache__/yacc.cpython-38.pyc
+TP2/ply/CHANGES
+TP2/ply/lex.py
+TP2/ply/LICENSE
+TP2/ply/yacc.py

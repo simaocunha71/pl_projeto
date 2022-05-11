@@ -1,7 +1,25 @@
-import sys
+import sys, re
 from expand_T1 import *
 
-#if(len(sys.argv) == 3):
+template_file = sys.argv[1]
+dictionary_file = sys.argv[2]
+output = sys.argv[3]
+
+yaml_file = open(dictionary_file, 'r', encoding='utf8',errors="surrogateescape")
+re_name_file = r'^((.+)\/)?(?P<fn>(\w+(\.+)))(?P<ext>[yY][aA][mM][lL])$'
+yamlC_match = re.compile(re_name_file)
+
+
+if (yamlC_match.match("yaml")):
+  yaml_to_dict = dictionary_file.safe_load(yaml_file)
+  print(yaml_to_dict)
+  expand_T1(template_file,yaml_to_dict,output)
+else:
+  expand_T1(template_file,dictionary_file,output)
+
+yaml_file.close()
+
+"""
 dictionary = {
   'lang' : 'en',
   'dir' : 'exemplo/exemplo',
@@ -38,15 +56,22 @@ dictionary = {
     ]
   }
 }
+"""
+
 
 #file = sys.stdout
 #print(dic_contains("it.porreiro.another_one",dictionary,"teste.porreiro",2,1))
 #dic_write_var("teste.fixe",dictionary,file,"teste.porreiro",2,0)
 #file.close()
 
-expand_T1("templates_teste/template_html.txt",dictionary,"teste.txt")
+
 #else: 
 #  sys.exit("Invalid arguments")
+
+
+
+
+
 
 
 

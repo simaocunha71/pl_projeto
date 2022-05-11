@@ -1,0 +1,22 @@
+---
+data:
+- name: "Vishvajit"
+  age: 23
+  address: Noida
+  Occupation: Software Developer
+  Skills:
+  - Python
+  - Django
+  - Flask
+  - FastAPI
+  - DRF ( Django Rest Framework )
+- name: "John"
+  age: 30
+  address: UK
+  Occupation: front-end Developer
+  Skills:
+  - HTML
+  - JavaScript
+  - React
+  - Angular
+  - Nodejs

@@ -1,0 +1,37 @@
+author: myself
+author-meta:
+- autor-1
+- autor-2
+body: corpo do html
+css: css
+date: today-date
+date-meta: today
+dir: exemplo/exemplo
+header-includes:
+- header 1
+- header 2
+highlighting-css: h-css
+idprefix: prefixo
+include-after: include after
+include-before:
+- include 1
+keywords: html_template
+lang: en
+math: 1+1
+pagetitle: pagina fixe
+quotes: quote
+sep: ','
+subtitle: subtitulo
+teste:
+  cool: nice
+  fixe:
+  - 1
+  - 3
+  - 5
+  - 6
+  porreiro:
+  - another_one: cool1
+  - another_one: cool2
+title: template
+title-prefix: exemplo
+toc: TOC

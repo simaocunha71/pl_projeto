@@ -1,25 +1,25 @@
 import sys, re
 from expand_T1 import *
+import yaml
 
 template_file = sys.argv[1]
 dictionary_file = sys.argv[2]
 output = sys.argv[3]
 
 yaml_file = open(dictionary_file, 'r', encoding='utf8',errors="surrogateescape")
-re_name_file = r'^((.+)\/)?(?P<fn>(\w+(\.+)))(?P<ext>[yY][aA][mM][lL])$'
+re_name_file = r'^((.+)\\)?(?P<fn>(\w+(\.+)))(?P<ext>[yY][aA][mM][lL])$'
 yamlC_match = re.compile(re_name_file)
 
 
-if (yamlC_match.match("yaml")):
-  yaml_to_dict = dictionary_file.safe_load(yaml_file)
-  print(yaml_to_dict)
+if (yamlC_match.match(dictionary_file)):
+  yaml_to_dict = yaml.safe_load(yaml_file)
   expand_T1(template_file,yaml_to_dict,output)
 else:
   expand_T1(template_file,dictionary_file,output)
 
 yaml_file.close()
 
-"""
+
 dictionary = {
   'lang' : 'en',
   'dir' : 'exemplo/exemplo',
@@ -56,7 +56,7 @@ dictionary = {
     ]
   }
 }
-"""
+
 
 
 #file = sys.stdout

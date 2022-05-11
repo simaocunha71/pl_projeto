@@ -33,7 +33,6 @@ def remove_dolars(string):
 #funcao que procura uma dada variavel num dicionario e a escreve no ficheiro explicitado
 # apresenta argumentos opcionais para procura da variavel no dicionario e escrita no ficheiro
 def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
-
   #caso especial da variavel "it"
   if variable.split('.')[0] == "it" and not isinstance(condition,bool):
     variable = re.sub(r'(it)(\.\w)*',condition +r'\2',variable)

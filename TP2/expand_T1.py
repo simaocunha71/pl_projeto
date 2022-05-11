@@ -182,8 +182,8 @@ def expand_T1(template,dictionary,output=False):
     #  print(v)
 
     file = sys.stdout
-    #if output:
-    #  file = open(output,'w+',encoding='utf8',errors="surrogateescape")
+    if output:
+      file = open(output,'w+',encoding='utf8',errors="surrogateescape")
     
     compile_template(tuple_stack, dictionary, file)  
 

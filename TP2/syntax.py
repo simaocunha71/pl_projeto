@@ -43,9 +43,17 @@ def p_comandos_PARTIAL(p):
   "comandos : comandos PARTIAL"
   p[0] = p[1] +  f'(PARTIAL,"{p[2]}")' 
 
+def p_comandos_PIPE(p):
+  "comandos : comandos PIPE"
+  p[0] = p[1] +  f'(PIPE,"{p[2]}")' 
+
 def p_comandos_WORD(p):
   "comandos : comandos WORD"
   p[0] = p[1] + f'(CONS,"{p[2]}")' 
+
+def p_comandos_comentarios(p):
+  "comandos : comandos COMMENTBEGIN comentarios COMMENTEND"
+  p[0] = p[1]
 
 
 def p_comandos_CONST(p):
@@ -68,6 +76,13 @@ def p_comandos_for(p):
   global id
   p[0] = p[1] + f'(FOR{id},"{p[3]}")' + p[5] + p[6] + f"(ENDFOR{id})"
   id+=1
+
+
+def p_comentarios_EMPTY(p):
+  "comentarios : "
+
+def p_comentarios_mult(p):
+  "comentarios : comentarios COMMENT"
 
 
 def p_alternative_cond_sing(p):

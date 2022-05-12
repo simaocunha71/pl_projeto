@@ -1,17 +1,33 @@
 import ply.lex as lex
 
 
-tokens = ["VARIABLE","PARTIAL","WORD","CONST","IF","ENDIF","ELSEIF","ELSE","FOR","ENDFOR","ENDCONDITION"]
+tokens = ["VARIABLE","COMMENTBEGIN","COMMENTEND","COMMENT","PIPE","PARTIAL","WORD","CONST","IF","ENDIF","ELSEIF","ELSE","FOR","ENDFOR","ENDCONDITION"]
 literals = ["$", "(", ")", "{", "}", "-", ".", "=",":"]
 
-t_ignore = "\r"
+t_ANY_ignore = "\r"
 
 states = [
   ("condition","inclusive"),
-  ("conditionAlt","inclusive")
+  ("conditionAlt","inclusive"),
+  ("comment","exclusive")
 ]
 
 # LEXICO
+
+def t_COMMENTBEGIN(t):
+    r'\$--'
+    t.lexer.push_state("comment")
+    return t
+
+def t_comment_COMMENTEND(t):
+    r'\n'
+    t.lexer.pop_state()
+    return t
+
+def t_comment_COMMENT(t):
+    r'.'
+    return t
+
 
 def t_IF(t):
     r'(\$if\()|(\$\{if\()'
@@ -69,6 +85,10 @@ def t_PARTIAL(t):
     r'(\$([\w]([._\-]?[\w\d]+)*:)?[\w]([._\-\\]?[\w\d]+)*\(\)\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*:)?[\w]([._\-]?[\w\d]+)*\(\)\})'
     return t
 
+def t_PIPE(t):
+    r'(\$([\w]([._\-]?[\w\d]+)*)?[\w]([._\-\/]?[\w\d]+)*\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*)?[\w]([._\-\/]?[\w\d]+)*\})'
+    return t
+
 def t_WORD(t):
     r'[\w]([._\-]?[\w\d]+)*'
     return t
@@ -77,5 +97,5 @@ def t_CONST(t):
     r'[^$]|\$\$'
     return t
 
-def t_error(t):
+def t_ANY_error(t):
     print("Lex error - >" + str(t))

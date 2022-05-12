@@ -38,7 +38,3 @@ teste de subtemplate
   cool1
   cool2
 fim do teste
-teste de subtemplate
-  cool1
-  cool2
-fim do teste

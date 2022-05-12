@@ -6,11 +6,15 @@ literals = ["$", "(", ")", "{", "}", "-", ".", "=",":"]
 
 t_ignore = "\r"
 
+states = [
+  ("condition","inclusive")
+]
 
 # LEXICO
 
 def t_IF(t):
     r'\$if\('
+    t.lexer.push_state("condition")
     return t
 
 def t_ENDIF(t):
@@ -19,6 +23,7 @@ def t_ENDIF(t):
 
 def t_ELSEIF(t):
     r'\$elseif\('
+    t.lexer.push_state("condition")
     return t
 
 def t_ELSE(t):
@@ -27,6 +32,7 @@ def t_ELSE(t):
 
 def t_FOR(t):
     r'\$for\('
+    t.lexer.push_state("condition")
     return t
 
 def t_ENDFOR(t):
@@ -34,8 +40,9 @@ def t_ENDFOR(t):
     return t
 
 
-def t_ENDCONDITION(t):
+def t_condition_ENDCONDITION(t):
   r'\)\$(\n)?'
+  t.lexer.pop_state()
   return t
 
 def t_VARIABLE(t):

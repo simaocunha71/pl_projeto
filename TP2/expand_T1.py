@@ -17,8 +17,8 @@ comp_endif = re.compile(endif_regex)
 
 """ 
 TODO : 
-  formas alternativas de for/if/etc
   pipes
+  sub-templates
  """
 
 def get_nest_tuples(tuple_stack,i,instruction):

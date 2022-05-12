@@ -27,7 +27,13 @@ def remove_dolars(string):
   if match:
     return match.group(1)
   else:
-    return string
+    reg_exp = r'\$\{(.+)\}'
+    compile = re.compile(reg_exp)
+    match = compile.search(string)
+    if match:
+      return match.group(1)
+    else:
+      return string
 
 
 #funcao que procura uma dada variavel num dicionario e a escreve no ficheiro explicitado

@@ -46,7 +46,10 @@ def p_comandos_WORD(p):
 
 def p_comandos_CONST(p):
   "comandos : comandos CONST"
-  p[0] = p[1] + f'(CONS,"{p[2]}")' 
+  cons = p[2]
+  if cons == '$$':
+    cons = '$'
+  p[0] = p[1] + f'(CONS,"{cons}")' 
 
 
 def p_comandos_if(p):

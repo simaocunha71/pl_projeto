@@ -7,36 +7,47 @@ literals = ["$", "(", ")", "{", "}", "-", ".", "=",":"]
 t_ignore = "\r"
 
 states = [
-  ("condition","inclusive")
+  ("condition","inclusive"),
+  ("conditionAlt","inclusive")
 ]
 
 # LEXICO
 
 def t_IF(t):
-    r'\$if\('
-    t.lexer.push_state("condition")
+    r'(\$if\()|(\$\{if\()'
+    if t.value == '$if(':
+        t.lexer.push_state("condition")
+    else:
+        t.lexer.push_state("conditionAlt")
     return t
 
+
 def t_ENDIF(t):
-    r'\$endif\$(\n)?'
+    r'(\$endif\$(\n)?)|(\$\{endif\}(\n)?)'
     return t
 
 def t_ELSEIF(t):
-    r'\$elseif\('
-    t.lexer.push_state("condition")
+    r'(\$elseif\()|(\$\{elseif\()'
+    if t.value == '$elseif(':
+        t.lexer.push_state("condition")
+    else:
+        t.lexer.push_state("conditionAlt")
     return t
 
 def t_ELSE(t):
-    r'\$else\$(\n)?'
+    r'(\$else\$(\n)?)|(\$\{else\}(\n)?)'
     return t
 
 def t_FOR(t):
-    r'\$for\('
-    t.lexer.push_state("condition")
+    r'(\$for\()|(\$\{for\()'
+    if t.value == '$for(':
+        t.lexer.push_state("condition")
+    else:
+        t.lexer.push_state("conditionAlt")
     return t
 
 def t_ENDFOR(t):
-    r'\$endfor\$(\n)?'
+    r'(\$endfor\$(\n)?)|(\$\{endfor\}(\n)?)'
     return t
 
 
@@ -45,8 +56,13 @@ def t_condition_ENDCONDITION(t):
   t.lexer.pop_state()
   return t
 
+def t_conditionAlt_ENDCONDITION(t):
+  r'\)\}(\n)?'
+  t.lexer.pop_state()
+  return t
+
 def t_VARIABLE(t):
-    r'\$[\w]([._-]?[\w\d]+)*\$'
+    r'(\$[\w]([._-]?[\w\d]+)*\$)|(\$\{[\w]([._-]?[\w\d]+)*\})'
     return t
 
 def t_WORD(t):
@@ -58,4 +74,4 @@ def t_CONST(t):
     return t
 
 def t_error(t):
-    print("Ta Mal", t)
+    print("Lex error - >" + str(t))

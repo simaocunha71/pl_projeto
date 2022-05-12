@@ -7,8 +7,8 @@
 $for(author-meta)$
   <meta name="author" content="$author-meta$" />
 $endfor$
-$if(date-meta)$
-  <meta name="date" content="$date-meta$" />
+${if(date-meta)}
+  <meta name="date" content="${date-meta}" />
 $endif$
 $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />

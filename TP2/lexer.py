@@ -20,12 +20,12 @@ def t_COMMENTBEGIN(t):
     return t
 
 def t_comment_COMMENTEND(t):
-    r'\n'
+    r'\n|.$'
     t.lexer.pop_state()
     return t
 
 def t_comment_COMMENT(t):
-    r'.'
+    r'[^\n]'
     return t
 
 

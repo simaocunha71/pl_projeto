@@ -1,4 +1,5 @@
 import re
+import roman
 
 def matches_to_tuples(matches):
   tuple_stack = []
@@ -43,6 +44,161 @@ def remove_dolars(string):
       return match.group(1)
     else:
       return string
+
+def valid_method(method):
+  methods = ['uppercase','lowercase','pairs','length','reverse','first','last','rest','allbutlast','chomp','nowrap','alpha','roman']
+  return method in methods
+
+
+def apply_method(var,method):
+  result = var
+  if method == 'uppercase':
+    if isinstance(var,str):
+      result = var.upper()
+    elif isinstance(var,list):
+      i=0
+      for v in var:
+        if isinstance(v,str):
+          result[i] = v.upper()
+        i+=1
+    elif isinstance(var,dict):
+      for key in var.keys():
+        value = var[key]
+        if isinstance(value,str):
+          result[key] = value.upper()
+        elif isinstance(value,list):
+          result[key] = apply_method(value,method)
+
+  elif method == 'lowercase':
+    if isinstance(var,str):
+      result = var.lower()
+    elif isinstance(var,list):
+      i=0
+      for v in var:
+        if isinstance(v,str):
+          result[i] = v.lower()
+        i+=1
+    elif isinstance(var,dict):
+      for key in var.keys():
+        value = var[key]
+        if isinstance(value,str):
+          result[key] = value.lower()
+        elif isinstance(value,list):
+          result[key] = apply_method(value,method)
+          
+  elif method == 'pairs':
+    map = []
+    if isinstance(var,list):
+      i = 1
+      for v in var:
+        map.append((i,v))
+        i+=1
+      result = map
+    elif isinstance(var,dict):
+      result = list(var.items())
+
+  elif method == 'length':
+    if isinstance(var,list) or isinstance(var,dict) or isinstance(var,str):
+      result = len(var)
+
+  elif method == 'reverse':
+    if isinstance(var,list):
+      result.reverse()
+    elif isinstance(var,str):
+      result = var[::-1]
+
+  elif method == 'first':
+    if isinstance(var,list):
+      if len(var) > 0:
+        result = var[0]
+      else:
+        result = []
+    elif isinstance(var,dict):
+      values = list(var.values())
+      if len(values) > 0:
+        result = values[0]
+      else:
+        result = []
+
+  elif method == 'last':
+    if isinstance(var,list):
+      if len(var) > 0:
+        result = var[-1]
+      else:
+        result = []
+    elif isinstance(var,dict):
+      values = list(var.values())
+      if len(values) > 0:
+        result = values[-1]
+      else:
+        result = []
+
+  elif method == 'rest':
+    if isinstance(var,list):
+      if len(var) > 1:
+        result = var[1:]
+      else:
+        result = []
+    elif isinstance(var,dict):
+      values = list(var.values())
+      if len(values) > 1:
+        result = values[1:]
+      else:
+        result = []
+
+  elif method == 'allbutlast':
+    if isinstance(var,list):
+      if len(var) > 1:
+        result = var[:-1]
+      else:
+        result = []
+    elif isinstance(var,dict):
+      values = list(var.values())
+      if len(values) > 1:
+        result = values[:-1]
+      else:
+        result = []
+
+  elif method == 'chomp':
+    if isinstance(var,str):
+      var = var.rstrip()
+      result = re.sub(r'\n','',var)
+
+
+  elif method == 'nowrap':
+    if isinstance(var,str):
+      result = var.rstrip(' ')
+
+  elif method == 'alpha':
+    if isinstance(var,str) or isinstance(var,list):
+      i=0
+      for v in var:
+        result[i] = chr(97 + ord(str(v))%26)
+        i+=1
+
+  elif method == 'roman':
+    if isinstance(var,str) or isinstance(var,list):
+      i=0
+      for v in var:
+        if isinstance(v,int):
+          result[i] = roman.toRoman(v)
+          i+=1
+  return result
+    
+
+#recebendo uma variavel, aplica todos os metodos de uma lista nele
+def apply_methods(var,methods,file):
+  i = 0
+  error = False
+  while i < len(methods) and not error:
+    var = apply_method(var,methods[i])
+    i+= 1
+  if isinstance(var,list):
+    for v in var:
+      file.write(f"{str(v)} ")
+  else:
+    file.write(str(var))
+  
 
 
 #funcao que procura uma dada variavel num dicionario e a escreve no ficheiro explicitado

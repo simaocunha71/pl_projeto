@@ -17,10 +17,6 @@ comp_if = re.compile(if_regex)
 endif_regex = r'^(ENDIF)(\d+)$'
 comp_endif = re.compile(endif_regex)
 
-""" 
-TODO : 
-  pipes
- """
 
 def get_nest_tuples(tuple_stack,i,instruction):
   end = False
@@ -125,6 +121,26 @@ def compile_partial(partial,dictionary,file,condition,type,j):
     else:
       print(f"template \"{partial}\" not found")
         
+#funcao utilizada para compilar o pipe com 1 ou multpilos metodos
+def compile_pipe(pipe,dictionary,file,condition,type,j):
+  pipe = remove_dolars(pipe)
+  splits = pipe.split('/')
+  var_name = splits[0]
+  var = dic_get_var(var_name,dictionary,file,condition,type,j)
+  valid = True
+  i = 0
+  methods =splits[1:] 
+  #verificar se todos os metodos sao validos
+  while valid and i < len(methods):
+    valid = valid_method(methods[i])
+    i += 1
+
+  if valid:
+    if var:
+      pass
+      apply_methods(var,methods,file)
+  else:
+    print(f"Unknown method {methods[i-1]}")
 
 
 
@@ -147,6 +163,10 @@ def compile_template(tuple_stack, dictionary, file, condition = True, type = 0,j
     #caso partial
     if tuple[0] == "PARTIAL":
       compile_partial(tuple[1],dictionary,file,condition,type,j)
+
+    #caso pipe
+    if tuple[0] == "PIPE":
+      compile_pipe(tuple[1],dictionary,file,condition,type,j)
 
     #caso variavel
     # necessario verificar se existe, tipo de variavel, se esta dentro de um ciclo...

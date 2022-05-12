@@ -39,6 +39,10 @@ def p_comandos_VARIABLE(p):
   "comandos : comandos VARIABLE"
   p[0] = p[1] +  f'(VAR,"{p[2]}")' 
 
+def p_comandos_PARTIAL(p):
+  "comandos : comandos PARTIAL"
+  p[0] = p[1] +  f'(PARTIAL,"{p[2]}")' 
+
 def p_comandos_WORD(p):
   "comandos : comandos WORD"
   p[0] = p[1] + f'(CONS,"{p[2]}")' 

@@ -20,6 +20,15 @@ def remove_qotes(string):
   else:
     return string
 
+def remove_parentheses(string):
+  reg_exp = r'(.+)\(\)'
+  compile = re.compile(reg_exp)
+  match = compile.search(string)
+  if match:
+    return match.group(1)
+  else:
+    return string
+
 def remove_dolars(string):
   reg_exp = r'\$(.+)\$'
   compile = re.compile(reg_exp)
@@ -85,7 +94,49 @@ def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
         file.write(str(result))
 
 
+#funcao similar a anterior, mas devolve o valor encontrado
+def dic_get_var(variable,dictionary,file,condition = True,type = 0,j = 0):
+  #caso especial da variavel "it"
+  if variable.split('.')[0] == "it" and not isinstance(condition,bool):
+    variable = re.sub(r'(it)(\.\w)*',condition +r'\2',variable)
 
+  if dic_contains(variable,dictionary,condition,type,j):
+    splits = variable.split('.')
+    if isinstance(splits,list):
+      iterations = len(splits)
+
+    i = 0
+    result = dictionary
+    var_append = splits[0]
+    error = False
+    while(i<iterations and not error):
+      if not isinstance(condition,bool):
+        if i > 0:
+          var_append = var_append + "." + splits[i] 
+      #se a variavel for a da condicao e for pedida por um "for", pega apenas
+      # na variavel correspondente a iteracao atual, dada por j
+      if var_append == condition:
+        condition = True
+        result = result[splits[i]]
+        if isinstance(result,list) and type == 2:
+          if j < len(result):
+            result = result[j]
+          else:
+            error = True
+      else:
+        result = result[splits[i]]
+      i += 1
+
+    if not error:
+      #lista, se for dentro de um ciclo com a variavel igual a condicao
+                                                    #fazer uma funcao para tratar desta condicao no caso de objetos ou variavel "it"
+      if(isinstance(result,list) and variable == condition and type == 2):
+          return result[j]
+      #variavel simples
+      else:
+        return result
+    else:
+      return None
 
 #funcao utiliada para verificar se uma variavel pertence ao dicionario
 # tem argumentos opcionais para auxilio na procura, caso de "for"

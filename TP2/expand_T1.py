@@ -1,5 +1,7 @@
+from io import TextIOWrapper
 import re
 import sys
+import os
 from utilities import *
 from lexer import *
 from syntax import *
@@ -18,7 +20,6 @@ comp_endif = re.compile(endif_regex)
 """ 
 TODO : 
   pipes
-  sub-templates
  """
 
 def get_nest_tuples(tuple_stack,i,instruction):
@@ -94,7 +95,35 @@ def compile_for(tuple_stack, dictionary, file, condition = True):
     j+=1
 
 
-
+#funcao utilizada para compilar partials (subtemplates)
+# as subtemplates podem ser utilizadas sozinhas, ou a variaveis dicionarios
+def compile_partial(partial,dictionary,file,condition,type,j):
+  partial = remove_dolars(partial)
+  splits = partial.split(':')
+  #caso de parcial aplicado a uma variavel
+  if(len(splits) == 2):
+    var = dic_get_var(splits[0],dictionary,file,condition,type,j)
+    partial = remove_parentheses(splits[1])
+    if os.path.isfile(partial):
+      if var:
+        #caso da variavel ser uma lista
+        if isinstance(var,list):
+          for i in var:
+            if isinstance(var,dict):
+              expand_T1(partial,var,file)
+        #variavel simples
+        else:
+          if isinstance(var,dict):
+            expand_T1(partial,var,file)
+    else:
+      print(f"template \"{partial}\" not found")
+  #partial simples
+  elif(len(splits) == 1):
+    partial = remove_parentheses(partial)
+    if os.path.isfile(partial):
+      expand_T1(partial,{},file)
+    else:
+      print(f"template \"{partial}\" not found")
         
 
 
@@ -114,6 +143,10 @@ def compile_template(tuple_stack, dictionary, file, condition = True, type = 0,j
     #caso constante, simplesmente escreve no ficheiro
     if tuple[0] == "CONS":
       file.write(tuple[1])
+
+    #caso partial
+    if tuple[0] == "PARTIAL":
+      compile_partial(tuple[1],dictionary,file,condition,type,j)
 
     #caso variavel
     # necessario verificar se existe, tipo de variavel, se esta dentro de um ciclo...
@@ -143,53 +176,61 @@ def compile_template(tuple_stack, dictionary, file, condition = True, type = 0,j
 def expand_T1(template,dictionary,output=False):
   lexer = lex.lex()
   parser = yacc.yacc()
-
+  opened = False
   #print("$if(titleblock)$\n$titleblock$\n\n$endif$")
-  f = open(template, "r",encoding='utf8',errors="surrogateescape")
+  if os.path.isfile(template):
+    f = open(template, "r",encoding='utf8',errors="surrogateescape")
 
-  lines = f.read()
-  f.close()
+    lines = f.read()
+    f.close()
 
-  #lexer.input(lines)
-  #for tok in lexer:
-  #    print("\u001B[33m" + str(tok) + "\u001B[0m")
+    #lexer.input(lines)
+    #for tok in lexer:
+    #    print("\u001B[33m" + str(tok) + "\u001B[0m")
 
-  #Parsing do template para verificar integridade lexica e gramatical
-  stack = parser.parse(lines)
+    #Parsing do template para verificar integridade lexica e gramatical
+    stack = parser.parse(lines)
 
-  if not error:
-    print("No syntax error")
+    if not error:
+      print("No syntax error")
 
-    #Expressao regular para separar os diferentes tuplos na string stack
-    reg_exp_tuples = r'\((\w+)(,([^(),"]+|"([^"]*|")*"))?\)'
-    compile = re.compile(reg_exp_tuples)
-    matches = compile.finditer(stack)
+      #Expressao regular para separar os diferentes tuplos na string stack
+      reg_exp_tuples = r'\((\w+)(,([^(),"]+|"([^"]*|")*"))?\)'
+      compile = re.compile(reg_exp_tuples)
+      matches = compile.finditer(stack)
 
-    #transforma os diferentes tuplos do tipo string para tuplos
-    tuple_stack = matches_to_tuples(matches)
+      #transforma os diferentes tuplos do tipo string para tuplos
+      tuple_stack = matches_to_tuples(matches)
 
-    
+      
 
-    #for i in tuple_stack:
-    #  print(i)
+      #for i in tuple_stack:
+      #  print(i)
 
-    #variables = {}
-    #for i in tuple_stack:
-    #  if i[0] == "VAR" or i[0] == "IF" or i[0] == "ELSEIF" or i[0] == "FOR":
-    #    variable = remove_dolars(i[1])
-    #    variables[variable] = variable
-    #for v in variables:
-    #  print(v)
+      #variables = {}
+      #for i in tuple_stack:
+      #  if i[0] == "VAR" or i[0] == "IF" or i[0] == "ELSEIF" or i[0] == "FOR":
+      #    variable = remove_dolars(i[1])
+      #    variables[variable] = variable
+      #for v in variables:
+      #  print(v)
 
-    file = sys.stdout
-    if output:
-      file = open(output,'w+',encoding='utf8',errors="surrogateescape")
-    
-    compile_template(tuple_stack, dictionary, file)  
-
-    file.close()
+      file = sys.stdout
+      if output:
+        if isinstance(output,str):
+          file = open(output,'w+',encoding='utf8',errors="surrogateescape")
+        #caso de subtemplates, o ficheiro ja estara antes aberto
+        elif isinstance(output,TextIOWrapper):
+          file = output
+          opened = True
+  
+      compile_template(tuple_stack, dictionary, file)  
+      if opened == False:
+        file.close()
+    else:
+      print("Syntax Error")
   else:
-    print("Syntax Error")
+    print("Template not found")
 
 
 

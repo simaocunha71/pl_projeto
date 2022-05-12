@@ -1,0 +1,5 @@
+teste de subtemplate
+$for(porreiro)$
+  $porreiro.another_one$
+$endfor$
+fim do teste

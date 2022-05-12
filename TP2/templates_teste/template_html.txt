@@ -62,3 +62,5 @@ $include-after$
 $endfor$
 </body>
 </html>
+$teste:templates_teste\subtemplate_teste.txt()$
+$teste:templates_teste\subtemplate_teste.txt()$

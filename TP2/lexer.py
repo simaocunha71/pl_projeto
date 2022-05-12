@@ -1,7 +1,7 @@
 import ply.lex as lex
 
 
-tokens = ["VARIABLE","WORD","CONST","IF","ENDIF","ELSEIF","ELSE","FOR","ENDFOR","ENDCONDITION"]
+tokens = ["VARIABLE","PARTIAL","WORD","CONST","IF","ENDIF","ELSEIF","ELSE","FOR","ENDFOR","ENDCONDITION"]
 literals = ["$", "(", ")", "{", "}", "-", ".", "=",":"]
 
 t_ignore = "\r"
@@ -62,11 +62,15 @@ def t_conditionAlt_ENDCONDITION(t):
   return t
 
 def t_VARIABLE(t):
-    r'(\$[\w]([._-]?[\w\d]+)*\$)|(\$\{[\w]([._-]?[\w\d]+)*\})'
+    r'(\$[\w]([._\-]?[\w\d]+)*\$)|(\$\{[\w]([._\-]?[\w\d]+)*\})'
+    return t
+
+def t_PARTIAL(t):
+    r'(\$([\w]([._\-]?[\w\d]+)*:)?[\w]([._\-\\]?[\w\d]+)*\(\)\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*:)?[\w]([._\-]?[\w\d]+)*\(\)\})'
     return t
 
 def t_WORD(t):
-    r'[\w]([._-]?[\w\d]+)*'
+    r'[\w]([._\-]?[\w\d]+)*'
     return t
 
 def t_CONST(t):

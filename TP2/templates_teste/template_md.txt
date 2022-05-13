@@ -1,11 +1,6 @@
-$if(x)$
+$if(titleblock)$
 $titleblock$
-$elseif(b)$
-$else$
-$if(teste.fixe)$
-$it$
-$endif$
-$toc$
+
 $endif$
 $for(header-includes)$
 $header-includes$
@@ -14,11 +9,9 @@ $endfor$
 $for(include-before)$
 $include-before$
 
-$teste.fixe$
-
 $endfor$
 $if(toc)$
-$table-of-contents$
+$toc$
 
 $endif$
 $body$

@@ -136,7 +136,6 @@ def compile_pipe(pipe,dictionary,file,condition,type,j):
 
   if valid:
     if var:
-      pass
       apply_methods(var,methods,file)
   else:
     print(f"Unknown method {methods[i-1]}")

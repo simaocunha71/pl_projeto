@@ -1,25 +1,10 @@
 import sys, re
 from expand_T1 import *
+from utilities import *
 import yaml
 
-template_file = sys.argv[1]
-dictionary_file = sys.argv[2]
-output = sys.argv[3]
-
-yaml_file = open(dictionary_file, 'r', encoding='utf8',errors="surrogateescape")
-re_name_file = r'^((.+)\\)?(?P<fn>(\w+(\.+)))(?P<ext>[yY][aA][mM][lL])$'
-yamlC_match = re.compile(re_name_file)
-
-
-if (yamlC_match.match(dictionary_file)):
-  yaml_to_dict = yaml.safe_load(yaml_file)
-  expand_T1(template_file,yaml_to_dict,output)
-else:
-  expand_T1(template_file,dictionary_file,output)
-
-yaml_file.close()
-
-
+error = False
+#default dict
 dictionary = {
   'lang' : 'en',
   'dir' : 'exemplo/exemplo',
@@ -57,16 +42,76 @@ dictionary = {
   }
 }
 
+re_name_file = r'^((.+)\\)?(?P<fn>(\w+(\.+)))(?P<ext>[yY][aA][mM][lL])$'
+yamlC_match = re.compile(re_name_file)
+
+if len(sys.argv) == 4:
+  template_file = sys.argv[1]
+  dictionary_file = sys.argv[2]
+  output = sys.argv[3]
+
+  
+  if os.path.isfile(dictionary_file):
+    if yamlC_match.match(dictionary_file):
+      yaml_file = open(dictionary_file, 'r', encoding='utf8',errors="surrogateescape")
+      yaml_to_dict = yaml.safe_load(yaml_file)
+      yaml_file.close()
+    else:
+      dict_string = file_to_dict(dictionary_file)
+      if dict_string:
+        dictionary = dict_string
+      else:
+        print("Could not process dictionary file")
+        error = True
+  else:
+    dict_string = ast.literal_eval(dictionary_file)
+    if dict_string:
+      dictionary = dict_string
+    else:
+      print("Invalid dictionary")
+      error = True
+
+  if not error:
+    expand_T1(template_file,dictionary_file,output)
 
 
-#file = sys.stdout
-#print(dic_contains("it.porreiro.another_one",dictionary,"teste.porreiro",2,1))
-#dic_write_var("teste.fixe",dictionary,file,"teste.porreiro",2,0)
-#file.close()
+elif len(sys.argv) > 1 and len(sys.argv) < 4:
+  template_file = sys.argv[1]
+  output = sys.stdout
+
+  #verificacao dos argumentos
+  # segundo argumento pode ser um ficheiro de dicionario, um dicionario ou ficheiro de output
+  if len(sys.argv) == 3:
+    file = sys.argv[2]
+    if os.path.isfile(file):
+      if yamlC_match.match(file):
+        yaml_file = open(file, 'r', encoding='utf8',errors="surrogateescape")
+        dictionary = yaml.safe_load(yaml_file)
+        yaml_file.close()
+      else:
+        dict_string = file_to_dict(file)
+        if dict_string:
+          dictionary = dict_string
+        else:
+          output = file
+    else:
+      dict_string = None
+      try:
+        dict_string = ast.literal_eval(file)
+      except Exception:
+        pass
+      if dict_string:
+        dictionary = dict_string
+      else:
+        print("Invalid dictionary")
+        error = True
+
+  if not error:
+    expand_T1(template_file,dictionary,output)
 
 
-#else: 
-#  sys.exit("Invalid arguments")
+else: 
+  sys.exit("Invalid arguments")
 
 
 

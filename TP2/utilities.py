@@ -1,5 +1,6 @@
 import re
 import roman
+import ast
 
 def matches_to_tuples(matches):
   tuple_stack = []
@@ -45,11 +46,24 @@ def remove_dolars(string):
     else:
       return string
 
+
+def file_to_dict(file):
+  result = None
+  try:
+    f_open = open(file,'r')
+    result = ast.literal_eval(f_open.read())
+    f_open.close()
+  except Exception:
+    pass
+  return result
+
+
+#verifica se o metodo dado pertence aos metodos disponiveis
 def valid_method(method):
   methods = ['uppercase','lowercase','pairs','length','reverse','first','last','rest','allbutlast','chomp','nowrap','alpha','roman']
   return method in methods
 
-
+#aplica o metodo a var
 def apply_method(var,method):
   result = var
   if method == 'uppercase':
@@ -186,7 +200,7 @@ def apply_method(var,method):
   return result
     
 
-#recebendo uma variavel, aplica todos os metodos de uma lista nele
+#recebendo uma variavel, aplica todos os metodos de uma lista nela
 def apply_methods(var,methods,file):
   i = 0
   error = False

@@ -212,7 +212,6 @@ def expand_T1(template,dictionary,output=False):
     stack = parser.parse(lines)
 
     if not error:
-      print("No syntax error")
 
       #Expressao regular para separar os diferentes tuplos na string stack
       reg_exp_tuples = r'\((\w+)(,([^(),"]+|"([^"]*|")*"))?\)'
@@ -250,7 +249,7 @@ def expand_T1(template,dictionary,output=False):
     else:
       print("Syntax Error")
   else:
-    print("Template not found")
+    print(f"Template {template} not found")
 
 
 

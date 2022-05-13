@@ -196,17 +196,15 @@ def compile_template(tuple_stack, dictionary, file, condition = True, type = 0,j
 def expand_T1(template,dictionary,output=False):
   lexer = lex.lex()
   parser = yacc.yacc()
+  #booleano que indica se o ficheiro ja esta aberto (caso de partial)
   opened = False
-  #print("$if(titleblock)$\n$titleblock$\n\n$endif$")
+
   if os.path.isfile(template):
     f = open(template, "r",encoding='utf8',errors="surrogateescape")
 
     lines = f.read()
     f.close()
 
-    #lexer.input(lines)
-    #for tok in lexer:
-    #    print("\u001B[33m" + str(tok) + "\u001B[0m")
 
     #Parsing do template para verificar integridade lexica e gramatical
     stack = parser.parse(lines)
@@ -220,19 +218,6 @@ def expand_T1(template,dictionary,output=False):
 
       #transforma os diferentes tuplos do tipo string para tuplos
       tuple_stack = matches_to_tuples(matches)
-
-      
-
-      #for i in tuple_stack:
-      #  print(i)
-
-      #variables = {}
-      #for i in tuple_stack:
-      #  if i[0] == "VAR" or i[0] == "IF" or i[0] == "ELSEIF" or i[0] == "FOR":
-      #    variable = remove_dolars(i[1])
-      #    variables[variable] = variable
-      #for v in variables:
-      #  print(v)
 
       file = sys.stdout
       if output:

@@ -5,22 +5,30 @@ import expand_T1
     
 def p_grammar(p):
       
-    prog : comandos
+    prog : comandos                                                       # terminador
 
-    comandos : 
-            | comandos VARIABLE
-            | comandos WORD
-            | comandos CONST
-            | comandos IF WORD ENDCONDITION comandos alternative ENDIF 
-            | comandos FOR WORD ENDCONDITION comandos ENDFOR 
+    comandos :                                                            # comando vazio
+            | comandos VARIABLE                                           # variavel
+            | comandos PARTIAL                                            # partial (subtemplate)
+            | comandos PIPE                                               # pipe (metodos aplicados a variavel)
+            | comandos WORD                                               # texto que se escreve diretamente no ficheiro
+            | comandos COMMENTBEGIN comentarios COMMENTEND                # linha de comentario
+            | comandos CONST                                              # texto que se escreve diretamente no ficheiro
+            | comandos IF WORD ENDCONDITION comandos alternative ENDIF    # condiçao if, formato if('variavel') ... endif
+            | comandos FOR WORD ENDCONDITION comandos ENDFOR              # condiçao for, formato for('variavel') ... endfor
 
-    alternative : condition_sing
-                | condition_rec
+    comentarios :                                                         # comentario vazio
+                | comentarios COMMENT                                     # comentario (recursivo por se ler char a char)
 
-    condition_sing : ELSE comandos
 
-    condition_rec :
-                  | condition_rec ELSEIF WORD  ENDCONDITION  comandos 
+    alternative : condition_sing                                          # regra de else
+                | condition_rec                                           # regra de elif
+
+    condition_sing : ELSE comandos                                        # else
+
+    condition_rec :                                                       # vazio (no caso de nao ter condicional else)
+                  | ELSEIF WORD  ENDCONDITION  comandos condition_rec     # condicionais elif recursivamente
+                  | ELSEIF WORD  ENDCONDITION  comandos condition_sing    # elif seguido de else
            
 """
 

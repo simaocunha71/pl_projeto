@@ -13,3 +13,7 @@ TP2/ply/CHANGES
 TP2/ply/lex.py
 TP2/ply/LICENSE
 TP2/ply/yacc.py
+TP2/imagens/template_md.png
+TP2/imagens/regra_variable.png
+TP2/imagens/inicio_lexer.png
+TP2/imagens/gramatica.png

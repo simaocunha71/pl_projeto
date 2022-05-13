@@ -1,7 +1,9 @@
 import ply.lex as lex
 
 
-tokens = ["VARIABLE","COMMENTBEGIN","COMMENTEND","COMMENT","PIPE","PARTIAL","WORD","CONST","IF","ENDIF","ELSEIF","ELSE","FOR","ENDFOR","ENDCONDITION"]
+tokens = ["VARIABLE","COMMENTBEGIN","COMMENTEND","COMMENT","PIPE",
+          "PARTIAL","WORD","CONST","IF","ENDIF","ELSEIF","ELSE",
+          "FOR","ENDFOR","ENDCONDITION"]
 literals = ["$", "(", ")", "{", "}", "-", ".", "=",":"]
 
 t_ANY_ignore = "\r"
@@ -82,11 +84,11 @@ def t_VARIABLE(t):
     return t
 
 def t_PARTIAL(t):
-    r'(\$([\w]([._\-]?[\w\d]+)*:)?[\w]([._\-\\]?[\w\d]+)*\(\)\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*:)?[\w]([._\-]?[\w\d]+)*\(\)\})'
+    r'(\$([\w]([._\-]?[\w\d]+)*:)?[\w]([_\-\\]?[\w\d]+)*\(\)\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*:)?[\w]([_\-]?[\w\d]+)*\(\)\})'
     return t
 
 def t_PIPE(t):
-    r'(\$([\w]([._\-]?[\w\d]+)*)?[\w]([._\-\/]?[\w\d]+)*\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*)?[\w]([._\-\/]?[\w\d]+)*\})'
+    r'(\$([\w]([._\-]?[\w\d]+)*)(\/[\w][_\-]?[\w\d]+)*\$)|(\$\{([\w]([._\-\\]?[\w\d]+)*)(\/[\w][_\-]?[\w\d]+)*\})'
     return t
 
 def t_WORD(t):

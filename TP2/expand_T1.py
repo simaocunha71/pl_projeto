@@ -56,13 +56,11 @@ def get_nest_tuples(tuple_stack,i,instruction):
 
 #funcao auxiliar do compilador, que permite tratar de if
 def compile_if(tuple_stack, dictionary, file,instruction, condition = True):
-  #print(condition)
-  if dictionary.__contains__(condition):
+  if dic_contains(condition,dictionary):
     compile_template(tuple_stack,dictionary,file,condition,1)
   else:
     valid = False
     i = 0
-    level = 0
     while(not valid and i < len(tuple_stack)):
       tuple = tuple_stack[i]
       if(tuple[0] == "ELSE"):
@@ -73,18 +71,19 @@ def compile_if(tuple_stack, dictionary, file,instruction, condition = True):
         i+=1
         instructions = get_nest_tuples(tuple_stack,i,tuple[0])
         i += len(instructions)
-        if dictionary.__contains__(tuple[1]):
+        if dic_contains(tuple[1],dictionary,condition):
           compile_template(instructions,dictionary,file,tuple[1])
-      
-      i+=1
+      else:
+        i+=1
 
 
 #funcao auxiliar do compilador, que permite o ciclo de uma instrucao for
 def compile_for(tuple_stack, dictionary, file, condition = True):
   iterate = 1
-  if dictionary.__contains__(condition):
-    if isinstance(dictionary[condition],list):
-      iterate = len(dictionary[condition])
+  if dic_contains(condition,dictionary):
+    var = dic_get_var(condition,dictionary)
+    if isinstance(var,list):
+      iterate = len(var)
   j = 0
   while j<iterate: 
     compile_template(tuple_stack,dictionary,file,condition,2,j)
@@ -98,7 +97,7 @@ def compile_partial(partial,dictionary,file,condition,type,j):
   splits = partial.split(':')
   #caso de parcial aplicado a uma variavel
   if(len(splits) == 2):
-    var = dic_get_var(splits[0],dictionary,file,condition,type,j)
+    var = dic_get_var(splits[0],dictionary,condition,type,j)
     partial = remove_parentheses(splits[1])
     if os.path.isfile(partial):
       if var:
@@ -126,7 +125,7 @@ def compile_pipe(pipe,dictionary,file,condition,type,j):
   pipe = remove_dolars(pipe)
   splits = pipe.split('/')
   var_name = splits[0]
-  var = dic_get_var(var_name,dictionary,file,condition,type,j)
+  var = dic_get_var(var_name,dictionary,condition,type,j)
   valid = True
   i = 0
   methods =splits[1:] 
@@ -175,12 +174,15 @@ def compile_template(tuple_stack, dictionary, file, condition = True, type = 0,j
         contains = dic_contains(variable,dictionary,condition,type,j)
         if contains:
           dic_write_var(variable,dictionary,file,condition,type,j)
+
+    #caso ciclo IF
     elif(comp_if.search(tuple[0])):
       variable = tuple[1]
       i+=1
       instructions = get_nest_tuples(tuple_stack,i,tuple[0])
       i += len(instructions)
       compile_if(instructions,dictionary,file,tuple[0],variable)
+
     #caso ciclo FOR
     elif(comp_for.search(tuple[0])):
       variable = tuple[1]

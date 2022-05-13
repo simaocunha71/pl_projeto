@@ -265,7 +265,7 @@ def dic_write_var(variable,dictionary,file,condition = True,type = 0,j = 0):
 
 
 #funcao similar a anterior, mas devolve o valor encontrado
-def dic_get_var(variable,dictionary,file,condition = True,type = 0,j = 0):
+def dic_get_var(variable,dictionary,condition = True,type = 0,j = 0):
   #caso especial da variavel "it"
   if variable.split('.')[0] == "it" and not isinstance(condition,bool):
     variable = re.sub(r'(it)(\.\w)*',condition +r'\2',variable)

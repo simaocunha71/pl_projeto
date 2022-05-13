@@ -112,11 +112,11 @@ def p_condition_rec_vazio(p):
 
 def p_condition_rec(p):
   "condition_rec : ELSEIF WORD  ENDCONDITION  comandos condition_rec"
-  p[0] = f'(ELSEIF,"{p[3]}")' + p[4] + p[5]
+  p[0] = f'(ELSEIF,"{p[2]}")' + p[4] + p[5]
 
 def p_condition_rec_sing(p):
   "condition_rec : ELSEIF WORD  ENDCONDITION  comandos condition_sing"
-  p[0] = f'(ELSEIF,"{p[3]}")' + p[4] + p[5]
+  p[0] = f'(ELSEIF,"{p[2]}")' + p[4] + p[5]
 
 
 def p_error(p):

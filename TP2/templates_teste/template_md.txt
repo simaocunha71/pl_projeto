@@ -2,8 +2,8 @@ $if(x)$
 $titleblock$
 $elseif(b)$
 $else$
-$if(toc)$
-$toc$
+$if(teste.fixe)$
+$it$
 $endif$
 $toc$
 $endif$
